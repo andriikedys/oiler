@@ -1,0 +1,11 @@
+$images : 'lupa-laptop', 'star1', 'like-w', 'lamp', 'price', 'manager', 'price', 'star1'
+.icon
+  display: inline-block
+
+@each $img in $images
+  .icon-#{$img}
+    +s(#{$img})
+
+.icon-price
+  margin-right: 8px
+

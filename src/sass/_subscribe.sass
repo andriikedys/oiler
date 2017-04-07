@@ -1,0 +1,398 @@
+.subscribe
+  position: relative
+  padding: 15px 15px 25px 20px
+  background-color: #ffffff
+  box-shadow: 0 4px 15px rgba(1, 1, 1, 0.08)
+  &--os
+    display: inline-block
+    margin-top: 20px
+    padding: 20px 35px
+    label
+      line-height: 1.1em
+      font-size: 21px
+      +pfComp-m
+      margin-right: 15px
+      text-align: left
+      display: inline-block
+      input
+        margin-right: 4px
+      span
+        font-size: 12px
+        padding-left: 15px
+        strong
+          color: #19b24c
+          font-size: 15px
+          padding: 0 5px
+          +segoe-b
+  &--letter
+    width: 100%
+    max-width: 342px
+    text-align: right
+
+    .subscribe__title
+      +r(1200)
+        font-size: 20px
+      +r(990)
+        font-size: 18px
+
+    .subscribe__phone
+      +r(990)
+        height: 23px
+        font-size: 12px
+        padding: 0 18px
+    .icon-cellphone
+      font-size: 14px
+      top: 5px
+      left: 3px
+    .subscribe__submit-btn
+      +r(990)
+        height: 24px
+        line-height: 24px
+        font-size: 12px
+    .subscribe__price
+      +r(1200)
+        font-size: 24px
+        span
+          font-size: 20px
+      +r(990)
+        font-size: 22px
+        span
+          font-size: 18px
+      +r(790)
+        font-size: 16px
+    +r(1200)
+      max-width: 274px
+    +r(990)
+      max-width: 250px
+
+    .subscribe__form
+      float: right
+      +r(1200)
+        width: 150px
+      +r(990)
+        width: 135px
+
+    .subscribe__price
+      font-size: 32px
+      margin: 5px 0 0 0
+  .subscribe__inner
+    +clr
+  .subscribe__form
+    overflow: hidden
+    margin-top: 15px
+    +clr
+  &__title
+    display: inline-block
+    position: relative
+    +pfCond-m
+    font-size: 26px
+    text-transform: uppercase
+    z-index: 1
+    +r(1200)
+      font-size: 24px
+
+
+    &::before
+      content: ''
+      position: absolute
+      right: 10px
+      top: 17px
+      z-index: 1
+      +s('clicker')
+      pointer-events: none
+    &::after
+      position: absolute
+      bottom: 2px
+      right: 0
+      width: 70px
+      content: ''
+      height: 2px
+      background-color: #000
+    .subscribe--simple &
+      +r(1023)
+        font-size: 19px
+  &__price
+    float: left
+    margin-right: 20px
+    margin-top: -10px
+    color: #00a243
+    +pfCond-m
+    font-size: 47px
+    line-height: 47px
+    span
+      margin-left: 5px
+      font-size: 29px
+  &__field
+    position: relative
+    max-width: 200px
+    margin-bottom: 10px
+    width: 100%
+    &:last-child
+      margin-bottom: 0
+    &-address
+      margin-bottom: 5px
+      text-align: left
+      font-size: 13px
+    &-icon
+      position: absolute
+      top: 7px
+      left: 6px
+      font-size: 16px
+  &__phone
+    padding: 0 30px
+    height: 30px
+    width: 100%
+    background-color: #eeeeee
+    box-shadow: inset 0 0 7px 0 rgba(150, 150, 150, 0.7)
+    line-height: 30px
+    font-size: 14px
+    +segoe-sb
+    color: #000
+    +placeholder
+      color: #808082
+  &__check
+    display: inline-block
+    vertical-align: -2px
+    margin-right: 5px
+
+  &__label
+    cursor: pointer
+  &__submit-btn
+    width: 100%
+    height: 35px
+    +pfCond-m
+    font-size: 22px
+    line-height: 35px
+    background-color: #ffc112
+    border: 1px solid #ffae00
+    text-transform: uppercase
+    margin: 5px 0
+    +trs
+    +tr(background-color .2s ease)
+    -webkit-tap-highlight-color: transparent
+    &:hover
+      background-color: #ffaf00
+  &__close-icon
+    position: absolute
+    top: 5px
+    right: 4px
+    z-index: 1
+    width: 20px
+    height: 20px
+    font-size: 16px
+    cursor: pointer
+    border-radius: 50%
+    background-color: #fff
+    -webkit-tap-highlight-color: transparent
+    +tr(background-color .6s ease)
+    &:hover
+      background-color: #ffc112
+    &:hover .icon-closed
+      fill: #000
+    +r(767)
+      height: 30px
+      width: 30px
+      font-size: 24px
+    .icon-closed
+      fill: #86888b
+      position: absolute
+      top: 2px
+      right: 2px
+      +tr(fill .5s ease)
+      +r(767)
+        top: 3px
+.subscribe--simple
+  max-width: 365px
+  margin: 0 auto
+  text-align: right
+  +r(1199)
+    padding: 15px 10px
+    text-align: center
+    +clr
+
+  .subscribe__price, .subscribe__form
+    +r(1199)
+      float: none
+      margin: 0
+  .subscribe__form
+    +r(1199)
+      display: inline-block
+  .subscribe__field
+    +r(1199)
+      width: 100%
+
+  .subscribe__title::after
+    +r(767)
+      //width: 130px
+  .subscribe__title
+    +r(1023)
+      max-width: 230px
+      text-align: right
+
+  .subscribe__phone
+    +r(767)
+      +segoe-r
+
+.subscribe--oil-page
+  box-shadow: none
+  padding: 0
+
+  .subscribe__field
+    width: auto
+  .subscribe__field-icon
+    left: 3px
+    top: 4px
+  .subscribe__form
+    max-width: 140px
+    margin: 0 auto
+
+
+  .subscribe__phone
+    padding: 0 10px 0 25px
+    height: 25px
+    line-height: 25px
+  .subscribe__submit-btn
+    font-size: 16px
+    height: 25px
+    line-height: 25px
+    background-color: #ffcc00
+    &:hover
+      background-color: #ffae00
+
+
+.subscribe--subscr
+  max-width: 300px
+  margin: 0 auto
+  display: block
+  padding: 20px 37px 10px 37px
+  text-align: center
+  box-shadow: 0 0 12px rgba(1, 1, 1, 0.22)
+  +r(767)
+    padding: 20px 35px 25px 35px
+    max-width: none
+  .subscribe__title
+    font-size: 18px
+    +r(767)
+  //font-size: 42px
+  //line-height: 77px
+  .subscribe__title::before
+    +r(767)
+      top: 27px
+  //right: 25px
+  //transform: scale(1.6)
+  .subscribe__title::after
+    +r(767)
+      bottom: 0px
+      width: 60px
+  .subscribe__address
+    margin-bottom: 15px
+
+  //.subscribe__field-address
+  //  +r(767)
+  //    padding-left: 55px
+  //    font-size: 30px
+  //    line-height: 40px
+  .subscribe__field
+    width: 145px
+    margin: 0 auto 10px
+    //+r(767)
+    //  margin: 0 auto 20px
+    //  width: 330px
+  .subscribe__phone
+    padding: 0 10px 0 25px
+    height: 25px
+    line-height: 25px
+    font-size: 13px
+    //+r(767)
+    //  padding: 0 25px 0 50px
+    //  height: 56px
+    //  line-height: 56px
+    //  font-size: 25px
+    //  +pfCond-r
+  .subscribe__submit-btn
+    height: 25px
+    line-height: 25px
+    font-size: 14px
+    background-color: #ffcc00
+    +pfCond-b
+    font-weight: 700
+    +trs
+    //+r(767)
+    //  font-size: 36px
+    //  height: 58px
+    //  line-height: 60px
+    //  +pfCond-r
+    &:hover
+      background-color: #ffaf00
+  .subscribe__field-icon
+    top: 5px
+    //+r(767)
+    //  font-size: 26px
+    //  top: 15px
+    //  left: 13px
+
+.subscribe--pack
+  padding: 30px 25px 25px
+  position: absolute
+  bottom: -140px
+  left: 50%
+  transform: translateX(-50%)
+  z-index: 5
+  box-shadow: 0 0 20px rgba(1, 1, 1, 0.3)
+  border-radius: 10px
+  opacity: 0
+  pointer-events: none
+  +tr(opacity .5s)
+  +r(767)
+    bottom: -205px
+    padding: 40px 40px 35px
+  &::after
+    content: ''
+    position: absolute
+    top: -15px
+    left: 50%
+    transform: translateX(-50%)
+    +arr(30, 15, #fff, t)
+    z-index: 2
+    +r(767)
+      top: -15px
+      +arr(80, 30, #fff, t)
+  &.is-active
+    opacity: 1
+    pointer-events: auto
+  .subscribe__form
+    margin-top: 0
+  .subscribe__phone
+    padding: 0 10px 0 25px
+    height: 25px
+    line-height: 25px
+    font-size: 13px
+    +r(767)
+      padding: 0 20px 0 50px
+      height: 50px
+      line-height: 50px
+      font-size: 22px
+      +segoe-r
+  .subscribe__field-icon
+    top: 5px
+    +r(767)
+      font-size: 26px
+      top: 12px
+      left: 12px
+  .subscribe__submit-btn
+    height: 25px
+    line-height: 25px
+    font-size: 14px
+    background-color: #ffcc00
+    +pfCond-b
+    +trs
+    +r(767)
+      font-size: 24px
+      line-height: 50px
+      height: 50px
+    &:hover
+      background-color: #ffaf00
+  .subscribe__field
+    width: 170px
+    +r(767)
+      width: 330px

@@ -1,0 +1,115 @@
+---
+title: "Заправка кондиционера авто"
+---
+extends layouts/_layout
+block content
+    .layout
+        section
+            h2.title-h2.title-h2_higher Заправка кондиционера авто
+            .benefit.benefit--image.benefit--cond
+                .benefit__title
+                    span
+                        strong 5 причин
+                        | ОБСЛУЖИТЬ АВТОКОНДИЦИОНЕР У НАС
+                .benefit__inner(style="background-image: url('img/bg/benefit.jpg')")
+                    -var benefitText = ['Вас обслуживает сертифицированный персонал', 'Вы получаете акт выполненных работ', 'В Вашем распоряжении комфортабельная комната клиента', 'Вы платите чётко фиксированную цену', 'Вы экономите своё время!'];
+                    mixin benefitList(...items)
+                        each item, index in items
+                            include components/_benefitList
+                    +benefitList('magister', 'file', 'sofa', 'weigher', 'timer')
+                    .benefit__title-border
+                        span СЛАБО РАБОТАЕТ КОНДИЦИОНЕР? ПЛОХО ХОЛОДИТ?
+                    .benefit__img
+                        +icon('icon-arr_big','oil-result__remark-arr')
+                    .benefit__title-border.is-white.center
+                        span ЗАПИСЫВАЙТЕСЬ НА ОБСЛУЖИВАНИЕ ПРЯМО СЕЙЧАС:
+                    .benefit__container
+                        .service.benefit__service
+                            .service__title.center НАШИ УСЛУГИ:
+                            .service__row
+                                .service__text
+                                    strong Заправка кондиционера <br>
+                                    | (диагностика и заправка)
+                                .service__price 868 грн.
+                            .service__row
+                                .service__text
+                                    strong Диагностика кондиционера <br>
+                                    |(визуальный осмотр)
+                                .service__price 108 грн.
+                        .benefit__image
+                            +icon('icon-arr_big')
+                        .subscribe.benefit__subscribe
+                            .subscribe__title Записаться в 1 клик
+                            .subscribe__inner
+                                .subscribe__form
+                                    form(action='#')
+                                        .subscribe__field
+                                            +icon('icon-cellphone','subscribe__field-icon')
+                                            input.subscribe__phone(type='tel' placeholder='Ваш телефон' required name)
+                                        .subscribe__field
+                                            button.subscribe__submit-btn(type='submit') ПЕРЕЗВОНИТЕ МНЕ
+        section.text
+            div
+                h4.title_h4 Заправка кондиционера автомобиля. Что? Где? Когда?
+                .article.article_silver
+                    p Мы уверены, что все автолюбители знают о плюсах такой техники в автомобиле, как кондиционер. И то, что с его помощью, во время жаркого лета в салоне вашего автомобиля будет оптимальная температура воздуха. Кондиционер — необходимый прибор для каждого автовладельца. И прежде всего — комфорт и уверенность на дороге.
+                    p Практически все современные автомобили оснащены кондиционерами, существуют также и авто, которые кроме нагрева и охлаждения еще очищают воздух от пыли, бактерий и различного рода микроорганизмов.
+                    p.is-hidden Запомните! Для того, чтобы кондиционер в вашем автомобиле работал долго и исправно, его стоит периодически обслуживать.
+                    button.more-btn.more-btn--blue.js-more-text Подробнее
+        section
+            .testimonials(class='testimonials--border')
+                h2.title-h3.testimonials__title Отзывы
+                .testimonials__inner
+                    .testimonials__item
+                        .testimonials__item-user Евгений на BMW ,
+                            span.testimonials__item-date Осень 2014,
+                        .testimonials__item-row
+                            .testimonials__item-photo
+                                img(src='img/testimonial-1.png')
+                            .testimonials__item-feedback
+                                p.testimonials__item-text Год назад купил BMW E39, и вот в один прекрасный день, выхожу, давай заводить, а она ни звука…. Позвонил товарищу, который посоветовал сервис OIILER, машина нужна была срочно… Ребята на СТО работают очень оперативно, притащил меня товарищ на СТО, через 15 минут у меня уже стояла новая батарея, ещё через 30 уже была сделана диагностика, которую я уже 2 месяца хотел сделать. Я доволен, спасибо вам ребята большое!!!
+                    .testimonials__item.testimonials__item--response
+                        .testimonials__item-user Ответ автосервиса
+                            span.testimonials__item-date
+                        .testimonials__item-row
+                            .testimonials__item-photo
+                                img(src='img/testimonial-2.png')
+                            .testimonials__item-feedback.testimonials__item-feedback--response
+                                p.testimonials__item-text Добрый день, Евгений! <br> Благодарим Вас за хороший отзыв и рекомендации. Напомните об этом при следующем визите и получите скидочную карту постоянного клиента.
+                .testimonials__inner
+                    .testimonials__item
+                        .testimonials__item-user NikPo,
+                            span.testimonials__item-date Осень 2014,
+                        .testimonials__item-row
+                            .testimonials__item-photo
+                                img(src='img/testimonial-1.png')
+                            .testimonials__item-feedback
+                                p.testimonials__item-text Мое знакомство с СТО Oiler началось с того что я выиграл на фейсбук сертификат на базовую диагностику авто. Влетев в яму и порвав два колеса я решил воспользоваться услугами по диагностике, и слава богу:) На диагностике выявили проблемы от удара, а так же еще одну, совершенно неожиданную проблему. Объяснили мне все нюансы, посчитали стоимость ремонта. Мне она показалась завышенной, проверил по другим местам, а так же у себя в пригороде, в итоге оказалось что на Oiler еще и дешевле:) В общем привез я свою машинку, оставил утром, забрал вечером, чистенькую, с ровным рулем, светящимися фарами, замененными сайлентами. В целом, с уверенностью могу рекомендовать всем, что и делаю всегда.
+                    .testimonials__item.testimonials__item--response
+                        .testimonials__item-user Ответ автосервиса
+                            span.testimonials__item-date
+                        .testimonials__item-row
+                            .testimonials__item-photo
+                                img(src='img/testimonial-2.png')
+                            .testimonials__item-feedback.testimonials__item-feedback--response
+                                p.testimonials__item-text Добрый день! <br> Большое спасибо за положительный отзыв о нашем сервисе. Напомните о нем при следующем визите и получите в благодарность скидочную карту постоянного клиента. <br> Также у нас на сайте есть раздел "Обратная связь", где Вы можете оставить отзыв о работе конкретных сотрудников с которыми Вы общались.
+                .testimonials__inner
+                    .testimonials__item
+                        .testimonials__item-user Валерий на Хюндай,
+                            span.testimonials__item-date 20 ноября 2014,
+                        .testimonials__item-row
+                            .testimonials__item-photo
+                                img(src='img/testimonial-1.png')
+                            .testimonials__item-feedback
+                                p.testimonials__item-text Уже несколько лет обслуживаюсь на СТО Ойлер. Все как то не получалось написать отзыв.А это уже не могу молчать. Хочу просто крикнуть на всю Украину ОГРОМНОЕ ВАМ СПАСИБО!!! Сервис супер, мастера Спецы. Все честно и справедливо. Ребята Вы лучшие. Всем кто прочтет этот отзыв рекомендую СТО Ойлер не ошибетесь. А всему коллективу Ойлер так держать. Побольше бы таких фирм и нам завидовала бы вся Европа.
+                    .testimonials__item.testimonials__item--response
+                        .testimonials__item-user Ответ автосервиса
+                            span.testimonials__item-date
+                        .testimonials__item-row
+                            .testimonials__item-photo
+                                img(src='img/testimonial-2.png')
+                            .testimonials__item-feedback.testimonials__item-feedback--response
+                                p.testimonials__item-text Добрый день, Валерий. Спасибо большое за такой положительный отзыв. Очень приятно, что Вы являетесь нашим Клиентом и что Вам действительно нравится наше обслуживание! Напомните об этом отзыве в следующий раз и получите в благодарность скидочную карту постоянного Клиента, либо, если такая у Вас есть - скромный подарок.
+        section
+            h2.title-h2.title-h2_higher Запишитесь на бесплатную консультацию в 1 клик:
+            include partials/request

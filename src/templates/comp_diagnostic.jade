@@ -1,0 +1,81 @@
+---
+title: Computer diagnostic
+---
+extends layouts/_layout
+
+block content
+   section.comp-diag
+      .layout.layout--md.layout--comp-diagn
+         h2.comp-diag__title.title-h2 Компьютерная диагностика автомобиля
+         .title_h4.comp-diag__sub-title Точное определение проблем за короткий срок
+         .benefit.benefit--comp-diag
+            .benefit__title Выгода для вас
+            .benefit__inner
+               -var benefitText = ['Экономия вашего времени', 'Решение проблемы с первого раза', 'Вас обслуживают сертифицированные специалисты', 'Вы получаете детальную распечатку результатов', 'Комфортабельная комната клиента', 'Вы всегда знаете за что платите'];
+               mixin benefitList(...items)
+                  each item, index in items
+                     include components/_benefitList
+               +benefitList('clock', 'mark', 'magister', 'file', 'sofa', 'smile')
+
+         .license.license--comp-diag
+            .license__title Разница между лицензионным и нелицензионным оборудованием:
+            .license__row.flex-row
+               .license__col.col-flex.col-flex--inb
+                  .license__block.license__block--unlicense
+                     .license__block-title НЕЛИЦЕНЗИОННОЕ ОБОРУДОВАНИЕ
+                     ul.license__block-list
+                        li Не определяет точно проблему
+                        li Отсутствует поддержка
+                           br
+                           | производителя оборудования
+                        li Может навредить автомобилю
+                        li Отсутствие гарантии
+                        li Неграмотная расшифровка диагностики
+                        li Отсутствие распечатки результатов
+                        li Низкая скорость работы
+               .license__col.col-flex.col-flex--inb
+                  .license__block.license__block--license
+                     .license__block-title ЛИЦЕНЗИОННОЕ ОБОРУДОВАНИЕ
+                     ul.license__block-list
+                        li Точно определяет проблему
+                        li Программное обеспечение
+                           br
+                           | одобрено автопроизводителями
+                        li Полностью безопасно
+                        li Гарантия выполненых работ
+                        li Понятный результат работ
+                        li Распечатка результатов
+                        li Высокая скорость работы
+               .license__col.license__col--small
+                  .license__subscr
+                     .license__subscr-row
+                        .license__subscr-col
+                           +icon('icon-star','license__subscr-icon')
+                           .license__subscr-text Мы используем только лицензионное оборудование
+                        .license__subscr-col
+                           .license__subscr-logo
+                              img(src='img/logos/bosch_esi.png' alt)
+                     .subscribe.subscribe--simple
+                        .subscribe__title Записаться в 1 клик
+                        .subscribe__inner
+                           .subscribe__price 178
+                              span грн.
+                           .subscribe__form
+                              form(action='#')
+                                 .subscribe__field
+                                    +icon('icon-cellphone','subscribe__field-icon')
+                                    input.subscribe__phone(type='tel' placeholder='Ваш телефон' required name)
+                                 .subscribe__field
+                                    button.subscribe__submit-btn(type='submit') Запишите меня
+         .comp-diag__descr
+            .comp-diag__descr-title Точное определение проблемы для безопасности Вашего авто
+            p.comp-diag__descr-text Компания Oiler для проведения компьютерной диагностики использует оборудование наивысшего качества. Мы отдаем предпочтение оборудованию крупнейшего немецкого производителя Bosch, т.к. на сегодняшний день это единственный прибор позволяющий действительно решить задачу в кратчайшие строки, а не просто прочитать и стереть ошибку.
+            p.comp-diag__descr-text.comp-diag__descr-text--hidden Компания Oiler для проведения компьютерной диагностики использует оборудование наивысшего качества. Мы отдаем предпочтение оборудованию крупнейшего немецкого производителя Bosch
+            button.more-btn.more-btn--blue.js-more-text(type='button') Подробнее
+
+         -var modClass = 'comp-diag';
+         include components/_testimonials
+
+         .comp-diag__subscr
+            .comp-diag__subscr-title Запишитесь на компьютерную диагностику в 1 клик:
+            include partials/request

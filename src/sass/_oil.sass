@@ -1,0 +1,1362 @@
+.oil
+   color: #231f20
+   +r(768)
+      overflow: hidden
+   &-title
+      color: #231f20
+      font-size: 30px
+      font-weight: 500
+      text-transform: uppercase
+      text-align: center
+      +pfCond-m
+      +r(767)
+         //font-size: 42px
+
+.oil-offer
+   position: relative
+   &__bg
+      +coverdiv
+      z-index: -1
+      background-size: cover
+      background-position: center center
+      background-repeat: no-repeat
+      pointer-events: none
+   &__inner
+      position: relative
+      max-width: 940px
+      margin: 0 auto
+      padding: 55px 15px
+      overflow: hidden
+      +clr
+      +r(767)
+         padding: 30px 40px
+   &__col
+      position: relative
+ 
+   &__img
+      position: absolute
+      top: 0
+      bottom: -45px
+      z-index: 0
+      +r(1023)
+         left: -15px
+      +r(767)
+         //left: -140px
+         //right: 55%
+         //bottom: -110px
+      img
+         display: block
+         width: 100%
+         height: 100%
+   &__form
+      max-width: 340px
+      padding: 20px 20px 25px
+      margin: 0 auto
+      background-color: #fff
+      box-shadow: 0 0 24px rgba(0, 2, 4, 0.2)
+      border-radius: 5px 4px 4px 5px
+      color: #231f20
+      +pfCond-r
+      +r(767)
+         //padding: 35px 23px 30px
+         max-width: 270px
+      &-title
+         font-size: 48px
+         line-height: 1.2em
+         +r(767)
+            //max-width: 300px
+            font-size: 36px
+         +r(480)
+            font-size: 32px
+      &-subtitle
+         margin: 25px 0
+         font-size: 26px
+         line-height: 1em
+         text-transform: uppercase
+         +r(767)
+            font-size: 18px
+            margin: 10px 0
+            //line-height: 31px
+
+      &-descr
+         font-size: 16px
+         line-height: 25px
+         +r(767)
+            font-size: 14px
+         &--all
+            +pfCond-b
+      &-info
+         position: relative
+         margin: 15px 0
+         padding-left: 35px
+         font-size: 16px
+         +r(767)
+            //margin: 30px 0 20px
+            font-size: 14px
+         &::before
+            content: ''
+            position: absolute
+            top: 0
+            left: 10px
+            +s('info')
+            +r(767)
+               top: 5px
+            //   left: 2px
+            //
+
+.oil-form
+   max-width: 300px
+   margin: 0 auto
+   +r(767)
+      max-width: none
+   &__field
+      margin-bottom: 20px
+      &:last-child
+         margin-bottom: 0
+   &__input
+      width: 100%
+      height: 50px
+      line-height: 50px
+      padding: 0 20px
+      font-size: 16px
+      border-radius: 4px 5px 5px 4px
+      border: 1px solid #707070
+      background-color: #ffffff
+      +placeholder
+         color: #9e9e9e
+      +r(767)
+         height: 30px
+         line-height: 30px
+         font-size: 16px
+   &__submit
+      width: 100%
+      height: 45px
+      padding: 0 10px
+      box-shadow: 0 2px 2px rgba(0, 2, 4, 0.1)
+      border-radius: 4px 5px 5px 4px
+      background-color: #19b24c
+      text-transform: uppercase
+      color: #ffffff
+      font-size: 24px
+      line-height: 45px
+      -webkit-tap-highlight-color: transparent
+      transition: transform .1s, background-color .2s
+      +pfCond-r
+      +r(767)
+         font-size: 16px
+         height: 30px
+         line-height: 30px
+      &:hover
+         background-color: darken(#19b24c, 5)
+      &:active
+         transform: scale(.98)
+
+.oil-simple
+   padding: 95px 0 55px
+   +r(767)
+      padding: 35px 0 15px
+   &__inner
+      max-width: 960px
+      margin: 0 auto
+      padding: 0 15px
+   &__row
+      margin: 100px -15px 0
+      font-size: 0
+      +r(767)
+         margin: 40px -15px 0
+   &__col
+      width: 33.3%
+      display: inline-block
+      vertical-align: top
+      padding: 0 15px 25px
+      +r(480)
+         display: block
+         width: 90%
+   &__item
+      &-pic
+         position: relative
+         width: 140px
+         height: 140px
+         margin: 0 auto
+         border-radius: 50%
+         box-shadow: 0 0 20px rgba(0, 2, 4, 0.1)
+         background-color: #fff
+         +r(767)
+            width: 140px
+            height: 140px
+         &::after
+            content: ''
+            +vcenter
+         &--1::after
+            +s('oil_car')
+            //+r(767)
+            //   +s('oil_car_lg')
+         &--2::after
+            +s('oil_pick')
+            //+r(767)
+            //   +s('oil_pick_lg')
+         &--3::after
+            +s('oil_teapot')
+            //+r(767)
+            //   +s('oil_teapot_lg')
+      &-text
+         margin-top: 30px
+         font-size: 14px
+         line-height: 21px
+         text-align: center
+         +r(480)
+            margin-top: 5px
+         //+r(767)
+         //   font-size: 24px
+         //   line-height: 28px
+
+.oil-trust
+   background-color: #f7f7f7
+   &__layout
+      max-width: 1230px
+      margin: 0 auto
+      padding: 0 15px
+      +r(767)
+         padding: 0
+   &__inner
+      position: relative
+      max-width: 990px
+      font-size: 0
+      +clr
+   &__img
+      width: 63%
+      display: inline-block
+      vertical-align: middle
+      margin-left: -20px
+      +r(767)
+         width: 60%
+         margin-left: 0
+         //max-width: 390px
+         //width: auto
+      +r(480)
+         width: 50%
+         //display: none
+      img
+         display: block
+         width: 100%
+         height: 100%
+   &__text
+      width: calc(37% - 50px)
+      margin: -35px 0 0 65px
+      display: inline-block
+      vertical-align: middle
+      font-size: 24px
+      line-height: 35px
+      +r(1023)
+         width: 33%
+         margin: 0 0 0 30px
+      +r(767)
+         //font-size: 31px
+         //line-height: 44px
+         width: 36%
+         margin: 0 0 0 15px
+         font-size: 22px
+         br
+            display: none
+      +r(600)
+         width: 40%
+         margin: 0
+         padding: 10px 5px
+         font-size: 16px
+         line-height: 1.5em
+         //font-size: 24px
+      +r(480)
+         width: 50%
+         font-size: 14px
+
+.oil-scheme
+   padding: 75px 0 95px
+   +r(767)
+      padding: 30px 0
+   &__layout
+      max-width: 1230px
+      margin: 0 auto
+      padding: 0 15px
+      +clr
+      +r(480)
+         padding: 0 5px
+
+   &__title
+      margin-bottom: 70px
+      +r(767)
+         margin-bottom: 30px
+   &__col
+      float: left
+      &:nth-child(2)
+         width: 47%
+         +r(767)
+            width: 100%
+      &:nth-child(3)
+         width: 53%
+         +r(767)
+            width: 100%
+            //margin-left: -15px
+   &__descr
+      margin: 0 60px 40px 0
+      font-size: 14px
+      line-height: 25px
+      text-align: right
+      color: #828282
+      +r(767)
+         margin: 0 auto
+         text-align: left
+         br
+            display: none
+         //max-width: 415px
+   &__item
+      position: relative
+      margin-bottom: 22px
+      font-size: 0
+      +r(767)
+         margin-bottom: 10px
+      &:last-child
+         margin-bottom: 0
+      &::after
+         content: ''
+         position: absolute
+         left: 35px
+         bottom: -40px
+         z-index: -1
+         width: 3px
+         height: 50px
+         background-color: #f5f5f5
+         +r(767)
+            left: 37px
+            bottom: -30px
+      &:last-child::after
+         display: none
+         content: none
+   &__item-pic
+      display: inline-block
+      vertical-align: middle
+      margin-right: 45px
+      +r(767)
+         margin-right: 20px
+      &--1
+         +s('oil-scheme-1')
+         //+r(767)
+         //   +s('oil-scheme-1_lg')
+      &--2
+         +s('oil-scheme-2')
+         //+r(767)
+            +s('oil-scheme-2_lg')
+      &--3
+         +s('oil-scheme-3')
+         //+r(767)
+            +s('oil-scheme-3_lg')
+      &--4
+         +s('oil-scheme-4')
+         //+r(767)
+            +s('oil-scheme-4_lg')
+      &--5
+         +s('oil-scheme-5')
+         //+r(767)
+            +s('oil-scheme-5_lg')
+   &__item-text
+      display: inline-block
+      vertical-align: middle
+      width: calc(100% - 125px)
+      font-size: 14px
+      line-height: 25px
+      +r(767)
+         width: calc(100% - 115px)
+         //font-size: 24px
+         //line-height: 40px
+
+.oil-sign
+   padding: 65px 0
+   background-color: #f7f7f7
+   text-align: center
+   +r(767)
+      padding: 20px 0 15px
+      //max-width: 310px
+      max-width: 100%
+      display: block
+      margin: 0 auto
+
+   &__title
+      font-size: 24px
+      line-height: 1.3em
+      +r(767)
+         margin-bottom: 10px
+         //font-size: 40px
+   &__phone
+      font-size: 18px
+      line-height: 25px
+      +r(767)
+         //font-size: 30px
+         //line-height: 42px
+   &__price
+      margin-bottom: 30px
+      font-size: 48px
+      color: #19b24c
+      +pfCond-r
+      +r(767)
+         margin: 15px 0
+         //font-size: 61px
+         //line-height: 61px
+         //font-size: 45px
+      .oil-sign--oil-page &
+         +r(767)
+            //font-size: 55px
+            span
+               //font-size: 100px
+
+   .oil-form
+      +r(767)
+         max-width: 380px
+         margin: 0 auto
+
+   &--oil-page
+      position: fixed
+      max-width: 230px
+      width: 100%
+      top: 38vh
+      right: calc(50% - 590px)
+      z-index: 10
+      padding: 15px 20px 15px
+      box-shadow: 0 4px 15px rgba(1, 1, 1, 0.08)
+      background-color: #fff
+      +r(1229)
+         right: calc(50% - 495px)
+      +r(1220)
+         max-width: 220px
+      +r(990)
+         right: 14px
+      +r(767)
+         position: static
+         max-width: 310px
+
+
+         margin: 0 auto
+      .oil-sign__title
+         font-size: 18px
+         line-height: 20px
+         +pfCond-m
+         //+r(768)
+         //   font-size: 50px
+      .oil-sign__price
+         margin-bottom: 5px
+         font-size: 18px
+         +segoe-b
+         span
+            font-size: 34px
+            +pfCond-m
+
+.oil-pay
+   padding: 85px 0 0
+   +r(767)
+      padding: 45px 0
+   &__layout
+      max-width: 1230px
+      margin: 0 auto
+      padding: 0 15px
+      +clr
+      //+r(767)
+      //   padding: 0 35px
+   &__row
+      max-width: 800px
+      margin: 60px auto 55px
+      +clr
+      +r(1024)
+         margin: 60px auto 30px
+      +r(767)
+         margin: 0 auto
+   &__subtitle
+      margin: 30px 0 40px
+      font-size: 24px
+      font-weight: bold
+      text-transform: uppercase
+      text-align: center
+      +r(1024)
+         margin: 0 0 20px
+      +r(767)
+         //margin: 30px 20px 40px
+         font-size: 22px
+         margin: 25px 0 15px
+      +r(480)
+         font-size: 18px
+   &__col
+      float: left
+      &:nth-child(1)
+         width: 60%
+         +r(1023)
+            width: 55%
+         +r(767)
+            width: 100%
+      &:nth-child(2)
+         width: 40%
+         +r(1023)
+            width: 45%
+         +r(767)
+            width: 100%
+   &__item
+      margin-bottom: 25px
+      font-size: 0
+      +r(767)
+         margin-bottom: 5px
+   &__item-pic
+      display: inline-block
+      vertical-align: middle
+      margin-right: 5px
+      //+r(767)
+      //   margin-right: 20px
+      &--1
+         +s('oil-pay-1')
+         //+r(767)
+         //   +s('oil-pay-1_lg')
+      &--2
+         +s('oil-pay-2')
+         //+r(767)
+         //   +s('oil-pay-2_lg')
+      &--3
+         +s('oil-pay-3')
+         //+r(767)
+         //   +s('oil-pay-3_lg')
+      &--4
+         +s('oil-pay-4')
+         //+r(767)
+         //   +s('oil-pay-4_lg')
+      &--5
+         +s('oil-pay-5')
+         //+r(767)
+         //   +s('oil-pay-5_lg')
+      &--6
+         +s('oil-pay-6')
+         //+r(767)
+         //   +s('oil-pay-6_lg')
+      &--7
+         +s('oil-pay-7')
+         //+r(767)
+         //   +s('oil-pay-7_lg')
+   &__item-text
+      display: inline-block
+      vertical-align: middle
+      width: calc(100% - 85px)
+      font-size: 14px
+      line-height: 25px
+      color: #828282
+      +r(767)
+         //width: calc(100% - 145px)
+         //font-size: 24px
+         //line-height: 40px
+
+.oil-slider
+   position: relative
+   max-width: 940px
+   padding: 10px 80px
+   margin: 0 auto
+   border-top: 1px solid #ccc
+   border-bottom: 1px solid #ccc
+   .slick-slide
+      display: flex
+      height: 150px
+      align-items: center
+      justify-content: center
+   .slick-arrow
+      position: absolute
+      top: 50%
+      margin-top: -17px
+      font-size: 34px
+      background-color: transparent
+   &__prev
+      left: 20px
+      transform: rotate(180deg)
+   &__next
+      right: 20px
+
+.feed
+   padding: 90px 0 25px
+   +r(1023)
+      padding: 60px 0 25px
+   +r(767)
+      padding: 0 0 25px
+   &__inner
+      max-width: 950px
+      padding: 0 15px
+      margin: 0 auto
+      +r(767)
+         //padding: 0 40px
+   &__row
+      margin: 65px -15px 0
+      font-size: 0
+      +r(1023)
+         margin: 45px 0 0
+      +r(1023)
+         margin: 75px 0 0
+      +r(990)
+         position: static
+   &__col
+      display: inline-block
+      vertical-align: top
+      width: 50%
+      padding: 0 0 40px 30px
+      +r(1023)
+         padding: 0 0 20px 15px
+      +r(767)
+         width: 100%
+         //padding: 0 0 45px 0
+   &__rate
+      margin-top: 5px
+      font-size: 0
+      line-height: 12px
+      &[data-rate="1"]
+         .icon-star:nth-child(1) ~ .icon-star
+            fill: #a9a9a9
+      &[data-rate="2"]
+         .icon-star:nth-child(2) ~ .icon-star
+            fill: #a9a9a9
+      &[data-rate="3"]
+         .icon-star:nth-child(3) ~ .icon-star
+            fill: #a9a9a9
+      &[data-rate="4"]
+         .icon-star:nth-child(4) ~ .icon-star
+            fill: #a9a9a9
+      &[data-rate="5"]
+         .icon-star:nth-child(5) ~ .icon-star
+            fill: #a9a9a9
+      &-star
+         display: inline-block
+         font-size: 12px
+         fill: #ffbe05
+         +r(767)
+            //font-size: 16px
+            //width:;
+   &__item
+      font-size: 13px
+      line-height: 24px
+      +clr
+   &__item-img
+      float: left
+      img
+         display: block
+   &__item-inner
+      float: left
+      padding-left: 30px
+      width: calc(100% - 40px)
+      +r(1023)
+         padding-left: 20px
+   &__item-username
+      color: #231f20
+      +segoe-sb
+      //+r(767)
+      //   font-size: 21px
+      //   line-height: 37px
+   &__item-date
+      color: #aaaaaa
+      +segoe-r
+   &__item-text
+      display: inline-block
+      color: #666666
+      //+r(767)
+      //   font-size: 21px
+      //   line-height: 37px
+      &--hidden
+         display: none
+   &__promo
+      margin-top: 45px
+      font-size: 0
+      +r(990)
+         position: relative
+   &__promo-text
+      display: inline-block
+      vertical-align: middle
+      margin-right: 20px
+      margin-top: -15px
+      max-width: 360px
+      font-size: 13px
+      line-height: 20px
+      p + p
+         margin-top: 20px
+      +r(990)
+         margin-bottom: 60px
+      .oil-page__inner &
+         +r(767)
+            //font-size: 24px
+            color: #6d6d6d
+            line-height: 1.3em
+            max-width: 80%
+         +r(770)
+            margin-bottom: 5px
+         +r(519)
+            margin-bottom: 0px
+
+
+
+   &__promo-discount
+      display: inline-block
+      vertical-align: middle
+      margin-right: 45px
+      +r(1200)
+         margin-right: 20px
+      +r(990)
+         margin-bottom: 60px
+         margin-right: 0
+      +r(771)
+         text-align: center
+         margin-bottom: 40px
+         //margin: 10px auto
+         display: block
+      +r(519)
+         text-align: center
+         display: block
+   &__promo-discount-img
+      display: inline-block
+      vertical-align: middle
+      margin-top: 20px
+      
+
+   &__promo-arrow
+      display: inline-block
+      vertical-align: middle
+      margin-left: 20px
+      font-size: 80px
+      +r(1200)
+         margin-left: 8px
+      +r(990)
+         position: absolute
+         transform: rotate(90deg)
+         margin: 50px auto 0 auto
+         left: 0
+         right: 0
+   &__promo-discount-pic
+      display: inline-block
+      vertical-align: middle
+      +r(990)
+         text-align: center
+         display: block
+         img
+            display: inline-block
+
+
+
+   &--oil-page
+      padding: 0
+      .feed__inner
+         margin-top: 30px
+         padding: 30px 20px 35px 40px
+         box-shadow: 0 4px 15px rgba(1, 1, 1, 0.08)
+         background-color: #f1f1f1
+      .feed__container
+         +r(990)
+            position: relative
+      .feed__row
+         position: relative
+         margin: 0
+         &::before
+            content: ''
+            position: absolute
+            left: -20px
+            top: 0
+            bottom: 0
+            width: 2px
+            background-color: #ffcc33
+            z-index: 1
+         +r(990)
+            position: static
+
+      .feed__col
+         padding: 0 0 15px 0
+         width: 100%
+         &:last-child
+            padding-bottom: 0
+      .feed__item
+         padding: 10px
+         border: 1px solid #ccc
+         background-color: #fff
+      .feed__item-date
+         color: #000000
+      .feed__item-inner
+         width: calc(100% - 50px)
+         padding: 0 0 0 10px
+         font-size: 13px
+         line-height: 18px
+      .feed__item-img
+         width: 48px
+         height: 48px
+         border: 1px solid #cccccc
+         border-radius: 4px
+         overflow: hidden
+         img
+            display: block
+            height: 100%
+      .feed__rate
+         display: inline-block
+         vertical-align: middle
+         margin: 0 5px 0 3px
+
+.experience
+   padding: 25px 0
+   +r(767)
+      padding: 0
+   &__layout
+      max-width: 1230px
+      margin: 0 auto
+      padding: 0 15px
+      +clr
+      //+r(767)
+      //   padding: 0 40px
+   &__inner
+      margin-top: 65px
+      float: right
+      width: 89%
+      +clr
+      +r(1199)
+         width: 100%
+         float: none
+      +r(767)
+         margin-top: 25px   
+   &__item
+      float: left
+      +r(600)
+         text-align: center
+      &:nth-child(1)
+         width: 43%
+         +r(1199)
+            width: 40%
+         +r(1023)
+            width: 53%
+         +r(767)
+            width: 100%
+            margin-bottom: 50px
+      &:nth-child(2)
+         width: 57%
+         +r(1199)
+            width: 60%
+         +r(1023)
+            width: 47%
+         +r(767)
+            width: 100%
+   &__item-title
+      margin-bottom: 15px
+      font-size: 24px
+      text-transform: uppercase
+      +r(767)
+         //font-size: 33px
+         //text-align: right
+         //padding-right: 40px
+      &--margin
+         margin-left: -50px
+         +r(1199)
+            margin-left: 0
+            padding-left: 70px
+         +r(1023)
+            margin-left: 0
+            padding-left: 0
+         +r(767)
+            text-align: left
+            padding-right: 0
+   &__cars
+      width: 278px
+      margin: 0 auto
+      margin-bottom: 25px
+      +r(767)
+         float: right
+         //margin-right: 70px
+      +r(600)
+         display: block
+         float: none
+         text-align: center
+         //margin: 0 auto
+   &__cars-item
+      padding-left: 15px
+      margin-bottom: 7px
+      height: 23px
+      line-height: 23px
+      position: relative
+      background-color: #ffcc33
+      text-align: left
+      //+r(767)
+      //   height: 35px
+      //   line-height: 35px
+      +r(600)
+         //display: inline-block
+         //margin: 0 auto
+      &::after
+         position: absolute
+         top: 0
+         right: 0
+         content: ''
+         +s('car_bg')
+         //+r(767)
+         //   transform: scale(1.5)
+         //   top: 7px
+         //   right: -50px
+      &:nth-child(1)
+         width: 250px
+         //+r(767)
+         //   width: 280px
+      &:nth-child(2)
+         width: 220px
+         margin-bottom: 0
+         +r(767)
+            width: 240px
+   &__cars-count
+      margin-right: 25px
+      display: inline-block
+      +segoe-sb
+      font-size: 18px
+      //+r(767)
+         //font-size: 22px
+   &__cars-text
+      display: inline-block
+      text-transform: uppercase
+      font-size: 16px
+      //+r(767)
+      //   font-size: 20px
+   &__feeds-title
+      display: inline-block
+      padding: 0 10px
+      height: 80px
+      line-height: 80px
+      font-size: 24px
+      background-color: #ffcc33
+      text-align: center
+      +text-overflow
+      +r(767)
+         //padding: 8px 10px
+         //margin-top: -45px
+         //font-size: 43px
+         //max-width: 290px
+         //white-space: normal
+         //height: auto
+         //line-height: normal
+
+      span
+         +segoe-b
+   &__feeds-graph
+      position: relative
+      left: -17px
+      margin-top: 15px
+      min-height: 450px
+      background: url(../img/content/exp-graph.png) no-repeat
+      background-position: 5px 39px
+      +r(1200)
+         left: 0
+      +r(767)
+         margin: 40px 0 0 0
+         background-position: center
+         left: 0
+      //   min-height: 575px
+      //   margin-top: 80px
+      //   background: url(../img/content/exp-graph_lg.png) no-repeat
+      +r(430)
+         background: url(../img/content/exp-graph_small.png) no-repeat
+         min-height: 350px
+         margin-top: 45px
+         background-position: center
+         left: 0
+
+   &__feeds-text
+      position: absolute
+      left: 33px
+      z-index: 1
+      width: 265px
+      color: #666666
+      +r(767)
+         left: 0
+         right: 0
+         margin: auto
+         top: -20px
+      +r(430)
+         top: -22px   
+
+      //+r(768)
+      //   font-size: 16px
+      //   width: auto
+      //   left: 60px
+      //   top: -23px
+      &:nth-child(2)
+         top: auto
+         //left: 125px
+         right: 75px
+         //bottom: -12px
+         bottom: 7px
+         +r(768)
+            bottom: 22px
+         +r(430)
+            font-size: 12px
+            max-width: 230px
+            bottom: 20px   
+      span
+
+         +segoe-b
+   &__feeds-remark
+      margin: 20px 0 40px
+      padding: 10px 15px
+      line-height: 24px
+      background-color: #ffcc33
+      +r(767)
+         margin: 45px -40px
+         padding: 15px 40px
+         color: #000000
+         font-size: 24px
+         line-height: 36px
+   &__feeds-copy
+      font-size: 12px
+      +r(767)
+         font-size: 19px
+      span
+         color: #828282
+   &__form
+      max-width: 270px
+      margin: 155px 0 0 195px
+      +r(1023)
+         margin: 185px 0 0 75px
+      .oil-form__field
+         margin-bottom: 10px
+      +r(767)
+         margin: 20px auto 0
+         padding: 40px 0 0 0
+         max-width: 440px
+   &__form-title
+      margin-bottom: 5px
+      font-size: 24px
+      line-height: 35px
+      text-align: center
+      //+r(767)
+      //   font-size: 39px
+      //   line-height: 57px
+
+.overview
+   max-width: 390px
+   margin: 80px 0 0 70px
+   position: relative
+   text-align: center
+   +r(1023)
+      margin: 100px 0 0 -60px
+   +r(767)
+      margin: 100px auto
+   +r(480)
+      margin: 0
+   //+r(767)
+   //   max-width: none
+   //   margin: 35px 0 210px -15px
+   &::before
+      content: ''
+      display: block
+      background-image: url(../img/content/exp-circle.png)
+      background-repeat: no-repeat
+      background-size: contain
+      width: 390px
+      height: 390px
+      +r(1023)
+         width: 300px
+         height: 300px
+      +r(480)
+         display: none
+      //+r(767)
+      //   width: 540px
+      //   height: 540px
+      //   background-image: url(../img/content/exp-circle_lg.png)
+   &__item
+      position: absolute
+      width: 90px
+      color: #828282
+      text-align: left
+      +r(480)
+         position: static
+         width: auto
+
+      //+r(767)
+      //   width: 135px
+      &:nth-child(1)
+         right: 16%
+         top: -34%
+         +r(1023)
+            right: 28%
+            top: -28%
+         //+r(767)
+         //   right: 1%
+         //   top: 25%
+      &:nth-child(2)
+         right: -15%
+         top: -18%
+         +r(1023)
+            right: 3%
+            top: -9%
+         //+r(767)
+         //   right: 3%
+         //   top: 61%
+      &:nth-child(3)
+         right: -31%
+         top: 16%
+         +r(1023)
+            right: -7%
+            top: 21%
+         //+r(767)
+         //   right: 17%
+         //   top: 91%
+      &:nth-child(4)
+         right: -32%
+         top: 49%
+         +r(1023)
+            right: -8%
+            top: 54%
+         //+r(767)
+         //   top: 102%
+         //   right: 40%
+      &:nth-child(5)
+         left: 96%
+         top: 81%
+         +r(1023)
+            left: 70%
+            top: 84%
+         //+r(767)
+         //   top: 103%
+         //   left: 15%
+         //   text-align: right
+      &:nth-child(6)
+         top: 43%
+         left: -31%
+         text-align: right
+         +r(1023)
+            top: 105%
+            left: 16%
+         +r(480)
+            text-align: left
+         //+r(767)
+         //   left: 62%
+         //   top: -7%
+   &__item-count
+      font-size: 30px
+      line-height: 36px
+      +r(480)
+         display: inline-block
+         font-size: 20px
+         text-align: left
+      &:first-of-type
+         +r(480)
+            display: none
+      //+r(767)
+      //   font-size: 42px
+      //   line-height: 50px
+   &__item-text
+      font-size: 16px
+      line-height: 24px
+      &_979
+         +r(480)
+            padding: 10px 0 5px 0
+         &:after
+            +r(480)
+               content: '979'
+               font-size: 20px
+               text-align: left
+               padding-left: 5px
+      &_40
+         +r(480)
+            padding-top: 9px
+         &:after
+            +r(480)
+               content: '40 414'
+               font-size: 20px
+               text-align: left
+               padding-left: 5px
+      +r(1023)
+         line-height: 18px
+      +r(480)
+         display: inline-block
+         font-size: 14px
+      //+r(767)
+      //   font-size: 24px
+      //   line-height: 33px
+.oil-result
+   padding: 65px 0 35px
+   &__subtitle
+      font-size: 24px
+      text-transform: uppercase
+      text-align: center
+      margin-top: 35px
+   &__inner
+      max-width: 890px
+      margin: 0 auto
+      padding: 0 15px
+      //+r(767)
+      //   padding: 0 40px
+   &__row
+      margin: 85px -15px 70px
+      +clr
+      +r(767)
+         margin: 45px -15px 35px
+   &__col
+      float: left
+      width: 50%
+      padding: 0 15px
+      +r(767)
+         width: 100%
+      &:nth-child(2)
+         padding-left: 55px
+         +r(1023)
+            padding-left: 15px
+   &__item
+      margin-bottom: 35px
+      min-height: 78px
+      font-size: 0
+      +r(1023)
+         min-height: 105px
+      +r(767)
+         min-height: 0
+         margin-bottom: 15px
+      &:last-child
+         margin-bottom: 0
+         +r(767)
+            margin-bottom: 15px
+   &__item-number
+      display: inline-block
+      vertical-align: middle
+      width: 60px
+      height: 60px
+      border-radius: 50%
+      background-color: #fff
+      box-shadow: 0 0 10px rgba(#000, .3)
+      line-height: 60px
+      font-size: 24px
+      color: #19b24c
+      text-align: center
+      //+r(767)
+      //   width: 95px
+      //   height: 95px
+      //   line-height: 95px
+      //   font-size: 38px
+   &__item-text
+      display: inline-block
+      vertical-align: middle
+      padding-left: 20px
+      width: calc(100% - 65px)
+      font-size: 16px
+      line-height: 26px
+      //+r(767)
+      //   width: calc(100% - 100px)
+      //   padding-left: 30px
+      //   font-size: 24px
+      //   line-height: 41px
+      br
+         +r(767)
+            display: none
+   &__remark
+      max-width: 370px
+      margin: 0 auto
+      font-size: 16px
+      line-height: 26px
+      text-align: center
+      //+r(767)
+      //   max-width: 510px
+      //   font-size: 31px
+      //   line-height: 46px
+   &__remark-arr
+      width: 100%
+      position: relative
+      margin-top: 55px
+      font-size: 40px
+      animation: moveDown 2s infinite
+
+// timer
+.sign-timer
+   max-width: 380px
+   margin: 20px auto 20px
+   //+r(768)
+   //   max-width: 390px
+   .oil-sign--oil-page &
+      +r(768)
+         max-width: 573px
+   &__message
+      display: block
+      +segoe-sb
+      font-size: 17px
+      color: #000
+      +r(767)
+         //font-size: 21px
+   &__label
+      display: none
+      margin-bottom: 15px
+      +r(767)
+         //margin-top: 22px
+         //font-size: 24px
+         //line-height: 32px
+      .oil-sign--oil-page &
+         +r(767)
+            //font-size: 34px
+            //line-height: 1.3em
+
+   &__text
+      display: none
+      max-width: 300px
+      margin: 20px auto 0
+      font-size: 0
+      +r(767)
+        //max-width: 420px
+        max-width: 190px
+   &__col
+      display: inline-block
+      width: 33.33333%
+      color: #231f20
+      font-size: 16px
+      line-height: 20px
+      +segoe-sb
+      +r(768)
+         //font-size: 20px
+      .oil-sign--oil-page &
+         //+r(768)
+         //   font-size: 32px
+
+   // change default settigns
+   .flip-clock-wrapper
+      display: flex
+      justify-content: center
+      margin: 0
+   .flip-clock-wrapper .flip
+      margin: 0 2px
+   .flip-clock-wrapper ul
+      width: 50px
+      height: 70px
+      background-color: #1e1e1e
+      //+r(767)
+      //   width: 65px
+      //   height: 85px
+   .flip-clock-wrapper ul li
+      line-height: 70px
+      //+r(767)
+      //   line-height: 85px
+   .flip-clock-wrapper ul li a div div.inn
+      font-size: 47px
+      color: #fff
+      //+r(767)
+      //   font-size: 54px
+   .flip-clock-divider
+      width: 5px
+      height: 70px
+      //+r(767)
+      //   width: 10px
+      //   height: 85px
+   .flip-clock-label
+      display: none
+   .flip-clock-dot
+      display: none
+
+   &--oil-page
+      margin: 5px auto 0
+      .sign-timer__text
+         margin: 3px auto 0
+      .sign-timer__label
+         margin-bottom: 5px
+         font-size: 13px
+         line-height: 19px
+      .sign-timer__col
+         font-size: 12px
+      .sign-timer__message
+         font-size: 13px
+      .flip-clock-wrapper ul
+         height: 40px
+         width: 25px
+      .flip-clock-wrapper ul li
+         line-height: 40px
+      .flip-clock-wrapper ul li a div div.inn
+         font-size: 26px
+         color: #fff
+      .flip-clock-divider
+         height: 40px

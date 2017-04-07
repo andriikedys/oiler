@@ -1,0 +1,133 @@
+---
+title: "Предпродажная диагностика авто"
+---
+extends layouts/_layout
+block content
+    .layout.layout--diagnostic
+        section
+            h2.title-h2 Предпродажная диагностика авто
+            h4.title_h4 Здесь вы можете заказать услугу диагностики авто перед, после или во время покупки
+
+                .benefit.benefit--reasons
+                    .benefit__title Выгода для вас
+
+                    .benefit__inner
+
+                        -var benefitText = ['Экономия вашего времени', 'Вы сразу понимаете где обслуживать авто', 'Вы получаете просчёт нужных работ и запчастей', 'Персональный менеджер к вашим услугам', 'Вы получаете гарантированный результат', '100%-я готовность вашего авто'];
+                        mixin benefitList(...items)
+                            each item, index in items
+                                include components/_benefitList
+                        +benefitList('clock', 'car', 'monitor', 'magister', 'guarantee', 'heart')
+        section.diagnostic-types.dashed
+            .diagnostic-types__inner
+
+                .grid-row
+                    .col.col-4
+                        ul.list.list_red
+                            li
+                                span проверка работоспособности осветительных приборов
+                            li
+                                span осмотр и контроль состояния деталей подвески на отсутствие люфта и механических повреждений
+                            li
+                                span осмотр амортизаторов на предмет герметичности
+                            li
+                                span осмотр и контроль элементов рулевого управления на предмет герметичности и отсутствия люфтов
+                            li
+                                span осмотр пыльников ШРУСов на герметичность
+                            li
+                                span осмотр тормозных дисков и колодок на предмет износа
+                            li
+                                span проверка подшипников ступицы на предмет неисправности
+
+                    .col.col-4
+                        ul.list.list_yellow
+                            li
+                                span осмотр состояния уплотнительных элементов двигателя и КПП на предмет герметичности
+                            li
+                                span осмотр тормозных шлангов на герметичность
+                            li
+                                span осмотр системы охлаждения на предмет герметичности и контроль уровня охлаждающей жидкости
+                            li
+                                span проверка состояния аккумулятора
+                            li
+                                span проверка уровня масла в двигателе
+                            li
+                                span проверка уровня жидкости гидроусилителя
+                            li
+                                span проверка состояния и уровня тормозной жидкости
+                            li
+                                span проверка состояния фильтра воздуха
+                            li
+                                span проверка состояния фильтра салона
+
+                    .col.col-4
+                        ul.list.list_green
+                            li
+                                span компьютерная диагностика
+
+                            li
+                                span осмотр состояния деталей крепежа двигателя
+                            li
+                                span oсмотр состояния деталей крепежа КПП
+                            li
+                                span осмотр и контроль натяжения поликлиновых ремней
+                            li
+                                span осмотр состояния покрышек на предмет равномерности износа
+                        .subscribe.subscribe--letter
+                            .subscribe__title Записаться в 1 клик
+                            .subscribe__inner
+                                .subscribe__price 458
+                                    span грн.
+                                .subscribe__form
+                                    form(action='#')
+                                        .subscribe__field
+                                            +icon('icon-cellphone','subscribe__field-icon')
+                                            input.subscribe__phone(type='tel' placeholder='Ваш телефон' required name)
+                                        .subscribe__field
+                                            button.subscribe__submit-btn(type='submit') Запишите меня
+        section.hint
+            .hint__item.done
+                .done__image
+                    img(src="img/done.png" alt="alt")
+            .hint__item
+                .circle.circle_small
+                    i.icon.icon-lamp
+                span.hint__title Напоминаем о важности! Полная диагностика — гарант безопасности на дороге!
+
+
+
+
+
+        section.text-content
+            article.article.article_silver
+                h2.title-h2.title-h2_higher Качественная предпродажная диагностика автомобиля
+                div
+                    span Приобретение автомобиля — это важное событие в жизни каждого автолюбителя. Если Вы решили купить авто на вторичном рынке, необходимо внимательно подойти к этой задаче. Ведь достаточно сложно определить состояние автомобиля по внешним характеристикам.
+                    span.is-hidden Чтобы не оказаться обманутым, мы рекомендуем воспользоваться Вам предпродажной диагностикой автомобиля.
+                    button.more-btn.more-btn--blue.js-more-text Подробнее
+        .request
+            .request__inner
+                .request__col
+                    .comp-diag__subscr-label.request__label БЫСТРЫЙ ЗАПРОС
+                .request__col
+                    .comp-diag__subscr-info.request__info
+                        | Запишитесь на предпродажную диагностику,&nbsp;
+                        br
+                        a.comp-diag__subscr-info--b(href='tel:0442382492') позвонив по телефону (044) 238-24-92
+                    .comp-diag__subscr-info.request__info
+                        | Или оставьте свои контакты, и мы свяжемся
+                        br
+                        | с Вами в течение&nbsp;
+                        span.comp-diag__subscr-info--b 5 мин. в рабочее время
+                .request__col
+                    .subscribe
+                        .subscribe__title Записаться в 1 клик
+                        .subscribe__inner
+                            .subscribe__form
+                                form(action='#')
+                                    .subscribe__field
+                                        +icon('icon-cellphone','subscribe__field-icon')
+                                        input.subscribe__phone(type='tel' placeholder='Ваш телефон' required name)
+                                    .subscribe__field
+                                        button.subscribe__submit-btn(type='submit') Запишите меня
+

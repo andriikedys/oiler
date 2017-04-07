@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>Покраска авто (автомалярка)</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--meta(name="viewport" content="width=device-width")-->
+    <meta name="theme-color" content="#fff">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" media="all" href="css/app.css">
+  </head>
+
+  <body>
+    <!--BEGIN out-->
+    <div class="out">
+      <div class="container container_1200">
+        <h2 class="title_h2 center">Покраска авто (автомалярка)</h2>
+        <h4 class="title_h4 center">Гарантия - 6 месяцев</h4>
+      </div>
+      <div class="silver">
+        <h2 class="silver__title center">Записывайтесь</h2>
+        <div class="container container_1200">
+          <div class="datail">
+            <div class="datail__list">
+              <h3 class="datail__title center">1. Выберите детали для покраски:</h3>
+              <div class="datail__table">
+                <div class="datail__head">
+                  <div class="datail__row">
+                    <div class="datail__box"><span class="datail__cell">Деталь</span><span class="datail__cell">грн.</span></div>
+                  </div>
+                </div>
+                <div class="js-datail-container">
+                  <div class="datail__row datail__item js-datail-item">
+                    <div class="datail__box"><span class="datail__cell">Бампер передний</span><span class="datail__cell datail__price js-price">3588</span></div>
+                  </div>
+                  <div class="datail__row datail__item js-datail-item">
+                    <div class="datail__box"><span class="datail__cell">Бампер передний</span><span class="datail__cell datail__price js-price">3588</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="datail__form">
+              <h3 class="datail__title center">2. Заполните свои данные:</h3>
+              <form action="#" class="datail__form-wrap"><label class="datail__label">Ваш телефон:</label>
+                <div class="datail__input"><svg class="icon-cellphone subscribe__field-icon"><use xlink:href="img/sprite.svg#icon-cellphone"></use></svg><input type="tel" required placeholder="+38(___)___-__-__"></div><label class="datail__label">Примечание (не обязательно):</label>
+                <textarea
+                  class="datail__textarea"></textarea>
+                  <div class="datail__summ">Итого<span class="js-datail-summ">0</span>грн.</div>
+                  <div class="datail__description">Если вас интересуют другие виды работ, например, локальная покраска, покраска в два цвета, покраска "переходом", покраска "хамелеон" - звоните по тел.<strong>(044) 353-81-79</strong></div><button type="submit" class="btn btn_yellow">ЗАПИСАТЬСЯ</button></form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container container_1200 pokraska">
+        <h4 class="title_h4">Профессиональная покраска авто с гарантией результата</h4>
+        <p>Вот и настал тот самый момент, когда Вам необходимо сделать покраску своего автомобиля. Следует признать, зачастую автовладельцы считают «автомалярку» очень сложной процедурой. По устоявшемуся мнению, кажется, что это длительный, отнимающий массу
+          времени и Ваших сил процесс. Соответственно, все это вызывает у владельца стресс, дискомфорт и желание хотя бы немного оттянуть эту задачу.<span class="is-hidden">Также нам известно, что к большинству автосервисов в нашей стране у людей просто нет доверия. Так как существует обман и халатное отношение к работе, сотрудников СТО. Поэтому мы считаем своим долгом помочь Вам обойти стороной неприятные моменты и не попасться на удочку обмана при выборе автосервиса.</span>
+          <button
+            class="more-btn more-btn--blue js-more-text"> Подробнее</button>
+        </p>
+      </div>
+    </div>
+    <!--END out-->
+    <!--LOAD SCRIPTS-->
+    <script type="text/template" data-typeID="json">{"Бампер задний":"3658","Бампер передний":"3658","Дверь передняя левая (водительская)":"3658","Дверь задняя левая":"3588", "Зеркало заднего вида правое": "1254"}</script>
+    <script type="text/template" id="tmpl">
+      <% for ( var key in items ) { %>
+        <div class="datail__row datail__item js-datail-item">
+          <div class="datail__box"><span class="datail__cell"> <%=key %> </span><span class="datail__cell datail__price js-price"> <%=items[key] %></span></div>
+        </div>
+        <% } %>
+    </script>
+    <script type="text/javascript" src="js/painting.js"></script>
+  </body>
+
+</html>

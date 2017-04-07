@@ -1,0 +1,160 @@
+.testimonials
+   
+   &__title
+      margin-bottom: 30px
+   &__inner
+      max-width: 1000px
+      margin: 0 auto
+      +r(480)
+         padding: 0 5px
+   &__descr
+      padding: 45px 0 0 0
+   &__item
+      margin-bottom: 25px
+      color: #333333
+      +r(767)
+         margin-bottom: 10px
+      &:last-child
+         margin-bottom: 0
+      &--response
+         margin-left: 100px
+         +r(767)
+            margin-left: 50px
+            margin-bottom: 35px
+         +r(480)
+            margin-left: 15px
+      &-user
+         +segoe-b
+         font-size: 13px
+         line-height: 33px
+         +r(767)
+            //margin-bottom: 10px
+            //font-size: 24px
+            //line-height: 54px
+      &-date
+         +segoe-r
+      &-row
+         +clr
+      &-photo
+         float: left
+         width: 62px
+         height: 62px
+         border: 1px solid #939598
+         //+r(767)
+         //   width: 100px
+         //   height: 100px
+         +r(480)
+            width: 40px
+            height: 40px
+         img
+            display: block
+            height: 100%
+      &-feedback
+         display: flex
+         align-items: center
+         width: calc(100% - 100px)
+         float: left
+         margin-left: 38px
+         padding: 15px
+         min-height: 65px
+         position: relative
+         background-color: #fffae6
+         border: 1px solid #f0ebd6
+         line-height: 20px
+         border-radius: 3px
+         //+r(767)
+         //   width: calc(100% - 140px)
+         //   margin-left: 40px
+         //   padding: 20px
+         +r(480)
+            margin-left: 14px
+            width: calc(100% - 78px)
+         &::before
+            content: ''
+            width: 0
+            height: 0
+            position: absolute
+            left: -30px
+            top: 19px
+            z-index: 1
+            border-width: 0 30px 30px 0
+            border-style: solid
+            border-color: transparent #f0ebd6 transparent transparent
+            +r(480)
+               border-width: 0 15px 15px 0
+               left: -15px
+         &::after
+            content: ''
+            width: 0
+            height: 0
+            position: absolute
+            left: -28px
+            top: 20px
+            z-index: 1
+            border-width: 0 32px 32px 0
+            border-style: solid
+            border-color: transparent #fffae6 transparent transparent
+            +r(480)
+               border-width: 0 17px 17px 0
+               left: -12px
+         &--response
+            background-color: #f8f7f5
+            border-color: #eeeded
+
+
+         &--response::after
+            border-right-color: #eeeded
+         &--response::after
+            border-right-color: #f8f7f5
+      &-text
+         font-size: 13px
+         line-height: 19px
+         //+r(767)
+         //   font-size: 24px
+         //   line-height: 31px
+      &-add
+         display: block
+      &-mob-hidden
+         +r(767)
+            display: none
+   &--comp-diag
+      .testimonials__inner
+         margin: 0
+      .testimonials__title
+         margin-bottom: 0
+         font-size: 24px
+         text-align: left
+         +pfComp-r
+         +r(767)
+            //margin-bottom: 20px
+            //font-size: 39px
+            //line-height: 54px
+      .testimonials__item
+         margin-bottom: 10px
+   &--service
+      padding: 25px 0 65px
+      +r(767)
+         padding-top: 15px
+      +r(767)
+         .testimonials__title
+            margin-bottom: 25px
+   &--border
+      border: solid 2px $yellow
+      border-left: none
+      border-right: none
+      text-align: left
+      padding: 40px 0
+      margin-bottom: 40px
+      .title-h3, h3
+         text-align: left
+      .testimonials__inner
+         margin: 0
+   &--border-top
+      border-top: solid 2px $yellow
+      text-align: left
+      padding: 40px 0
+      margin-bottom: 40px
+      .title-h3, h3
+         text-align: left
+      .testimonials__inner
+         margin: 0

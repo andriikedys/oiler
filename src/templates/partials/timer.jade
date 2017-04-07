@@ -1,0 +1,21 @@
+
+.oil-sign.oil-sign--oil-page
+         .oil-sign__title ЗАПИШИТЕСЬ СЕЙЧАС
+         .sign-timer.sign-timer--oil-page
+            .sign-timer__label Конец рабочего дня через:
+            .sign-timer__count.js-sign-timer
+            .sign-timer__text
+               .sign-timer__col часов
+               .sign-timer__col мин
+               .sign-timer__col сек
+            .sign-timer__message Рабочий день уже окончен, но мы перезвоним Вам утром
+         .oil-sign__price Всего
+            span 118&nbsp;
+            | грн.
+         .subscribe.subscribe--oil-page
+            .subscribe__form
+               form(action='#')
+                  .subscribe__field
+                     +icon('icon-cellphone','subscribe__field-icon')
+                     input.subscribe__phone(type='tel' placeholder='Ваш телефон' required name)
+                     button.subscribe__submit-btn(type="submit") Записать меня

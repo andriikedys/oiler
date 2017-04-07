@@ -1,0 +1,962 @@
+---
+title: STO
+---
+extends layouts/_layout
+block content
+
+   .layout.layout--sto.x
+      section.about-us
+         h3.about-us__title.title-h3 СТО (Автосервис) Oiler
+         h1.about-us__nav.js-about-us-nav
+            a.about-us__nav-link(href='#reasons') Наши преимущества
+            a.about-us__nav-link(href='#autoserv') Наши автосервисы
+            a.about-us__nav-link(href='#certification') Наши сертификаты
+            a.about-us__nav-link(href='#subscribe') Запись на СТО
+            a.about-us__nav-link(href='#pack') Пакеты услуг
+            a.about-us__nav-link(href='#price') Прайс-лист
+            a.about-us__nav-link(href='#testimonials') Отзывы
+            a.about-us__nav-link(href='#address') Адреса наших автосервисов
+            a.about-us__nav-link(href='#autopick') Выбрать марку авто
+            a.about-us__nav-link(href='#') Безналичный расчет
+         .about-us__inner
+            .about-us__stamp
+               .stamp
+                  .stamp__icon
+                     img(src="img/stamp.png")
+                  .stamp__label Автосервис Oiler
+
+            .about-us__remark
+               p.about-us__remark-text
+                  | Любой автовладелец сталкивается с такой бытовой необходимостью, как&nbsp;
+                  span.about-us__remark-bold ремонт авто.
+                  | &nbsp;Становится вопрос выбора не только качественного автосервиса, но и такой компании, где бы любой&nbsp;
+                  span.about-us__remark-bold СТО мастер
+                  | &nbsp;действительно ручался за свою работу. Создавая условия для вас, мы тщательно позаботились о том, чтобы ваши требования и пожелания были полностью удовлетворены. Вокруг сотни&nbsp;
+                  span.about-us__remark-bold СТО, Киев
+                  | &nbsp;большой, но мы уже для многих оказались единственными.&nbsp;
+                  span.p.about-us__remark-hidden Создавая условия для вас, мы тщательно позаботились о том, чтобы ваши требования и пожелания были полностью удовлетворены. Вокруг сотни СТО, Киев большой, но мы уже для многих оказались единственными.
+                  button.more-btn.more-btn--blue.js-more-text Подробнее
+
+      section#reasons.reasons
+         h3.reasons__title.title-h3 7 причин обслуживаться у нас
+         .benefit.benefit--reasons
+            .benefit__inner
+
+               -var benefitText = ['Вы экономите своё время!', 'Вы сохраняете свои деньги', 'Вы бережете свои нервы', 'Вы всегда знаете, за что вы платите', 'Вы решаете проблему с первого раза', 'Вы можете смело рассчитовать на результат', 'Вы пользуетесь лучшим'];
+               mixin benefitList(...items)
+                  each item, index in items
+                     include components/_benefitList
+               +benefitList('clock', 'money', 'smile', 'file', 'mark', 'guarantee', 'heart')
+
+      section#autoserv.autoserv
+         h3.title-h3 Наши автосервисы
+         .address-links.address-links--autoserv
+            .address-links__inner
+               .address-links__row
+                  .address-links__item
+                     .address-links__title Oiler Лукьяновка
+                     .address-links__address Киев, #[span ул. Нагорная, 47] Шевченковский район
+                     a(href='#lukjanovka').address-links__btn.js-scroll-link
+                        | Посмотреть карту&nbsp;
+                        span и видео проезда
+                  .address-links__item
+                     .address-links__title Oiler Печерск
+                     .address-links__address Киев, #[span ул. Киквидзе, 43] Печерский район
+                     a(href='#pechersk').address-links__btn.js-scroll-link
+                        | Посмотреть карту&nbsp;
+                        span и видео проезда
+
+         .serv-slider.js-serv-slider
+            a.serv-slider__item.js-gallery(href='img/gallery/autoserv-1.jpg' data-fancybox="serv-gallery")
+               img.serv-slider__img(src='img/gallery/autoserv-1_sm.jpg' alt='img')
+            a.serv-slider__item.js-gallery(href='img/gallery/autoserv-2.jpg' data-fancybox="serv-gallery")
+               img.serv-slider__img(src='img/gallery/autoserv-2_sm.jpg' alt='img')
+            a.serv-slider__item.js-gallery(href='img/gallery/autoserv-3.jpg' data-fancybox="serv-gallery")
+               img.serv-slider__img(src='img/gallery/autoserv-1_sm.jpg' alt='img')
+            a.serv-slider__item.js-gallery(href='img/gallery/autoserv-4.jpg' data-fancybox="serv-gallery")
+               img.serv-slider__img(src='img/gallery/autoserv-2_sm.jpg' alt='img')
+            a.serv-slider__item.js-gallery(href='img/gallery/autoserv-1.jpg' data-fancybox="serv-gallery")
+               img.serv-slider__img(src='img/gallery/autoserv-1_sm.jpg' alt='img')
+            a.serv-slider__item.js-gallery(href='img/gallery/autoserv-1.jpg' data-fancybox="serv-gallery")
+               img.serv-slider__img(src='img/gallery/autoserv-2_sm.jpg' alt='img')
+            a.serv-slider__item.js-gallery(href='img/gallery/autoserv-1.jpg' data-fancybox="serv-gallery")
+               img.serv-slider__img(src='img/gallery/autoserv-1_sm.jpg' alt='img')
+            a.serv-slider__item.js-gallery(href='img/gallery/autoserv-1.jpg' data-fancybox="serv-gallery")
+               img.serv-slider__img(src='img/gallery/autoserv-2_sm.jpg' alt='img')
+
+      section#certification.certif
+         h3.certif__title.title-h3 Вас обслуживают сертифицированные специалисты
+         .certif-slider.js-certif-slider
+            a.certif-slider__item.js-gallery(href='img/gallery/certif-1.jpg' data-fancybox="certif-gallery")
+               img.certif-slider__img(src='img/gallery/certif-1_sm.jpg' alt='img')
+            a.certif-slider__item.js-gallery(href='img/gallery/certif-2.jpg' data-fancybox="certif-gallery")
+               img.certif-slider__img(src='img/gallery/certif-2_sm.jpg' alt='img')
+            a.certif-slider__item.js-gallery(href='img/gallery/certif-1.jpg' data-fancybox="certif-gallery")
+               img.certif-slider__img(src='img/gallery/certif-1_sm.jpg' alt='img')
+            a.certif-slider__item.js-gallery(href='img/gallery/certif-2.jpg' data-fancybox="certif-gallery")
+               img.certif-slider__img(src='img/gallery/certif-2_sm.jpg' alt='img')
+            a.certif-slider__item.js-gallery(href='img/gallery/certif-1.jpg' data-fancybox="certif-gallery")
+               img.certif-slider__img(src='img/gallery/certif-1_sm.jpg' alt='img')
+            a.certif-slider__item.js-gallery(href='img/gallery/certif-2.jpg' data-fancybox="certif-gallery")
+               img.certif-slider__img(src='img/gallery/certif-2_sm.jpg' alt='img')
+            a.certif-slider__item.js-gallery(href='img/gallery/certif-1.jpg' data-fancybox="certif-gallery")
+               img.certif-slider__img(src='img/gallery/certif-1_sm.jpg' alt='img')
+            a.certif-slider__item.js-gallery(href='img/gallery/certif-2.jpg' data-fancybox="certif-gallery")
+               img.certif-slider__img(src='img/gallery/certif-2_sm.jpg' alt='img')
+
+         .certif__passed
+            h3.certif__passed-title.title-h3 Наш сервис прошел сертификацию
+            .certif__passed-row.js-passed-slider
+               .certif__passed-item
+                  .certif__passed-img
+                     img(src='img/logos/serv-partner-1.png')
+                  .certif__passed-text ZF Services Partner
+               .certif__passed-item
+                  .certif__passed-img
+                     img(src='img/logos/serv-partner-2.png')
+                  .certif__passed-text Original Sachs Service
+               .certif__passed-item
+                  .certif__passed-img
+                     img(src='img/logos/serv-partner-3.png')
+                  .certif__passed-text ELIT Partner
+               .certif__passed-item
+                  .certif__passed-img
+                     img(src='img/logos/serv-partner-4.png')
+                  .certif__passed-text Nora Professional Service
+               .certif__passed-item
+                  .certif__passed-img
+                     img(src='img/logos/serv-partner-5.png')
+                  .certif__passed-text Bosch Diagnostic
+                     br
+                     | Software
+
+      section#subscribe.subscr
+         h3.subscr__title.title-h3 Запишитесь на СТО
+         .subscr__inner
+            .subscr__col
+               .stamp
+                  .stamp__icon
+                  .stamp__label Автосервис Oiler
+
+            .subscr__col
+               .subscribe.subscribe--subscr
+                  .subscribe__title Записаться в 1 клик!
+                  .subscribe__form
+                     form(action='#')
+                        .subscribe__address
+                           .subscribe__field-address
+                              label.subscribe__label
+                                 input.subscribe__check(type='radio' name='street')
+                                 span Oiler Лукьяновка, ул. Нагорная, 47
+                           .subscribe__field-address
+                              label.subscribe__label
+                                 input.subscribe__check(type='radio' name='street')
+                                 span Oiler Печерск, ул. Киквидзе, 43
+                        .subscribe__field
+                           +icon('icon-cellphone','subscribe__field-icon')
+                           input.subscribe__phone(type='tel' placeholder='Ваш телефон' required name)
+                        .subscribe__field
+                           button.subscribe__submit-btn(type='submit') Перезвоните мне
+            .subscr__col
+               .subscr__label
+                  +icon('icon-star','subscr__label-icon')
+                  .subscr__label-text Мы перезвоним Вам для уточнения списка работ в удобное для Вас время
+
+      section#pack.pack
+         h3.pack__title.title-h3 Пакеты услуг ТО
+         .pack__inner
+            .pack__table
+               .pack__table-row Замена моторного масла
+               .pack__table-row Замена фильтра воздуха
+               .pack__table-row Замена фильтра топлива
+               .pack__table-row Замена фильтра салона
+
+            .pack__item
+               .pack__item-title ТО «ЭКОНОМ»
+               .pack__item-feature Замена моторного масла
+                  +icon('icon-check','pack__icon-check')
+               .pack__item-feature Замена фильтра воздуха
+                  +icon('icon-check','pack__icon-check')
+               .pack__item-feature Замена фильтра топлива
+               .pack__item-feature Замена фильтра салона
+               .pack__item-add.pack__item-add--nofree + диагностика ходовой (7 пунктов)
+               .pack__item-price 294 #[span.pack__item-price--val грн.]
+               button.pack__item-order.js-pack-btn ЗАКАЗАТЬ
+               .subscribe.subscribe--pack
+                  .subscribe__form
+                     form(action='#')
+                        .subscribe__field
+                           +icon('icon-user','subscribe__field-icon')
+                           input.subscribe__phone(type='text' placeholder='Ваше имя' required name)
+                        .subscribe__field
+                           +icon('icon-cellphone','subscribe__field-icon')
+                           input.subscribe__phone(type='tel' placeholder='Ваш номер телефона' required name)
+                        .subscribe__field
+                           button.subscribe__submit-btn(type='submit') Отправить
+                  .subscribe__close-icon.js-subscribe-pack-close
+                     +icon('icon-closed')
+
+            .pack__item
+               .pack__item-title ТО «СТАНДАРТ»
+               .pack__item-feature Замена моторного масла
+                  +icon('icon-check','pack__icon-check pack__icon-check--gold')
+               .pack__item-feature Замена фильтра воздуха
+                  +icon('icon-check','pack__icon-check pack__icon-check--gold')
+               .pack__item-feature Замена фильтра топлива
+                  +icon('icon-check','pack__icon-check pack__icon-check--gold')
+               .pack__item-feature Замена фильтра салона
+               .pack__item-add + базовая диагностика авто (16 пунктов)
+               .pack__item-free #[span FREE:] скидочная карта постоянного клиента
+               .pack__item-discount 3%
+               .pack__item-price 512 #[span.pack__item-price--val грн.]
+               button.pack__item-order.js-pack-btn ЗАКАЗАТЬ
+               .subscribe.subscribe--pack
+                  .subscribe__form
+                     form(action='#')
+                        .subscribe__field
+                           +icon('icon-user','subscribe__field-icon')
+                           input.subscribe__phone(type='text' placeholder='Ваше имя' required name)
+                        .subscribe__field
+                           +icon('icon-cellphone','subscribe__field-icon')
+                           input.subscribe__phone(type='tel' placeholder='Ваш номер телефона' required name)
+                        .subscribe__field
+                           button.subscribe__submit-btn(type='submit') Отправить
+                  .subscribe__close-icon.js-subscribe-pack-close
+                     +icon('icon-closed')
+            .pack__item.pack__item--hit
+               .pack__item-title ТО «ПОЛНОЕ»
+               .pack__item-feature Замена моторного масла
+                  +icon('icon-check','pack__icon-check pack__icon-check--gold')
+               .pack__item-feature Замена фильтра воздуха
+                  +icon('icon-check','pack__icon-check pack__icon-check--gold')
+               .pack__item-feature Замена фильтра топлива
+                  +icon('icon-check','pack__icon-check pack__icon-check--gold')
+               .pack__item-feature Замена фильтра салона
+                  +icon('icon-check','pack__icon-check pack__icon-check--gold')
+               .pack__item-add + базовая диагностика авто (16 пунктов)
+               .pack__item-free #[span FREE:] скидочная карта постоянного клиента
+               .pack__item-discount 5%
+               .pack__item-price 610 #[span.pack__item-price--val грн.]
+               button.pack__item-order.js-pack-btn ЗАКАЗАТЬ
+               .subscribe.subscribe--pack
+                  .subscribe__form
+                     form(action='#')
+                        .subscribe__field
+                           +icon('icon-user','subscribe__field-icon')
+                           input.subscribe__phone(type='text' placeholder='Ваше имя' required name)
+                        .subscribe__field
+                           +icon('icon-cellphone','subscribe__field-icon')
+                           input.subscribe__phone(type='tel' placeholder='Ваш номер телефона' required name)
+                        .subscribe__field
+                           button.subscribe__submit-btn(type='submit') Отправить
+                  .subscribe__close-icon.js-subscribe-pack-close
+                     +icon('icon-closed')
+            .pack__item.pack__item--recommend
+               .pack__item-title ТО «МАКСИМУМ»
+               .pack__item-feature Замена моторного масла
+                  +icon('icon-check','pack__icon-check pack__icon-check--green')
+               .pack__item-feature Замена фильтра воздуха
+                  +icon('icon-check','pack__icon-check pack__icon-check--green')
+               .pack__item-feature Замена фильтра топлива
+                  +icon('icon-check','pack__icon-check pack__icon-check--green')
+               .pack__item-feature Замена фильтра салона
+                  +icon('icon-check','pack__icon-check pack__icon-check--green')
+               .pack__item-add + базовая диагностика авто (21 пункт)
+               .pack__item-free #[span.pack__item-free--green FREE:] скидочная карта постоянного клиента
+               .pack__item-discount.pack__item-discount--green 5%
+               .pack__item-price 848 #[span.pack__item-price--val грн.]
+               button.pack__item-order.js-pack-btn ЗАКАЗАТЬ
+               .subscribe.subscribe--pack
+                  .subscribe__form
+                     form(action='#')
+                        .subscribe__field
+                           +icon('icon-user','subscribe__field-icon')
+                           input.subscribe__phone(type='text' placeholder='Ваше имя' required name)
+                        .subscribe__field
+                           +icon('icon-cellphone','subscribe__field-icon')
+                           input.subscribe__phone(type='tel' placeholder='Ваш номер телефона' required name)
+                        .subscribe__field
+                           button.subscribe__submit-btn(type='submit') Отправить
+                  .subscribe__close-icon.js-subscribe-pack-close
+                     +icon('icon-closed')
+            .pack__label
+               +icon('icon-star','pack__label-icon')
+               .pack__label-text
+                  div
+                     | Уточните у менеджера при заказе:&nbsp;
+                     span + 280 грн. — если фильтр топлива находится в топливном баке;
+                  div + 150 грн. — если фильтр салона находится в педальном узле.
+
+      section#price.price
+         h3.title-h3.price__title Цены на услуги
+         .price__inner
+            .price__col
+               ul.price-accordion.js-price-accordion
+                  li.price-accordion__title
+                     .price-accordion__title-text Основные услуги
+                     .price-accordion__title-price Цена (грн)
+                  li.price-accordion__item
+                     .price-accordion__item-title Диагностика автомобиля
+                        +icon('icon-more','price-accordion__icon')
+                        +icon('icon-less','price-accordion__icon')
+                     .price-accordion__item-content
+                        .price-accordion__item-inner
+                           .price-accordion__item-text Компьютерная диагностика
+                           .price-accordion__item-price 178
+                        .price-accordion__item-inner
+                           .price-accordion__item-text Диагностика ходовой автомобиля (7 пунктов)
+                           .price-accordion__item-price 118
+                        .price-accordion__item-inner
+                           .price-accordion__item-text Базовый комплекс диагностики автомобиля (16 пунктов)
+                           .price-accordion__item-price 218
+                        .price-accordion__item-inner
+                           .price-accordion__item-text Полный комплекс диагностики автомобиля (21 пункт)
+                           .price-accordion__item-price 458
+                  li.price-accordion__item
+                     .price-accordion__item-title Замена технических жидкостей и фильтров
+                        +icon('icon-more','price-accordion__icon')
+                        +icon('icon-less','price-accordion__icon')
+                        .price-accordion__item-icon
+                     .price-accordion__item-content
+                        .price-accordion__item-inner
+                           .price-accordion__item-text Компьютерная диагностика
+                           .price-accordion__item-price 178
+                        .price-accordion__item-inner
+                           .price-accordion__item-text Диагностика ходовой автомобиля (7 пунктов)
+                           .price-accordion__item-price 118
+                        .price-accordion__item-inner
+                           .price-accordion__item-text Диагностика ходовой автомобиля (7 пунктов)
+                           .price-accordion__item-price 118
+                  li.price-accordion__item
+                     .price-accordion__item-title Тормозная система
+                        +icon('icon-more','price-accordion__icon')
+                        +icon('icon-less','price-accordion__icon')
+                     .price-accordion__item-content
+                        .price-accordion__item-inner
+                           .price-accordion__item-text Компьютерная диагностика
+                           .price-accordion__item-price 178
+                        .price-accordion__item-inner
+                           .price-accordion__item-text Диагностика ходовой автомобиля (7 пунктов)
+                           .price-accordion__item-price 118
+                        .price-accordion__item-inner
+                           .price-accordion__item-text Диагностика ходовой автомобиля (7 пунктов)
+                           .price-accordion__item-price 118
+                  li.price-accordion__item
+                     .price-accordion__item-title Рулевое управление
+                        +icon('icon-more','price-accordion__icon')
+                        +icon('icon-less','price-accordion__icon')
+                     .price-accordion__item-content
+                        .price-accordion__item-inner
+                           .price-accordion__item-text Компьютерная диагностика
+                           .price-accordion__item-price 178
+                        .price-accordion__item-inner
+                           .price-accordion__item-text Диагностика ходовой автомобиля (7 пунктов)
+                           .price-accordion__item-price 118
+                        .price-accordion__item-inner
+                           .price-accordion__item-text Диагностика ходовой автомобиля (7 пунктов)
+                           .price-accordion__item-price 118
+                  li.price-accordion__item
+                     .price-accordion__item-title Ходовая часть
+                        +icon('icon-more','price-accordion__icon')
+                        +icon('icon-less','price-accordion__icon')
+                     .price-accordion__item-content
+                        .price-accordion__item-inner
+                           .price-accordion__item-text Компьютерная диагностика
+                           .price-accordion__item-price 178
+                        .price-accordion__item-inner
+                           .price-accordion__item-text Диагностика ходовой автомобиля (7 пунктов)
+                           .price-accordion__item-price 118
+                        .price-accordion__item-inner
+                           .price-accordion__item-text Диагностика ходовой автомобиля (7 пунктов)
+                           .price-accordion__item-price 118
+                  li.price-accordion__item
+                     .price-accordion__item-title Топливная система
+                        +icon('icon-more','price-accordion__icon')
+                        +icon('icon-less','price-accordion__icon')
+                     .price-accordion__item-content
+                        .price-accordion__item-inner
+                           .price-accordion__item-text Компьютерная диагностика
+                           .price-accordion__item-price 178
+                        .price-accordion__item-inner
+                           .price-accordion__item-text Диагностика ходовой автомобиля (7 пунктов)
+                           .price-accordion__item-price 118
+                        .price-accordion__item-inner
+                           .price-accordion__item-text Диагностика ходовой автомобиля (7 пунктов)
+                           .price-accordion__item-price 118
+                  li.price-accordion__item
+                     .price-accordion__item-title Система сцепления
+                        +icon('icon-more','price-accordion__icon')
+                        +icon('icon-less','price-accordion__icon')
+                     .price-accordion__item-content
+                        .price-accordion__item-inner
+                           .price-accordion__item-text Компьютерная диагностика
+                           .price-accordion__item-price 178
+                        .price-accordion__item-inner
+                           .price-accordion__item-text Диагностика ходовой автомобиля (7 пунктов)
+                           .price-accordion__item-price 118
+                        .price-accordion__item-inner
+                           .price-accordion__item-text Диагностика ходовой автомобиля (7 пунктов)
+                           .price-accordion__item-price 118
+                  li.price-accordion__item
+                     .price-accordion__item-title ГРМ (газораспределительный механизм)
+                        +icon('icon-more','price-accordion__icon')
+                        +icon('icon-less','price-accordion__icon')
+                     .price-accordion__item-content
+                        .price-accordion__item-inner
+                           .price-accordion__item-text Компьютерная диагностика
+                           .price-accordion__item-price 178
+                        .price-accordion__item-inner
+                           .price-accordion__item-text Диагностика ходовой автомобиля (7 пунктов)
+                           .price-accordion__item-price 118
+                        .price-accordion__item-inner
+                           .price-accordion__item-text Диагностика ходовой автомобиля (7 пунктов)
+                           .price-accordion__item-price 118
+                  li.price-accordion__item
+                     .price-accordion__item-title Двигатель
+                        +icon('icon-more','price-accordion__icon')
+                        +icon('icon-less','price-accordion__icon')
+                     .price-accordion__item-content
+                        .price-accordion__item-inner
+                           .price-accordion__item-text Компьютерная диагностика
+                           .price-accordion__item-price 178
+                        .price-accordion__item-inner
+                           .price-accordion__item-text Диагностика ходовой автомобиля (7 пунктов)
+                           .price-accordion__item-price 118
+                        .price-accordion__item-inner
+                           .price-accordion__item-text Диагностика ходовой автомобиля (7 пунктов)
+                           .price-accordion__item-price 118
+                  li.price-accordion__item
+                     .price-accordion__item-title Система зажигания
+                        +icon('icon-more','price-accordion__icon')
+                        +icon('icon-less','price-accordion__icon')
+                     .price-accordion__item-content
+                        .price-accordion__item-inner
+                           .price-accordion__item-text Компьютерная диагностика
+                           .price-accordion__item-price 178
+                        .price-accordion__item-inner
+                           .price-accordion__item-text Диагностика ходовой автомобиля (7 пунктов)
+                           .price-accordion__item-price 118
+                        .price-accordion__item-inner
+                           .price-accordion__item-text Диагностика ходовой автомобиля (7 пунктов)
+                           .price-accordion__item-price 118
+                  li.price-accordion__item
+                     .price-accordion__item-title Чистка форсунок (инжектора)
+                        +icon('icon-more','price-accordion__icon')
+                        +icon('icon-less','price-accordion__icon')
+                     .price-accordion__item-content
+                        .price-accordion__item-inner
+                           .price-accordion__item-text Компьютерная диагностика
+                           .price-accordion__item-price 178
+                        .price-accordion__item-inner
+                           .price-accordion__item-text Диагностика ходовой автомобиля (7 пунктов)
+                           .price-accordion__item-price 118
+                        .price-accordion__item-inner
+                           .price-accordion__item-text Диагностика ходовой автомобиля (7 пунктов)
+                           .price-accordion__item-price 118
+                  li.price-accordion__item
+                     .price-accordion__item-title Замена сервисных ремней
+                        +icon('icon-more','price-accordion__icon')
+                        +icon('icon-less','price-accordion__icon')
+                     .price-accordion__item-content
+                        .price-accordion__item-inner
+                           .price-accordion__item-text Компьютерная диагностика
+                           .price-accordion__item-price 178
+                        .price-accordion__item-inner
+                           .price-accordion__item-text Диагностика ходовой автомобиля (7 пунктов)
+                           .price-accordion__item-price 118
+                        .price-accordion__item-inner
+                           .price-accordion__item-text Диагностика ходовой автомобиля (7 пунктов)
+                           .price-accordion__item-price 118
+                  li.price-accordion__item
+                     .price-accordion__item-title Система охлаждения
+                        +icon('icon-more','price-accordion__icon')
+                        +icon('icon-less','price-accordion__icon')
+                     .price-accordion__item-content
+                        .price-accordion__item-inner
+                           .price-accordion__item-text Компьютерная диагностика
+                           .price-accordion__item-price 178
+                        .price-accordion__item-inner
+                           .price-accordion__item-text Диагностика ходовой автомобиля (7 пунктов)
+                           .price-accordion__item-price 118
+                        .price-accordion__item-inner
+                           .price-accordion__item-text Диагностика ходовой автомобиля (7 пунктов)
+                           .price-accordion__item-price 118
+                  li.price-accordion__item
+                     .price-accordion__item-title Развал-схождение
+                        +icon('icon-more','price-accordion__icon')
+                        +icon('icon-less','price-accordion__icon')
+                     .price-accordion__item-content
+                        .price-accordion__item-inner
+                           .price-accordion__item-text Компьютерная диагностика
+                           .price-accordion__item-price 178
+                        .price-accordion__item-inner
+                           .price-accordion__item-text Диагностика ходовой автомобиля (7 пунктов)
+                           .price-accordion__item-price 118
+                        .price-accordion__item-inner
+                           .price-accordion__item-text Диагностика ходовой автомобиля (7 пунктов)
+                           .price-accordion__item-price 118
+                  li.price-accordion__item
+                     .price-accordion__item-title Обслуживание кондиционера
+                        +icon('icon-more','price-accordion__icon')
+                        +icon('icon-less','price-accordion__icon')
+                     .price-accordion__item-content
+                        .price-accordion__item-inner
+                           .price-accordion__item-text Компьютерная диагностика
+                           .price-accordion__item-price 178
+                        .price-accordion__item-inner
+                           .price-accordion__item-text Диагностика ходовой автомобиля (7 пунктов)
+                           .price-accordion__item-price 118
+                        .price-accordion__item-inner
+                           .price-accordion__item-text Диагностика ходовой автомобиля (7 пунктов)
+                           .price-accordion__item-price 118
+                  li.price-accordion__item
+                     .price-accordion__item-title Шиномонтаж
+                        +icon('icon-more','price-accordion__icon')
+                        +icon('icon-less','price-accordion__icon')
+                     .price-accordion__item-content
+                        .price-accordion__item-inner
+                           .price-accordion__item-text Компьютерная диагностика
+                           .price-accordion__item-price 178
+                        .price-accordion__item-inner
+                           .price-accordion__item-text Диагностика ходовой автомобиля (7 пунктов)
+                           .price-accordion__item-price 118
+                        .price-accordion__item-inner
+                           .price-accordion__item-text Диагностика ходовой автомобиля (7 пунктов)
+                           .price-accordion__item-price 118
+                  li.price-accordion__item
+                     .price-accordion__item-title Аккумуляторы
+                        +icon('icon-more','price-accordion__icon')
+                        +icon('icon-less','price-accordion__icon')
+                     .price-accordion__item-content
+                        .price-accordion__item-inner
+                           .price-accordion__item-text Компьютерная диагностика
+                           .price-accordion__item-price 178
+                        .price-accordion__item-inner
+                           .price-accordion__item-text Диагностика ходовой автомобиля (7 пунктов)
+                           .price-accordion__item-price 118
+                        .price-accordion__item-inner
+                           .price-accordion__item-text Диагностика ходовой автомобиля (7 пунктов)
+                           .price-accordion__item-price 118
+                  li.price-accordion__item
+                     .price-accordion__item-title Малярные работы
+                        +icon('icon-more','price-accordion__icon')
+                        +icon('icon-less','price-accordion__icon')
+                     .price-accordion__item-content
+                        .price-accordion__item-inner
+                           .price-accordion__item-text Компьютерная диагностика
+                           .price-accordion__item-price 178
+                        .price-accordion__item-inner
+                           .price-accordion__item-text Диагностика ходовой автомобиля (7 пунктов)
+                           .price-accordion__item-price 118
+                        .price-accordion__item-inner
+                           .price-accordion__item-text Диагностика ходовой автомобиля (7 пунктов)
+                           .price-accordion__item-price 118
+            .price__col
+               .price-adv
+                  .price-adv__title Преимущества
+                  .price-adv__tabs.js-price-tabs
+                     .price-adv__tab
+                        a.price-adv__banner(href='#')
+                           img.price-adv__banner-img(src='img/content/price-adv-1.jpg')
+                        a.price-adv__banner(href='#')
+                           img.price-adv__banner-img(src='img/content/price-adv-2.jpg')
+                        a.price-adv__banner(href='#')
+                           img.price-adv__banner-img(src='img/content/price-adv-3.jpg')
+                     .price-adv__tab
+                        a.price-adv__banner(href='#')
+                           img.price-adv__banner-img(src='img/content/price-adv-1.jpg')
+                        a.price-adv__banner(href='#')
+                           img.price-adv__banner-img(src='img/content/price-adv-3.jpg')
+                        a.price-adv__banner(href='#')
+                           img.price-adv__banner-img(src='img/content/price-adv-2.jpg')
+                     .price-adv__tab
+                        a.price-adv__banner(href='#')
+                           img.price-adv__banner-img(src='img/content/price-adv-1.jpg')
+                        a.price-adv__banner(href='#')
+                           img.price-adv__banner-img(src='img/content/price-adv-2.jpg')
+                        a.price-adv__banner(href='#')
+                           img.price-adv__banner-img(src='img/content/price-adv-3.jpg')
+
+      section.subscr
+         h3.subscr__title.title-h3 Запишитесь на СТО
+         .subscr__inner
+            .subscr__col.stamp
+               .stamp__icon
+               .stamp__label Автосервис Oiler
+
+            .subscr__col.subscribe.subscribe--subscr
+               .subscribe__title Записаться в 1 клик!
+               .subscribe__form
+                  form(action='#')
+                     .subscribe__address
+                        .subscribe__field-address
+                           label.subscribe__label
+                              input.subscribe__check(type='radio' name='street')
+                              span Oiler Лукьяновка, ул. Нагорная, 47
+                        .subscribe__field-address
+                           label.subscribe__label
+                              input.subscribe__check(type='radio' name='street')
+                              span Oiler Печерск, ул. Киквидзе, 43
+                     .subscribe__field
+                        +icon('icon-cellphone','subscribe__field-icon')
+                        input.subscribe__phone(type='tel' placeholder='Ваш телефон' required name)
+                     .subscribe__field
+                        button.subscribe__submit-btn(type='submit') Перезвоните мне
+            .subscr__col.subscr__label
+               +icon('icon-star','subscr__label-icon')
+               .subscr__label-text Мы перезвоним Вам для уточнения списка работ в удобное для Вас время
+
+      section#testimonials.testimonials.testimonials--service
+         h3.title-h3.testimonials__title Отзывы
+         .testimonials__inner
+            .testimonials__item
+               .testimonials__item-user
+                  | Александр на BMW 760Li,&nbsp;
+                  span.testimonials__item-date 22 апреля 2014 г.
+               .testimonials__item-row
+                  .testimonials__item-photo
+                     img(src='img/testimonial-1.png')
+                  .testimonials__item-feedback
+                     p.testimonials__item-text
+                        | Сегодня менял жидкости и делал полную замену масла в коробке, через аппарат. Ребята компетентные, толковые и знают свое дело.&nbsp;
+                        span.testimonials__item-mob-hidden Трудностей (конструктивных) не боятся - все решают с чувством, с толком, с расстановкой. Из плюсов - оперативные достаточно менеджеры, которые берут на себя решение вопроса запчастей и расходников. К отзывам и просьбам - отзывчивы. Пока только положительные впечатления. Дальше будет видно.
+                        button.more-btn.more-btn--testimonials.js-more-comment Развернуть
+            .testimonials__item.testimonials__item--response
+               .testimonials__item-user Ответ автосервиса
+               .testimonials__item-row
+                  .testimonials__item-photo
+                     img(src='img/testimonial-2.png')
+                  .testimonials__item-feedback.testimonials__item-feedback--response
+                     p.testimonials__item-text Добрый день! Спасибо большое за положительный отзыв, благодарим Вас за выбор нашей компании. Напомните об этом отзыве при следующем визите и получите скидочную карту постоянного клиента
+            .testimonials__item
+               .testimonials__item-user
+                  | Валерий на Хюндай,&nbsp;
+                  span.testimonials__item-date 20 ноября 2014 г.
+               .testimonials__item-row
+                  .testimonials__item-photo
+                     img(src='img/testimonial-1.png')
+                  .testimonials__item-feedback
+                     p.testimonials__item-text
+                        | Уже несколько лет обслуживаюсь на СТО Ойлер. Все как то не получалось написать отзыв.А это уже не могу молчать. Хочу просто крикнуть на всю Украину ОГРОМНОЕ ВАМ СПАСИБО!!!&nbsp;
+                        span.testimonials__item-mob-hidden Сервис супер, мастера Спецы. Все честно и справедливо. Ребята Вы лучшие. Всем кто прочтет этот отзыв рекомендую СТО Ойлер не ошибетесь. А всему коллективу Ойлер так держать. Побольше бы таких фирм и нам завидовала бы вся Европа.
+                        button.more-btn.more-btn--testimonials.js-more-comment Развернуть
+            .testimonials__item.testimonials__item--response
+               .testimonials__item-user Ответ автосервиса
+               .testimonials__item-row
+                  .testimonials__item-photo
+                     img(src='img/testimonial-2.png')
+                  .testimonials__item-feedback.testimonials__item-feedback--response
+                     p.testimonials__item-text Отличное СТО! Приехал с неизвестной проблемой(машина глохла "на горячую"), ребята сходу определили в чем проблема и через 30минут уже было все готово. Цены за услуги весьма адекватны. Спасибо за качественную работу.
+            .testimonials__item
+               .testimonials__item-user
+                  | Тарас на Daewoo Lanos,&nbsp;
+                  span.testimonials__item-date 20 ноября 2014 г.
+               .testimonials__item-row
+                  .testimonials__item-photo
+                     img(src='img/testimonial-1.png')
+                  .testimonials__item-feedback
+                     p.testimonials__item-text
+                        | Все как всегда на высшем уровне. Адекватные цены, приветливый и профессиональный персонал, широкий выбор расходников и запчастей, качественный сервис.&nbsp;
+                        span.testimonials__item-mob-hidden Обслуживаюсь не первый год и не первую машину.С недавних пор можно сделать компьютерную диагностику на некоторые марки, включая мою. Дима в магазине и Сережа на СТО: 5+. Рекомендую всем знакомым.
+                        button.more-btn.more-btn--testimonials.js-more-comment Развернуть
+            .testimonials__item.testimonials__item--response
+               .testimonials__item-user Ответ автосервиса
+               .testimonials__item-row
+                  .testimonials__item-photo
+                     img(src='img/testimonial-2.png')
+                  .testimonials__item-feedback.testimonials__item-feedback--response
+                     p.testimonials__item-text Денис, большое спасибо за положительный отзыв, рады что Вам нравится у нас все больше!
+
+      section.write-about
+         h3.title-h3.write-about__title Что пишут о нас независимые источники?
+         a.write-about__link(href='#') Все СТО
+            span тм
+
+      section.partners.partners--cars
+         h3.title-h3.partners__title Наши партнёры
+         .partners__slider-wrapper
+            .partners__slider.js-partners-slider
+               a.partners__slider-item(href='#')
+                  .partners__slider-img
+                     img(src='img/logos/kia-club.jpg')
+                  .partners__slider-text Украинский клуб Kia Cee'd
+               a.partners__slider-item(href='#')
+                  .partners__slider-img
+                     img(src='img/logos/nissan-club.jpg')
+                  .partners__slider-text Украинский Nissan Клуб
+               a.partners__slider-item(href='#')
+                  .partners__slider-img
+                     img(src='img/logos/bmw-club.jpg')
+                  .partners__slider-text Всеукраинский клуб BMW
+               a.partners__slider-item(href='#')
+                  .partners__slider-img
+                     img(src='img/logos/opel-club.jpg')
+                  .partners__slider-text Украинский Opel Клуб
+               a.partners__slider-item(href='#')
+                  .partners__slider-img
+                     img(src='img/logos/ssangyong-club.jpg')
+                  .partners__slider-text SsangYong Клуб
+               a.partners__slider-item(href='#')
+                  .partners__slider-img
+                     img(src='img/logos/mercedes-club.jpg')
+                  .partners__slider-text Клуб любителей автомобилей Mercedes-Benz
+               a.partners__slider-item(href='#')
+                  .partners__slider-img
+                     img(src='img/logos/bmw-club.jpg')
+                  .partners__slider-text Всеукраинский клуб BMW
+               a.partners__slider-item(href='#')
+                  .partners__slider-img
+                     img(src='img/logos/opel-club.jpg')
+                  .partners__slider-text Украинский Opel Клуб
+               a.partners__slider-item(href='#')
+                  .partners__slider-img
+                     img(src='img/logos/ssangyong-club.jpg')
+                  .partners__slider-text SsangYong Клуб
+               a.partners__slider-item(href='#')
+                  .partners__slider-img
+                     img(src='img/logos/mercedes-club.jpg')
+                  .partners__slider-text Клуб любителей автомобилей Mercedes-Benz
+            button.more-btn.more-btn--partners.js-partners-more Подробнее
+
+      section.partners
+         h3.title-h3.partners__title Компании, которые нам доверяют
+         .partners__slider-wrapper
+            .partners__slider.js-partners-slider
+               a.partners__slider-item(href='#')
+                  .partners__slider-img
+                     img(src="img/logos/cat.png" alt="MDN")
+                  .partners__slider-text Компания Caterpillar
+               a.partners__slider-item(href='#')
+                  .partners__slider-img
+                     img(src='img/logos/bta-bank.png')
+                  .partners__slider-text ПАО &laquo;БТА Банк&raquo;
+               a.partners__slider-item(href='#')
+                  .partners__slider-img
+                     img(src='img/logos/beton.png')
+                  .partners__slider-text Бетон от Ковальской
+               a.partners__slider-item(href='#')
+                  .partners__slider-img
+                     img(src='img/logos/kpi.png')
+                  .partners__slider-text НТУУ &laquo;КПИ&raquo;
+               a.partners__slider-item(href='#')
+                  .partners__slider-img
+                     img(src='img/logos/irbis.png')
+                  .partners__slider-text ООО &laquo;ТД &laquo;ИРБИС&raquo;
+               a.partners__slider-item(href='#')
+                  .partners__slider-img
+                     img(src='img/logos/oshchadbank.png')
+                  .partners__slider-text Ощадбанк Украины
+               a.partners__slider-item(href='#')
+                  .partners__slider-img
+                     img(src='img/logos/beton.png')
+                  .partners__slider-text Бетон от Ковальской
+               a.partners__slider-item(href='#')
+                  .partners__slider-img
+                     img(src='img/logos/kpi.png')
+                  .partners__slider-text НТУУ &laquo;КПИ&raquo;
+               a.partners__slider-item(href='#')
+                  .partners__slider-img
+                     img(src='img/logos/irbis.png')
+                  .partners__slider-text ООО &laquo;ТД &laquo;ИРБИС&raquo;
+               a.partners__slider-item(href='#')
+                  .partners__slider-img
+                     img(src='img/logos/oshchadbank.png')
+                  .partners__slider-text Ощадбанк Украины
+            button.more-btn.more-btn--partners.js-partners-more Подробнее
+
+      section.discount
+         h3.title-h3.discount__title Хотите получить скидку?
+         .discount__sub-title Присоединяйтесь к нам в социальных сетях
+         .soc-vidgets
+            .soc-vidgets__col
+               script(type='text/javascript', src='//vk.com/js/api/openapi.js?75')
+               #vk_groups(style='float:left; padding-right: 20px; ')
+               script(type='text/javascript').
+                  VK.Widgets.Group("vk_groups", {mode: 0, width: "200", height: "317"}, 22487440);
+            .soc-vidgets__col
+               div(style='vertical-align: top;padding-right:20px;width:200px;float:left;')
+               script(async='', type='text/javascript', src='https://apis.google.com/js/plusone.js')
+               .g-page(data-width='200', data-href='https://plus.google.com/105973302303778163635')
+            .soc-vidgets__col
+               a.twitter-timeline(href='https://twitter.com/oilercomua', data-widget-id='286803819923374080', width='200', height='317') Твиты пользователя @oilercomua
+               script.
+                  !function (d, s, id) {
+                     var js, fjs = d.getElementsByTagName(s)[0];
+                     if (!d.getElementById(id)) {
+                        js = d.createElement(s);
+                        js.id = id;
+                        js.src = "//platform.twitter.com/widgets.js";
+                        fjs.parentNode.insertBefore(js, fjs);
+                     }
+                  }(document, "script", "twitter-wjs");
+            .soc-vidgets__col
+               #fb-root
+               script.
+                  (function (d, s, id) {
+                     var js, fjs = d.getElementsByTagName(s)[0];
+                     if (d.getElementById(id)) return;
+                     js = d.createElement(s);
+                     js.id = id;
+                     js.src = "//connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.5";
+                     fjs.parentNode.insertBefore(js, fjs);
+                  }(document, 'script', 'facebook-jssdk'));
+               .fb-page(data-href='http://www.facebook.com/oilercomua', data-width='220', data-height='317', data-small-header='false', data-adapt-container-width='true', data-hide-cover='false', data-show-facepile='true', data-show-posts='false', data-hide-cta='false', style='padding-bottom:30px;float:left;padding-right: 20px; width:220px')
+            .soc-vidgets__btn
+                img(src="img/soc-btn1.png")
+            .soc-vidgets__btn
+                img(src="img/soc-btn2.png")
+            .soc-vidgets__btn
+                img(src="img/soc-btn3.png")
+            .soc-vidgets__btn
+                img(src="img/soc-btn4.png")
+
+         .discount__cards
+            .discount__cards-item
+               .discount__cards-img
+                  img(src='img/content/discount-3.jpg')
+               .discount__cards-text
+                  .discount__cards-sub-text При подписке на нас в социальных сетях,
+                  .social(style='display: inline-block; float: none;')
+                     a.youtube-small(rel='nofollow', title='Oiler на Youtube', href='https://www.youtube.com/user/Oilercomua', target='_blank')
+                     a.vk-small(rel='nofollow', title='Oiler на Вконтакте', href='http://vk.com/oilercomua', target='_blank')
+                     a.fb-small(rel='nofollow', title='Oiler на Facebook', href='https://www.facebook.com/oilercomua', target='_blank')
+                     // <a class="google-small" rel="nofollow" title="Oiler на Google+" href="https://plus.google.com/105973302303778163635?rel=author" target="_blank"></a>
+                     a.google-small(rel='nofollow', title='Oiler на Google+', href='https://plus.google.com/+OilerUa/posts', target='_blank')
+                     a.tw-small(rel='nofollow', title='Oiler на Twitter', href='https://twitter.com/oilercomua', target='_blank')
+                     a.fsquare-small(rel='nofollow', title='Oiler на Foursquare', href='https://ru.foursquare.com/explore?mode=share&near=%D0%9A%D0%B8%D0%B5%D0%B2%2C%20%D0%A3%D0%BA%D1%80%D0%B0%D0%B8%D0%BD%D0%B0&nearGeoId=72057594038631384&q=oiler&vne=50.481432%2C30.62602&vsw=50.38904%2C30.413332&share=1&rid=57ed0aeb498e13797f994603', target='_blank')
+                     a.insta-small(rel='nofollow', title='Oiler на Instagram', href='http://instagram.com/oilercomua', target='_blank')
+                     a.ok-small(rel='nofollow', title='Oiler в Одноклассниках', href='http://www.odnoklassniki.ru/oilercomua', target='_blank')
+
+                   div
+                     i или
+                  .discount__cards-sub-text при покупке на суму&nbsp;
+                     span от 4000 грн!
+            .discount__cards-item
+               .discount__cards-img
+                  img(src='img/content/discount-5.jpg')
+               .discount__cards-text
+                  .discount__cards-sub-text При покупке
+                  .discount__cards-sub-text
+                     span от 8000 грн,
+                     | &nbsp;при условии обслуживания на нашей станции
+            .discount__cards-item
+               .discount__cards-img
+                  img(src='img/content/discount-7.png')
+               .discount__cards-text
+                  .discount__cards-sub-text При покупке
+                  .discount__cards-sub-text
+                     span от 15000 грн,
+                     | &nbsp;при условии обслуживания на нашей станции
+         .discount__remark
+            p.discount__remark-text &#42; Дисконтные карты действуют&nbsp;
+               span только на товары магазина. Карты не являются накопительными. Скидки не распространяются на аккумуляторы, шины и диски.
+            p.discount__remark-text К каждой скидочной карте мы дарим рамку для номера.
+
+      include components/_address
+
+   .layout
+      section.subscr
+         h3.subscr__title.title-h3 Запишитесь на СТО
+         .subscr__inner
+            .subscr__col.stamp
+               .stamp__icon adfidfjs0
+                   img(src="img/stamp.png")
+               .stamp__label Автосервис Oiler
+
+            .subscr__col.subscribe.subscribe--subscr
+               .subscribe__title Записаться в 1 клик!
+               .subscribe__form
+                  form(action='#')
+                     .subscribe__address
+                        .subscribe__field-address
+                           label.subscribe__label
+                              input.subscribe__check(type='radio' name='street')
+                              span Oiler Лукьяновка, ул. Нагорная, 47
+                        .subscribe__field-address
+                           label.subscribe__label
+                              input.subscribe__check(type='radio' name='street')
+                              span Oiler Печерск, ул. Киквидзе, 43
+                     .subscribe__field
+                        +icon('icon-cellphone','subscribe__field-icon')
+                        input.subscribe__phone(type='tel' placeholder='Ваш телефон' required name)
+                     .subscribe__field
+                        button.subscribe__submit-btn(type='submit') Перезвоните мне
+            .subscr__col.subscr__label
+               +icon('icon-star','subscr__label-icon')
+               .subscr__label-text Мы перезвоним Вам для уточнения списка работ в удобное для Вас время
+
+      section#autopick.autopick
+         h3.title-h3.autopick__title Выбрать марку авто
+         .autopick__inner
+            a.autopick__logo(href='#')
+               img(src='img/logos/alfa-romeo_logo.jpg')
+            a.autopick__logo(href='#')
+               img(src='img/logos/audi_logo.jpg')
+            a.autopick__logo(href='#')
+               img(src='img/logos/bmw_logo.jpg')
+            a.autopick__logo(href='#')
+               img(src='img/logos/chery_logo.jpg')
+            a.autopick__logo(href='#')
+               img(src='img/logos/chevrolet_logo.jpg')
+            a.autopick__logo(href='#')
+               img(src='img/logos/citroen_logo.jpg')
+            a.autopick__logo(href='#')
+               img(src='img/logos/dacia_logo.jpg')
+            a.autopick__logo(href='#')
+               img(src='img/logos/daewoo_logo.jpg')
+            a.autopick__logo(href='#')
+               img(src='img/logos/dodge_logo.jpg')
+            a.autopick__logo(href='#')
+               img(src='img/logos/chery_logo.jpg')
+            a.autopick__logo(href='#')
+               img(src='img/logos/chevrolet_logo.jpg')
+            a.autopick__logo(href='#')
+               img(src='img/logos/citroen_logo.jpg')
+            a.autopick__logo(href='#')
+               img(src='img/logos/dacia_logo.jpg')
+            a.autopick__logo(href='#')
+               img(src='img/logos/daewoo_logo.jpg')
+            a.autopick__logo(href='#')
+               img(src='img/logos/dodge_logo.jpg')
+            a.autopick__logo(href='#')
+               img(src='img/logos/bmw_logo.jpg')
+            a.autopick__logo(href='#')
+               img(src='img/logos/chery_logo.jpg')
+            a.autopick__logo(href='#')
+               img(src='img/logos/chevrolet_logo.jpg')
+            a.autopick__logo(href='#')
+               img(src='img/logos/citroen_logo.jpg')
+            a.autopick__logo(href='#')
+               img(src='img/logos/dacia_logo.jpg')
+            a.autopick__logo(href='#')
+               img(src='img/logos/daewoo_logo.jpg')
+            a.autopick__logo(href='#')
+               img(src='img/logos/dodge_logo.jpg')
+            a.autopick__logo(href='#')
+               img(src='img/logos/chery_logo.jpg')
+            a.autopick__logo(href='#')
+               img(src='img/logos/chevrolet_logo.jpg')
+            a.autopick__logo(href='#')
+               img(src='img/logos/citroen_logo.jpg')
+            a.autopick__logo(href='#')
+               img(src='img/logos/dacia_logo.jpg')
+            a.autopick__logo(href='#')
+               img(src='img/logos/daewoo_logo.jpg')
+            a.autopick__logo(href='#')
+               img(src='img/logos/citroen_logo.jpg')
+            a.autopick__logo(href='#')
+               img(src='img/logos/dacia_logo.jpg')
+            a.autopick__logo(href='#')
+               img(src='img/logos/daewoo_logo.jpg')
+            a.autopick__logo(href='#')
+               img(src='img/logos/dodge_logo.jpg')
+            a.autopick__logo(href='#')
+               img(src='img/logos/chery_logo.jpg')
+            a.autopick__logo(href='#')
+               img(src='img/logos/chevrolet_logo.jpg')
+            a.autopick__logo(href='#')
+               img(src='img/logos/citroen_logo.jpg')
+            a.autopick__logo(href='#')
+               img(src='img/logos/dacia_logo.jpg')
+            a.autopick__logo(href='#')
+               img(src='img/logos/daewoo_logo.jpg')

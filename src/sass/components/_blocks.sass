@@ -1,0 +1,655 @@
+// MORE TEXT BTN
+.link-main
+   display: block
+   padding: 5px 0
+   //color: green
+   font-size: 16px
+.more-btn
+   display: inline-block
+   vertical-align: top
+   font-size: 14px
+   line-height: 20px
+   background-color: transparent
+   outline: none
+   color: #265992
+   +segoe-r
+   &::after
+      margin-left: 3px
+      content: ''
+      display: inline-block
+      vertical-align: middle
+      +s('arrow_d')
+   &.is-active::after
+      +rotate(180)
+   &--blue
+      +r(767)
+         display: block
+         margin-top: 5px
+         font-size: 14px
+         line-height: 1.5em
+   &--adapt
+      display: none
+      +r(767)
+         margin: 10px auto
+
+   &--partners
+      margin-top: 10px
+      +r(767)
+         display: none
+   &--testimonials
+      line-height: 20px
+      display: none
+      +r(767)
+         display: inline-block
+         //font-size: 24px
+         //line-height: 31px
+   &--testimonials::after
+      +r(767)
+         //+s('arrow_d_lg')
+         margin-left: 5px
+   &--feed
+      font-size: 13px
+      line-height: 24px
+      color: #19b24c
+      +r(767)
+         //font-size: 20px
+         //line-height: 37px
+      &::after
+         content: ''
+         +s('arr_d-gray')
+
+// BENEFIT BLOCK
+@import benefit
+
+// SUBSCRIBE BLOCK
+@import subscribe
+
+// compare
+@import compare
+
+.table-price
+   color: #19b24c
+   font-size: 17px
+   +segoe-b
+   span
+      font-size: 11px
+      +segoe-r
+p.chage-price
+   display: inline-block
+   +segoe-b
+   font-size: 18px
+   padding: 0
+.radio-container
+   //display: inline-block
+   padding: 1px 0 0 10px
+   +r(992)
+      padding: 0
+   +r(767)
+      +clr
+   label
+      min-width: 50px
+      +r(1200)
+         min-width: 42px
+      +r(767)
+         float: left
+         margin-left: 5px
+.click-title
+   display: inline-block
+   position: relative
+   +pfCond-m
+   font-size: 20px
+   text-transform: uppercase
+   z-index: 1
+   color: #333333
+   .col-1-4 &
+      +r(1200)
+         font-size: 16px
+   +r(990)
+      font-size: 17px
+   &::before
+      content: ''
+      position: absolute
+      right: 10px
+      top: 17px
+      z-index: 1
+      +s('clicker')
+      pointer-events: none
+   &::after
+      position: absolute
+      bottom: 2px
+      right: 0
+      width: 55px
+      content: ''
+      height: 2px
+      background-color: #333333
+.input-phone
+   padding: 0 20px
+   height: 30px
+   width: 100%
+   background-color: #eeeeee
+   box-shadow: inset 0 0 7px 0 rgba(150, 150, 150, 0.7)
+   line-height: 30px
+   font-size: 14px
+   +segoe-sb
+   color: #000
+   position: relative
+
+   input
+      background: transparent
+      width: 100%
+      height: 100%
+      +placeholder
+         color: #808082
+   &:before
+      content: ''
+      position: absolute
+      display: block
+      left: 8px
+      top: 0
+      bottom: 0
+      margin: auto
+      +s(phone)
+
+   .letter__body &
+      max-width: 145px
+      display: block
+      margin: 16px auto
+span.result-price
+   font-family: SegoeUI-Bold, Arial, sans-serif
+   font-size: 32px
+   margin-top: -10px
+   color: #19b24c
+.btn
+   display: block
+   padding: 2px 0
+   +pfCond-b
+   font-size: 14px
+   line-height: 30px
+   width: 100%
+
+   .letter__body &
+      max-width: 145px
+      margin: 0px auto
+      text-align: center
+   &_yellow
+      background-color: #ffc503
+      color: #000
+      border: 1px solid #ffae00
+      +trs
+      +tr(background-color .2s ease)
+      -webkit-tap-highlight-color: transparent
+      &:hover
+         background-color: #ffaf00
+.diagnostic
+   padding: 0 0 30px 0
+   &__hint
+      color: #636466
+      height: 15px
+      +segoe-r
+      font-size: 14px
+      line-height: 21px
+      padding: 0 0 50px 20px
+      .icon-star
+         margin: 0 5px 8px 0
+      +r(767)
+         padding-bottom: 90px
+.social
+   .social__item
+      display: inline-block
+      +segoe-r
+      font-size: 14px
+      color: #636466
+      line-height: 27px
+      vertical-align: middle
+      img
+         display: inline-block
+         vertical-align: middle
+         margin: 0 10px
+
+      &:last-of-type
+         padding-left: 50px
+   .social__item_motor
+      +r(767)
+         img
+            margin: 0
+   
+.oil-page-title
+   +r(768)
+      padding-left: 40px
+      font-size: 48px
+      line-height: 1.2em
+.request-container
+   padding: 30px 0 70px
+.akp
+   &__list
+      padding: 35px 0
+      border-bottom: solid 2px #f8cb39
+      +r(1024)
+         +clr
+   &__item
+      display: inline-block
+      //width: 140px
+      text-align: center
+      vertical-align: top
+      margin-left: 65px
+      &:first-child
+         margin-left: 0
+         +r(767)
+            margin: 0 auto
+         +r(600)
+            //margin-left: 0
+      +r(1024)
+         float: left
+         //display: inline-block
+         margin-left: calc((100% - 700px)/4)
+      +r(767)
+         display: block
+         float: none
+         margin: 25px auto
+         position: relative
+         width: auto
+
+      a
+         width: 140px
+         display: block
+         +r(767)
+            display: inline-block
+            +clr
+            width: auto
+
+      a:hover
+         .akp__image
+            background: rgb(255,255,255)
+            background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(255,245,210,1) 29%,rgba(255,245,210,1) 99%,rgba(255,245,210,1) 100%,rgba(255,245,210,1) 100%,rgba(255,245,210,1) 100%,rgba(255,245,210,1) 100%,rgba(32,124,202,1) 100%,rgba(255,245,210,1) 100%)
+         .akp__descr
+            color: #ffc633
+      img
+         display: inline-block
+         vertical-align: middle
+   &__image
+      width: 100%
+      height: 140px
+      padding: 18px 0 0 0
+      border: solid 2px #f8cb39
+      border-radius: 50%
+      +r(767)
+         float: left
+         max-width: 140px
+         width: 140px
+
+   &__name
+      color: #19b14c
+      +pfCond-b
+      font-size: 18px
+      padding-top: 5px
+      text-align: center
+   &__descr
+      font-size: 13px
+      padding-top: 15px
+      +r(767)
+        //  position: absolute
+        //  top: 0
+        //  //left: 0
+        //  bottom: 0
+        //  margin: auto
+        //  left: 150px
+        //  text-align: left
+        font-size: 18px
+        float: left
+        max-width: 140px
+        text-align: left
+        margin-left: 15px
+      +r(600)
+         margin: 0 0 0 15px
+         max-width: 140px
+         position: relative
+         float: left
+         width: 140px
+         top: auto
+         left: auto
+         bottom: auto
+         right: auto
+      +r(480)
+         font-size: 14px
+         padding: 35px 0 0 0
+         margin: 0 0 0 5px
+         width: 110px
+//width: 200px
+.request
+   box-shadow: 0 4px 15px rgba(1, 1, 1, 0.08)
+   margin-bottom: 15px
+   &__inner
+      font-size: 0
+      padding-bottom: 15px
+   &__col
+      width: 30%
+      display: inline-block
+      vertical-align: middle
+      +r(992)
+         &:nth-of-type(2)
+            width: 40% 
+      +r(767)          
+         &:nth-of-type(2)           
+            width: 100%     
+      +r(767)
+         width: 100%
+         display: block
+   &__label
+      +r(767)
+         font-size: 24px
+   .subscribe
+      box-shadow: none
+      &__inner
+         float: right
+.text
+   padding: 0 0 50px 0
+.center
+   text-align: center
+.silver
+   background-color: #f3f3f3
+   position: relative
+   padding: 40px 0 65px
+   margin-bottom: 35px
+   &__title
+      color: #555
+      font-family: "Myriad Pro"
+      font-size: 26px
+      line-height: 2em
+      +pfCond-m
+      text-transform: none
+   &:before, &:after
+      content: ''
+      position: absolute
+      left: 0
+      right: 0
+      margin: auto
+      display: block
+   &:before
+      top: 0
+      +arr(30, 16, #fff, b)
+   &:after
+      bottom: -16px
+      +arr(30,16,#f3f3f3, b)
+
+
+
+.grid-row
+   +clr
+   margin: 0 -22px
+
+   +r(1200)
+      margin: 0 -16px
+   +r(990)
+      margin: 0 -6px
+   +r(767)
+      margin: 0
+   @for $i from 1 through 12
+      .col-#{$i}
+          width: calc( 8.33333% * #{$i} )
+          padding: 0 22px
+          float: left
+          +r(1200)
+            padding: 0 16px
+          +r(990)
+             padding: 0 6px
+          +r(767)
+             padding: 0
+             float: none
+             width: 100%
+             max-width: 480px
+             margin: 15px auto
+
+
+
+.razval__inner
+   position: relative
+.razval__text
+   display: inline-block
+   text-align: right
+   vertical-align: top
+   padding-top: 80px
+   font-size: 16px
+   padding: 70px 0 15px 0
+   +segoe-b
+   border-bottom: 2px solid  #ffcc33
+   width: calc(100% - 192px)
+   text-align: left
+   +r(1200)
+      padding-left: 15px
+   +r(767)
+      padding-left: 0
+      padding: 0
+      width: calc(100% - 173px)
+      font-size: 14px
+//.line-razval
+//   width: calc(100% - 182px)
+//   height: 2px
+//   background-color: #ffcc33
+//   position: absolute
+//   top: 115px
+//   left: 180px
+.circle
+   margin-left: 25px
+   width: 160px
+   height: 160px
+   border: solid 2px #ffcc33
+   border-radius: 50%
+   position: relative
+   display: inline-block
+   &_small
+      border: none
+      width: 87px
+      height: 87px
+      background-color: #ffcc33
+      text-align: center
+      line-height: 87px
+      .icon
+         vertical-align: middle
+
+   +r(767)
+      margin-left: 5px
+
+   &__inner
+      background-color: #ffcc33
+      width: 145px
+      height: 145px
+      border-radius: 50%
+      text-align: center
+      padding: 15px
+      position: absolute
+      top: 0
+      left: 0
+      right: 0
+      bottom: 0
+      margin: auto
+      border-radius: 50%
+   &__text
+      font-size: 20px
+      +pfCond-b
+.dashed
+   background: repeating-linear-gradient(-45deg, #f5f5f5 0, #f5f5f5 3%, #fff 0, #fff 50%)
+   background-size: 14px 14px
+.diagnostic-types
+   &__inner
+      padding: 25px 10px
+      box-shadow: 0px 4px 15px 0px rgba(1, 1, 1, 0.08)
+      .subscribe
+         margin-top: 20px
+         +r(767)
+            margin: 15px auto
+
+
+
+.hint
+   padding: 45px 0
+   border-bottom: 2px solid #ffcc33
+   margin-bottom: 50px
+   +clr
+   &__title
+      font-size: 16px
+      margin-left: 16px
+      +segoe-b
+      display: inline-block
+
+      +r(1200)
+         max-width: 450px
+      +r(990)
+         max-width: 290px
+         vertical-align: middle
+   &__item
+      &:last-of-type
+         float: left
+         margin-top: 27px
+         +r(767)
+            float: none
+            display: block
+            margin: 0 auto
+      &:first-of-type
+         float: right
+         +r(767)
+            float: none
+            display: block
+.done
+   &__image
+      img
+         display: inline-block
+      +r(767)
+         text-align: center
+.arrow-top, .arrow-bottom
+   background-color: transparent
+.arrow-bottom
+   img
+      transform: rotate(180deg)
+.section-table
+   +clr
+   &__inner
+      float: left
+      +r(1200)
+         max-width: 800px
+      +r(1100)
+         max-width: 727px
+      +r(990)
+         max-width: calc(100% - 206px)
+      +r(767)
+         float: none
+         max-width: 100%
+   &__slider
+      float: right
+      +r(767)
+         float: none
+//.section
+//   overflow: hidden
+.slider-vertical
+   +r(767)
+      margin-bottom: 50px
+   &__box
+      padding: 60px 0
+      position: relative
+      text-align: center
+      width: 185px
+      +r(767)
+         width: 100%
+         padding: 0 10px
+      .arrow-top, .arrow-bottom
+         position: absolute
+         left: 0
+         right: 0
+         margin: auto
+         width: 62px
+         +r(767)
+            transform: rotate(90deg)
+            top: 0
+            bottom: 0
+            left: auto
+            right: auto
+            z-index: 10
+
+      .arrow-top
+         top: 25px
+         +r(767)
+            right: -30px
+         +r(480)
+            right: 0
+      .arrow-bottom
+         bottom: 25px
+         +r(767)
+            left: -30px
+         +r(480)
+            left: 0
+   &__inner
+      margin-bottom: -30px
+      +r(767)
+         margin: 0 auto
+   &__slide
+      display: block
+      margin-top: 30px
+
+
+      &:first-of-type
+         margin-top: 0
+      &:last-of-type
+         margin-top: 0
+      img
+         width: 185px
+      +r(767)
+         margin-top: 0
+.manager
+   &__title
+      margin-top: 45px
+      font-size: 14px
+      padding: 12px 0
+      border-bottom: 1px solid $yellow
+      margin-bottom: 15px
+      position: relative
+      +r(1023)
+         padding: 12px 140px 12px 0
+         margin-bottom: 45px
+      +r(767)
+         max-width: calc(100% - 140px)
+         padding: 12px 0
+      .icon
+         margin-right: 10px
+      .manager__img
+         position: absolute
+         right: 0
+         top: 0
+         +r(767)
+            right: -140px
+
+
+.left
+   text-align: left
+.testimonials-container
+   padding: 40px 0
+.img-oil
+   padding-top: 90px
+   margin: 0 auto
+   +r(736)
+      padding-top: 35px
+   img
+      display: inline-block
+   .license__subscr-text
+      text-align: left
+      max-width: 100%
+      text-align: center
+      span
+         display: inline-block
+         max-width: 260px
+         vertical-align: middle
+         margin-left: 5px
+         text-align: left
+
+.diagnostic-types
+   .subscribe__submit-btn
+      +r(1200)
+         font-size: 18px
+   .grid-row 
+      .col-4      
+         max-width: 100%
+
+   .letter__h2
+      font-size: 21px   
+
+
+
+

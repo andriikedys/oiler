@@ -1,0 +1,415 @@
+.benefit
+  padding: 10px 0 5px
+  border: 2px solid #ffc633
+  border-radius: 15px
+  background-size: 100%
+  //background: #ffffff url(../img/bg/benefit_bg.png) no-repeat
+  background: repeating-linear-gradient(-45deg,#f5f5f5 0, #f5f5f5 5%, #fff 0, #fff 50%)
+  background-size: 14px 14px
+  text-align: center
+  margin: 30px 0
+  +r(1023)
+    padding: 20px 0 15px
+  &__description
+    display: block
+    width: 100%
+    text-align: center
+    color: white
+    font-size: 11px
+    padding: 10px 0
+  .motor-fix &, .layout--diagnostic &
+    +r(768)
+      text-align: center
+      .benefit__title
+        margin-top: -25px
+  +r(767)
+    padding-top: 0
+    text-align: left
+    background-repeat: repeat-y
+
+  &--image
+    padding: 25px 0 0 0
+    margin-top: 70px
+    border: none
+    position: relative
+    background: none
+    +r(767)
+      text-align: center
+      margin-bottom: 40px
+    +r(480)
+      margin-bottom: 60px
+    .benefit__sub-title
+      +pfCond-b
+      font-size: 26px
+      margin-top: 15px
+      +r(767)
+        text-align: center
+    .benefit__title
+      box-shadow: 0px -6px 15px 0px rgba(1, 1, 1, 0.15)
+      display: inline-block
+      font-size: 27px
+      padding: 15px
+      width: 640px
+      border-radius: 10px
+      position: absolute
+      top: -37px
+      left: 0
+      right: 0
+      margin: auto
+      z-index: 3
+      background-color: #fff
+      +pfCond-r
+      +r(767)
+        width: 100%
+        max-width: 100%
+        text-align: center
+        font-size: 20px
+      strong
+        +pfCond-b
+        text-transform: uppercase
+        margin-right: 5px
+      span
+        padding: 5px 10px
+        border-bottom: 2px solid #ffbf00
+        position: relative
+        z-index: 3
+        +r(767)
+          display: block
+      &:after
+        content: ''
+        width: 100%
+        height: 15px
+        position: absolute
+        left: 0
+        bottom: -6px
+        background-color: #fff
+        z-index: 2
+    .benefit__description
+      +r(767)
+        text-align: justify
+
+        color: #000
+        position: absolute
+        margin-top: 40px
+        br
+          display: none
+    .benefit__inner
+      background-image: url('../img/bg/benef.jpg')
+      box-shadow: 0px 0px 15px 0px rgba(1, 1, 1, 0.15)
+      border-radius: 10px
+      padding: 40px 0 0px 0
+      background-repeat: no-repeat
+      background-size: cover
+      background-position: center bottom
+      max-width: 100%
+      +r(767)
+        background-size: contain
+        padding: 40px 0
+
+  &--cond
+    .benefit__inner
+      +r(767)
+        background-size: cover
+        padding: 60px 0 40px
+    .benefit__image
+      .icon-arr_big
+        +r(767)
+          transform: rotate(0deg)
+          margin-top: 10px
+  &__title-border
+    text-align: left
+    margin: 50px 0 0 50px
+    +r(767)
+      margin: 20px
+      text-align: center
+    span
+      font-size: 21px
+      color: #000
+      +pfCond-b
+      padding-bottom: 4px
+      border-bottom: 2px solid $yellow
+      display: inline-block
+    &.is-white
+      span
+        color: white
+  &__img
+    font-size: 40px
+    .icon-arr_big
+      fill: $yellow
+  &__image
+    font-size: 40px
+    display: inline-block
+    +r(767)
+      display: block
+
+    .icon-arr_big
+      fill: white
+      transform: rotate(-90deg)
+      margin-top: 50px
+      +r(1023)
+        width: 2em
+
+
+  &__container
+    padding: 30px 0
+    max-width: 885px
+    margin: 0 auto
+    +clr
+    +r(1200)
+      max-width: 800px
+    +r(1023)
+      max-width: 685px
+
+  &__service
+    float: left
+    +r(767)
+      float: none
+      display: inline-block
+
+  &--motor
+    .benefit__title
+        margin-top: -40px
+  &__title
+    display: inline-block
+    vertical-align: top
+    margin-top: -40px
+    padding: 4px 13px
+    color: #231f20
+    background-color: #ffcc33
+    font-size: 14px
+    +segoe-b
+    &_shin
+      margin-top: -30px
+    +r(768)
+      margin-top: -34px
+    +r(767)
+      display: block
+      max-width: 135px
+      margin: -13px auto 0
+  //.motor-fix &
+  //   margin: -31px
+
+  &__inner
+    max-width: 1120px
+    margin: 0 auto
+    font-size: 0
+    +r(400)
+      margin-top: 10px
+  &__item
+    display: inline-block
+    vertical-align: middle
+    width: 16.66666%
+    padding: 0 20px
+    +clr
+    .benefit--image &
+      vertical-align: top
+      +r(767)
+        margin-bottom: 13px
+    &--pad
+      padding: 0
+    +r(767)
+      display: flex
+      align-items: center
+      padding: 0 15px
+      width: 100%
+    .motor-fix &
+      +r(767)
+        text-align: left
+  &__icon
+    position: relative
+    width: 100%
+    min-height: 60px
+    +r(767)
+      display: inline-block
+      vertical-align: middle
+      min-height: 0
+      width: 35px
+    &::after
+      position: relative
+      content: ''
+      display: block
+      margin: 0 auto
+      +r(767)
+        display: inline-block
+    &--people::after
+      +s('people')
+    &--cars::after
+      +s('cars')
+    &--arrow::after
+      +s('arrow')
+    &--list::after
+      +s('list')
+    &--pay::after
+      +s('pay')
+      bottom: -9px
+    &--shina::after
+      +s('shina')
+    &--clock::after
+      +s('clock')
+    &--mark::after
+      +s('mark')
+      bottom: -7px
+    &--magister::after
+      +s('magister')
+    &--weigher::after
+      +s('weigher')
+    &--file::after
+      +s('file')
+      bottom: -6px
+    &--sofa::after
+      +s('sofa')
+      bottom: -16px
+    &--smile::after
+      +s('smile')
+      bottom: -6px
+    &--money::after
+      +s('money')
+      bottom: -7px
+    &--monitor::after
+      +s('monitor')
+      bottom: -9px
+    &--guarantee::after
+      +s('guarantee')
+      bottom: -7px
+    &--heart::after
+      +s('heart')
+      bottom: -9px
+    &--tools::after
+      +s('tools')
+    &--spec::after
+      +s('spec')
+    &--timer::after
+      +s('timer')
+    &--car::after
+      +s('car')
+  &__text
+    font-family: Arial, sans-serif
+    font-size: 13px
+    line-height: 14px
+    color: #636466
+    span
+      display: none
+
+    +r(1023)
+      font-size: 12px
+      word-wrap: break-word
+      hyphens: auto
+    +r(767)
+      display: inline-block
+      vertical-align: middle
+      padding-left: 45px
+      font-size: 16px
+      text-align: left
+  //line-height: 28px
+  &--comp-diag
+    padding: 23px 0 5px
+    margin: 45px 0 35px
+    +r(767)
+      text-align: center
+    .benefit__inner
+      max-width: 1100px
+      margin: -7px auto 0
+      +r(767)
+        margin: 0
+      +r(400)
+        margin-top: 10px   
+    .benefit__title
+      +r(767)
+        margin-top: -15px
+
+    .benefit__item
+      min-height: 105px
+      +r(1199)
+        padding: 0 10px
+      +r(1023)
+        padding: 0
+      +r(767)
+        min-height: 0
+        padding: 0 40px
+        margin-bottom: 15px
+        text-align: left
+    .benefit__icon--mark::after
+      top: 5px
+      +r(1023)
+        top: 0
+    .benefit__icon--file::after
+      top: 5px
+      +r(767)
+        top: 0
+    .benefit__icon--smile::after
+      top: 7px
+      +r(1023)
+        top: 0
+    .benefit__icon--magister::after
+      top: -2px
+      +r(1023)
+        top: -10px
+      +r(767)
+        top: 0
+    .benefit__icon--sofa::after
+      top: 10px
+      +r(1023)
+        top: 0
+  .benefit__subscribe
+    max-width: 300px
+    float: right
+    padding: 20px 65px
+    +r(767)
+      float: none
+      display: inline-block
+    .subscribe__title
+      font-size: 18px
+      .subscribe__form
+    .subscribe__submit-btn
+      font-size: 14px
+      line-height: 25px
+      height: 25px
+    .subscribe__phone
+      height: 26px
+  &--reasons
+    padding: 25px 0 5px
+    .benefit__inner
+      +justify
+    
+    .benefit__title
+      +r(767)
+        margin-top: -26px
+    +r(767)
+      padding: 15px 0
+    .benefit__item
+      width: 14.28571%
+      vertical-align: top
+      padding: 0 10px
+      text-align: center
+    
+      +r(767)
+        padding: 0 20px
+        margin-bottom: 13px
+        width: 100%
+    .benefit__text
+      text-align-last: center
+      +r(767)
+        text-align-last: left
+.service
+  background-color: #fff
+  width: 300px
+  padding: 10px 25px
+  &__title
+    font-size: 18px
+    line-height: 2em
+    +pfCond-m
+  &__row
+    +clr
+    border-bottom: 1px solid #cccccc
+    font-size: 13px
+    padding: 3px 0
+    line-height: 1.5em
+  &__text
+     float: left
+     text-align: left
+
+       
+  &__price
+    color: $green
+    float: right
+    +segoe-b

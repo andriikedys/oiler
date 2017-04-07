@@ -1,0 +1,223 @@
+---
+title: "Автосервис «OILER» оказывает услугу по смене резины"
+---
+extends layouts/_layout
+block content
+    .layout
+        section
+            h2.title-h2.title-h2_higher Автосервис «OILER» оказывает услугу по смене резины
+            .benefit.benefit--reasons.dashed
+                .benefit__title Выгода для вас
+                .benefit__inner
+
+                    -var benefitText = ['Вы экономите свое время', 'Вам профессионально подберут шины', 'Вы получаете сертифицированный товар ','Вы всегда знаете, за что платите', 'Вы получаете акт выполненных работ и грамотную консультацию', 'В Вашем распоряжении комфортабельная комната клиента'];
+                    -var benefitMod = [1, 4, 5];
+                    mixin benefitList(...items)
+                        each item, index in items
+                            include components/_benefitList
+                    +benefitList('clock', 'shina', 'mark', 'pay', 'file', 'sofa')
+        section.section-table
+
+            .section-table__inner
+                h2.title-h2
+                    i.icon.icon-price
+                    | Прайс-лист
+
+                h4.title_h4 Oiler Печерск, ул. Киквидзе, 43
+                .table-wrap
+                    table.table.table--4
+                        thead
+                            tr
+                                th(rowspan = 2 valign="center")Тип авто
+                                th(rowspan = 2) Диаметр диска <br>
+                                    span (дюймы)
+                                th(colspan=2) ИТОГO &nbsp;
+                                    span (грн.)
+                            tr
+                                th 1 шт.
+                                th 4 шт
+                        tr
+                            td(rowspan = 10) Легковые
+                            td R 12
+                            td 42
+                            td 168
+                        tr
+                            td R 13
+                            td 57
+                            td 228
+                        tr
+                            td R 14
+                            td 57
+                            td 228
+                        tr
+                            td R 15
+                            td 72
+                            td 288
+                        tr
+                            td R 16
+                            td 82
+                            td 328
+                        tr
+                            td R 17
+                            td 87
+                            td 348
+                        tr
+                            td R 18
+                            td 97
+                            td 388
+                        tr
+                            td R 19
+                            td 117
+                            td 468
+                        tr
+                            td R 20
+                            td 137
+                            td 548
+                        tr
+                            td R 21
+                            td 157
+                            td 628
+                        tr
+                            td(rowspan = 8) SUV
+                            td R 14
+                            td 62
+                            td 248
+                        tr
+                            td R 15
+                            td 77
+                            td 308
+                        tr
+                            td R 16
+                            td 92
+                            td 368
+                        tr
+                            td R 17
+                            td 92
+                            td 368
+                        tr
+                            td R 18
+                            td 107
+                            td 428
+                        tr
+                            td R 19
+                            td 124.5
+                            td 498
+                        tr
+                            td R 20
+                            td 142
+                            td 568
+                        tr
+                            td R 21
+                            td 164.5
+                            td 658
+                h4.title_h4 Oiler Лукьяновка, ул. Нагорная, 47
+                .table-wrap
+                    table.table.table--4
+                            thead
+                                tr
+                                    th(rowspan = 2 valign="center")Тип авто
+                                    th(rowspan = 2) Диаметр диска <br>
+                                        span (дюймы)
+                                    th(colspan=2) ИТОГО &nbsp;
+                                        span (грн.)
+                                tr
+                                    th 1 шт.
+                                    th 4 шт
+                            tr
+                                td(rowspan="10") Легковые
+                                td R 12
+                                td 42
+                                td 168
+                            tr
+                                td R 13
+                                td 57
+                                td 228
+                            tr
+                                td R 14
+                                td 57
+                                td 228
+                            tr
+                                td R 15
+                                td 72
+                                td 288
+                            tr
+                                td R 16
+                                td 82
+                                td 328
+                            tr
+                                td R 17
+                                td 87
+                                td 348
+                            tr
+                                td R 18
+                                td 97
+                                td 388
+                            tr
+                                td R 19
+                                td 117
+                                td 468
+                            tr
+                                td R 20
+                                td 137
+                                td 548
+                            tr
+                                td R 21
+                                td 157
+                                td 628
+                            tr
+                                td(rowspan="8") SUV
+                                td R 14
+                                td 62
+                                td 248
+                            tr
+                                td R 15
+                                td 77
+                                td 308
+                            tr
+                                td R 16
+                                td 92
+                                td 368
+                            tr
+                                td R 17
+                                td 92
+                                td 368
+                            tr
+                                td R 18
+                                td 107
+                                td 428
+                            tr
+                                td R 19
+                                td 124.5
+                                td 498
+                            tr
+                                td R 20
+                                td 142
+                                td 568
+                            tr
+                                td R 21
+                                td 164.5
+                                td 658
+
+
+                .table-descr
+                    p Компания Oiler является плательщиком НДС на общих основаниях, по безналичному расчету к стоимости работ добавляется 20%
+            .section-table__slider
+               .slider-vertical
+                   .slider-vertical__box
+                        button.arrow-top.js-arr-top
+                            img(src="img/content/arrow.png")
+                        button.arrow-bottom.js-arr-bottom
+                            img(src="img/content/arrow.png")
+                        .slider-vertical__inner.js-slider-vertical
+                             a.slider-vertical__slide.js-gallery(data-fancybox="vertical-slider" href="img/gallery/autoserv-3.jpg")
+                                img(src="img/gallery/img1.png")
+                             a.slider-vertical__slide.js-gallery(data-fancybox="vertical-slider" href="img/gallery/autoserv-1.jpg")
+                                 img(src="img/gallery/img2.png")
+                             a.slider-vertical__slide.js-gallery(data-fancybox="vertical-slider" href="img/gallery/autoserv-4.jpg")
+                                 img(src="img/gallery/img3.png")
+                             a.slider-vertical__slide.js-gallery(data-fancybox="vertical-slider" href="img/gallery/autoserv-3.jpg")
+                                 img(src="img/gallery/img1.png")
+                             a.slider-vertical__slide.js-gallery(data-fancybox="vertical-slider" href="img/gallery/autoserv-1.jpg")
+                                 img(src="img/gallery/img2.png")
+                             a.slider-vertical__slide.js-gallery(data-fancybox="vertical-slider" href="img/gallery/autoserv-4.jpg")
+                                 img(src="img/gallery/img3.png")

@@ -1,0 +1,54 @@
+---
+title: "Покраска авто (автомалярка)"
+---
+extends layouts/layout-pokraska
+block content
+    .container.container_1200
+        h2.title_h2.center Покраска авто (автомалярка)
+        h4.title_h4.center Гарантия - 6 месяцев
+    .silver
+        h2.silver__title.center Записывайтесь
+        .container.container_1200
+            .datail
+                .datail__list
+                    h3.datail__title.center 1. Выберите детали для покраски:
+                    .datail__table
+                        .datail__head
+                            .datail__row
+                                .datail__box
+                                    span.datail__cell Деталь
+                                    span.datail__cell грн.
+                        .js-datail-container
+                            .datail__row.datail__item.js-datail-item
+                                .datail__box
+                                    span.datail__cell Бампер передний
+                                    span.datail__cell.datail__price.js-price 3588
+                            .datail__row.datail__item.js-datail-item
+                                .datail__box
+                                    span.datail__cell Бампер передний
+                                    span.datail__cell.datail__price.js-price 3588
+                .datail__form
+                    h3.datail__title.center 2. Заполните свои данные:
+                    form.datail__form-wrap(action="#")
+                        label.datail__label Ваш телефон:
+                        .datail__input
+                            +icon('icon-cellphone','subscribe__field-icon')
+                            input(type="tel" required placeholder="+38(___)___-__-__")
+                        label.datail__label Примечание (не обязательно):
+                        textarea( class="datail__textarea")
+                        .datail__summ Итого
+                            span.js-datail-summ 0
+                            грн.
+                        .datail__description Если вас интересуют другие виды работ, например, локальная покраска, покраска в два цвета, покраска "переходом", покраска "хамелеон" - звоните по тел.
+                            strong (044) 353-81-79
+                        button(type="submit" class="btn btn_yellow") ЗАПИСАТЬСЯ
+    .container.container_1200.pokraska
+        h4.title_h4 Профессиональная покраска авто с гарантией результата
+        p Вот и настал тот самый момент, когда Вам необходимо сделать покраску своего автомобиля. Следует признать, зачастую автовладельцы считают «автомалярку» очень сложной процедурой. По устоявшемуся мнению, кажется, что это длительный, отнимающий массу времени и Ваших сил процесс. Соответственно, все это вызывает у владельца стресс, дискомфорт и желание хотя бы немного оттянуть эту задачу.
+            span.is-hidden Также нам известно, что к большинству автосервисов в нашей стране у людей просто нет доверия. Так как существует обман и халатное отношение к работе, сотрудников СТО. Поэтому мы считаем своим долгом помочь Вам обойти стороной неприятные моменты и не попасться на удочку обмана при выборе автосервиса.
+            button.more-btn.more-btn--blue.js-more-text  Подробнее
+
+
+
+
+

@@ -1,0 +1,827 @@
+.oil-page
+   &__inner
+      max-width: 780px
+      +r(1200)
+         max-width: 737px
+      +r(990)
+         max-width: 69%
+         padding-left: 5px
+      +r(767)
+         max-width: 100%
+         position: relative
+         padding: 0 15px
+      +r(480)
+         padding: 0 5px
+   &__title
+      +r(767)
+         padding-top: 15px
+      //+r(767)
+      //   font-size: 48px
+      //   padding: 10px 40px
+      &--lg
+         font-size: 27px
+   &__label
+      display: inline-block
+      padding: 0 27px
+      color: #fff
+      font-size: 18px
+      +pfComp-m
+      background-color: #19b24c
+      +r(990)
+         font-size: 16px
+         padding: 1px 5px
+      +r(767)
+         //font-size: 40px
+         //padding: 5px 40px
+      &--exp
+         margin: 15px 0 0 -30px
+         +r(767)
+            margin: 15px 0 0 0px
+      &--total
+         padding: 2px 43px
+         margin: 0 0 0 -40px
+         +pfCond-m
+         font-size: 15px
+
+.oil-nav
+   position: fixed
+   left: 50%
+   margin-left: -600px
+   z-index: 10
+   font-size: 0
+   +r(1229)
+      margin-left: -497px
+   +r(1023)
+      margin-left: -376px
+   +r(767)
+      display: none
+   &__item
+      position: relative
+      display: inline-block
+      vertical-align: middle
+      background-color: #fff
+      border-bottom: 1px solid #bfbfbf
+      border-top: none
+      font-size: 12px
+      &:first-child
+         border-left: 1px solid #bfbfbf
+         border-bottom-left-radius: 10px
+      &:last-child
+         border-right: 1px solid #bfbfbf
+         border-bottom-right-radius: 10px
+      &:hover
+         background-color: #dedede
+      &.active .oil-nav__number
+         background-color: #ffcc33
+   &__link
+      display: block
+      padding: 17px 25.4px 17px 55px
+      font-size: 16px
+      text-align: center
+      +pfCond-r
+      +r(1229)
+         padding: 17px 10px 17px 41px
+      +r(1023)
+         display: flex
+         align-items: center
+         padding: 10px 10px 10px 30px
+         max-width: 115px
+         min-height: 60px
+   &__number
+      position: absolute
+      top: 16px
+      left: 23px
+      z-index: 1
+      width: 22px
+      height: 22px
+      line-height: 20px
+      text-indent: 3px
+      border-radius: 50%
+      border: 1px solid #929292
+      background-color: #cbcbcb
+      color: #fff
+      text-shadow: 0 0 3px #000
+      +tr(background-color .3s ease-in)
+      +r(1229)
+         left: 14px
+      +r(1023)
+         left: 3px
+.oil-brief
+   &__descr
+      margin: 25px 0 15px
+   &__descr-hidden
+      display: none
+   &__descr-text
+      line-height: 20px
+      color: #6d6d6d
+      //+r(767)
+      //   font-size: 24px
+      //   line-height: 1.2em
+
+
+      .more-btn
+         margin-left: 5px
+         +r(767)
+   //         font-size: 24px
+   //         margin-top: 5px
+   &__summary
+      position: relative
+      margin-bottom: 30px
+      padding: 20px 25px 20px 20px
+      box-shadow: 0 4px 15px rgba(1, 1, 1, 0.08)
+      background-color: #ffffff
+      font-size: 0
+      &-image
+         display: none
+         +r(767)
+            display: block
+            img
+               width: 100%
+      +r(990)
+         padding: 20px 18px 19px 20px
+         display: table
+      +r(767)
+         padding: 0
+         display: block
+      &::before
+         content: ''
+         position: absolute
+         left: 19px
+         top: 30px
+         bottom: 35px
+         width: 2px
+         background-color: #ffcc33
+         z-index: 1
+         +r(990)
+            left: 11px
+         +r(767)
+            display: none
+
+   &__summary-table
+      display: inline-block
+      vertical-align: middle
+      width: 59%
+      margin-right: 2%
+      padding: 0 10px 0 20px
+      &::before
+         content: ''
+         position: absolute
+         left: 40px
+         top: 4px
+         bottom: 8px
+         width: 2px
+         background-color: #ffcc33
+         z-index: 1
+         display: none
+         +r(767)
+            display: block
+         +r(600)
+            left: 10px
+      +r(1200)
+         width: 50%
+         margin-right: 8%
+      +r(990)
+         width: 60%
+         margin-right: 2%
+         display: table-cell
+      +r(767)
+         display: block
+         width: 100%
+         margin: 10px auto
+         position: relative
+         padding: 0 35px 0 85px
+      +r(600)
+         padding: 0 15px 0 25px
+   &__summary-pic
+      display: inline-block
+      vertical-align: middle
+      width: 39%
+      +r(1200)
+         width: 42%
+         img
+            width: 100%
+      +r(990)
+         width: 40%
+         height: 100%
+         display: table-cell
+         img
+            object-fit: cover
+            height: 100%
+            overflow: hidden
+      +r(767)
+         display: none
+
+   &__summary-item
+      padding: 10px 0
+      font-size: 16px
+      line-height: 1em
+      border-bottom: 1px solid #b7b7b7
+      +clr
+      &:last-child
+         border-bottom-color: transparent
+      +r(767)
+         padding: 10px 0
+   &__summary-ask
+      float: left
+      width: 28%
+      text-transform: uppercase
+      +pfComp-m
+      +r(1200)
+         width: 35%
+      +r(767)
+         //font-size: 25px
+         line-height: 1.2
+         width: 30%
+   &__summary-reply
+      float: left
+      width: 72%
+      +segoe-b
+      +r(1200)
+         width: 65%
+      +r(767)
+         width: 70%
+         //font-size: 32px
+   &__summary-sm
+      font-size: 11px
+      +segoe-r
+      //+r(767)
+      //   font-size: 17px
+   &__summary-md
+      font-size: 11px
+      //+r(767)
+      //   font-size: 22px
+   &__why-us
+      margin: 15px 0 0
+      font-size: 24px
+      line-height: 20px
+      +pfComp-r
+      //+r(767)
+      //   font-size: 40px
+      //   padding: 15px 40px
+   &__arrows-icon
+      position: relative
+      display: inline-block
+      vertical-align: -4px
+      top: 2px
+      margin-left: 1px
+      font-size: 30px
+      animation: moveDown 2s infinite
+
+.oil-work
+   &__descr
+      margin: 15px 0 25px
+      font-size: 14px
+      line-height: 20px
+      color: #010000
+      +r(767)
+         //padding: 0 40px
+         //font-size: 24px
+         color: #6d6d6d
+         line-height: 1.2em
+   &__scheme
+      padding: 25px 20px 25px 20px
+      box-shadow: 0 4px 15px rgba(1, 1, 1, 0.08)
+      background-color: #ffffff
+   &__scheme-inner
+      padding: 0 40px
+      border-left: 2px solid #ffcc33
+      +r(990)
+         padding: 0 20px
+      +r(480)
+         padding: 0 5px
+   &__scheme-row
+      position: relative
+      display: flex
+      justify-content: space-between
+      margin: 0 -30px
+      +r(767)
+         display: block
+         margin: 0
+      +r(480)
+         //display: none
+      &::after
+         content: ''
+         height: 2px
+         width: 85%
+         position: absolute
+         top: 37px
+         left: 55px
+         z-index: 1
+         background-color: #999999
+         +r(767)
+            width: 2px
+            height: 85%
+            left: 42px
+   &__scheme-item
+      flex-basis: 25%
+      padding: 0 10px
+      text-align: center
+      +r(990)
+         padding: 0 5px
+      +r(767)
+         display: block
+         text-align: left
+      +r(600)
+
+
+
+   &__scheme-icon
+      position: relative
+      z-index: 2
+      margin: 0 auto
+      +r(767)
+         display: inline-block
+      +r(480)
+         //display: none
+
+      &--1
+         +s('oil-scheme-1')
+      &--2
+         +s('oil-scheme-2')
+      &--3
+         +s('oil-scheme-3')
+      &--4
+         +s('oil-scheme-4')
+      &--5
+         +s('oil-scheme-5')
+   &__scheme-text
+      padding: 0 7px
+      font-size: 13px
+      line-height: 16px
+      +r(767)
+         font-size: 18px
+         display: inline-block
+         vertical-align: top
+         line-height: 76px
+         br
+            display: none
+      +r(600)
+         font-size: 14px
+      +r(480)
+         line-height: 1.2em
+         width: calc(100% - 80px)
+         padding-top: 20px
+         //font-size: 14px
+   &__scheme-steps
+      margin-top: 25px
+   &__scheme-title
+      font-size: 18px
+      +pfComp-m
+      //+r(767)
+      //   font-size: 36px
+   &__scheme-list
+      margin-top: 5px
+      padding-left: 12px
+      list-style-type: decimal
+      li
+         font-size: 13px
+         line-height: 20px
+         +r(767)
+            //font-size: 22px
+            //line-height: 38px
+            color: #6d6d6d
+
+.oil-reasons
+   &__block
+      margin-top:  35px
+      padding: 25px 50px 25px 20px
+      box-shadow: 0 4px 15px rgba(1, 1, 1, 0.08)
+      background-color: #f1f1f1
+      +r(767)
+         padding: 55px 50px 25px 20px
+         position: relative
+      +r(480)
+         padding: 25px 20px
+   &__block-inner
+      padding-left: 55px
+      border-left: 2px solid #ffcc33
+      +clr
+      +r(990)
+         padding-left: 15px
+      +r(600)
+         //padding: 250px 0 0 15px
+   &__row
+      position: relative
+      display: flex
+      justify-content: space-between
+      margin: 0 -20px 20px
+      +r(990)
+         margin: 0 0 20px
+      +r(767)
+         display: block
+      +r(480)
+         margin: 30px 0 20px
+         //display: none
+      &::after
+         content: ''
+         height: 2px
+         width: 88%
+         position: absolute
+         top: 37px
+         left: 50px
+         z-index: 1
+         background-color: #999999
+         +r(767)
+            height: 88%
+            width: 2px
+            left: 32px
+   &__item
+      padding: 0 10px
+      +r(990)
+         padding: 0
+         margin: 0 -5px
+      +r(767)
+         display: block
+         text-align: left
+   &__icon
+      position: relative
+      z-index: 2
+      margin: 0 auto
+      +r(767)
+         display: inline-block
+      +r(480)
+         //display: none
+      &--1
+         +s('oil-pay-1')
+      &--2
+         +s('oil-pay-2')
+      &--3
+         +s('oil-pay-3')
+      &--4
+         +s('oil-pay-4')
+      &--5
+         +s('oil-pay-5')
+      &--6
+         +s('oil-pay-6')
+      &--7
+         +s('oil-pay-7')
+   &__steps
+      float: left
+      max-width: 300px
+      margin-top: 10px
+      +r(767)
+         position: absolute
+         top: 0
+         max-width: 100%
+      +r(600)
+         margin-left: 60px
+         //position: relative
+         //padding: 0 0 15px 0
+   &__steps-title
+      font-size: 18px
+      margin-bottom: 10px
+      +pfComp-m
+      +r(767)
+         //font-size: 36px
+   &__steps-list
+      padding-left: 12px
+      list-style-type: decimal
+      +r(767)
+         list-style: none
+         padding-left: 80px
+         padding-top: 10px
+      +r(600)
+         padding-left: 10px
+         //list-style-type: decimal
+      li
+         font-size: 13px
+         line-height: 20px
+         +r(767)
+            font-size: 20px
+            color: #6d6d6d
+            line-height: 80px
+         +r(600)
+            font-size: 14px
+            line-height: 1.2em
+            //padding: 32px 0
+            height: 80px
+
+   &__certif-pic
+      float: right
+      +r(767)
+         float: none
+         display: block
+         text-align: center
+         img
+            display: inline-block
+            width: 80%
+
+.oil-exp
+   &__inner
+      margin: 30px 0 0
+      padding: 35px 25px 25px 30px
+      box-shadow: 0 4px 15px rgba(1, 1, 1, 0.08)
+      background-color: #e6e6e6
+      +clr
+      +r(768)
+         padding: 35px 5px 25px 30px
+      +r(767)
+         padding: 35px 5px 25px 10px
+   &__feeds
+      position: relative
+      float: left
+      width: calc(380/725*100%)
+      padding-left: 15px
+      &::before
+         content: ''
+         position: absolute
+         left: -10px
+         top: 0
+         bottom: 0
+         width: 2px
+         background-color: #ffcc33
+         z-index: 1
+         +r(767)
+            left: 0
+      +r(990)
+         width: 44%
+         padding-left: 28px
+      +r(767)
+         float: none
+         display: block
+         width: 100%
+         text-align: center
+         padding-left: 0
+
+   &__feeds-container
+
+      +r(767)
+         text-align: center
+      +clr
+   &__feeds-links
+      float: right
+      +r(990)
+         float: none
+         display: block
+         padding-bottom: 20px
+      +r(768)
+         margin-left: -20px
+
+   &__feeds-title
+      font-size: 23px
+      line-height: 20px
+      text-transform: uppercase
+      +pfCond-m
+      float: left
+      +r(990)
+         font-size: 18px
+         float: none
+      +r(767)
+         //font-size: 45px
+         line-height: 1.2em
+
+   &__feeds-graph
+      margin: 15px 0 15px -35px
+      position: relative
+      +clr
+      +r(990)
+         padding-bottom: 70px
+      +r(767)
+         display: block
+         margin: 0 auto
+         //max-width: 300px
+         width: 300px
+         padding-bottom: 123px
+         overflow: hidden
+         //padding-bottom: 250px
+      +r(320)
+         width: 270px
+      &:after,&:before
+         content: ''
+         width: 1px
+         height: 25px
+         position: absolute
+         background-color: #959595
+         bottom: 53px
+         display: none
+         +r(990)
+            display: block
+         +r(767)
+            bottom: 115px
+            height: 20px
+            //width: 3px
+            //height: 37px
+            //bottom: 230px
+      &:after
+         left: 157px
+         +r(767)
+            left: 202px
+            //left: 450px
+      &:before
+         left: 72px
+         +r(767)
+            //left: 157px
+            left: 116px
+
+
+   &__feeds-pic
+      width: 100%
+      height: 200px
+      background: no-repeat top center
+      img
+         +r(767)
+            display: inline-block
+   &__feeds-text
+      p
+         position: absolute
+         z-index: 1
+         color: #060000
+         font-size: 10px
+         line-height: 15px
+         +r(990)
+            bottom: 3px
+            top: auto
+         +r(767)
+            //font-size: 21px
+            line-height: 1.5em
+      p:first-child
+         width: 110px
+         top: 16px
+         right: 25px
+         &:before
+            content: ''
+            width: 100%
+            height: 1px
+            background-color: #959595
+            position: absolute
+            top: -5px
+            display: none
+            +r(990)
+               display: block
+            +r(767)
+               //height: 3px
+         +r(990)
+            text-align: center
+            bottom: 3px
+            top: auto
+            left: 10px
+         +r(767)
+            width: 120px
+            bottom: 65px
+            text-align: left
+            //left: 120px
+            //width: 210px
+            //bottom: 100px
+      p:last-child
+         width: 125px
+         top: 105px
+         right: 10px
+         &:before
+            content: ''
+            width: 100%
+            height: 1px
+            background-color: #959595
+            position: absolute
+            top: -5px
+            display: none
+            +r(990)
+               display: block
+            +r(767)
+               //height: 3px
+               //bottom: 6px
+            +r(320)
+               
+         +r(990)
+            bottom: 3px
+            top: auto
+            left: 157px
+            width: 255px
+         +r(767)
+            bottom: 6px
+            width: 120px
+            //left: 370px
+            //bottom: 8px
+         +r(320)
+            left: 127px
+      span
+         +segoe-b
+   &__feeds-stat
+      margin: 25px 0 0
+      font-size: 16px
+      line-height: 20px
+      text-transform: uppercase
+      +pfCond-m
+      +r(990)
+         clear: both
+      +r(767)
+         position: absolute
+         bottom: 540px
+         font-size: 21px
+         max-width: 200px
+         left: 150px
+         text-align: center
+         display: none
+
+
+   &__summ
+      float: right
+      width: calc(325/725*100%)
+      padding: 10px
+      background-color: #fff
+      +r(990)
+         width: 54%
+         margin-bottom: 70px
+      +r(767)
+         display: none
+   &__summ-table
+      color: #060000
+      td
+         padding: 5px 0 5px 10px
+         +r(990)
+            padding: 5px 0 3px 6px
+
+   &__summ-title
+      padding: 5px 10px 10px
+      font-size: 13px
+      line-height: 19px
+      text-transform: uppercase
+      +segoe-b
+   &__summ-row
+      border-bottom: 1px solid #b7b7b7
+      &:first-child
+         border-bottom-color: transparent
+      &:last-child
+         border-bottom-color: transparent
+   &__summ-text
+      font-size: 11px
+      line-height: 17px
+      +segoe-sb
+   &__summ-number
+      font-size: 14px
+      line-height: 21px
+      text-align: center
+      +segoe-b
+
+.oil-total
+   &__inner
+      margin: 30px 0 0
+      padding: 20px 40px 20px 40px
+      box-shadow: 0 4px 15px rgba(1, 1, 1, 0.08)
+      background-color: #fff
+      font-size: 0
+      +r(990)
+         padding: 20px 10px 20px 40px
+   &__title
+      font-size: 18px
+      line-height: 20px
+      text-transform: uppercase
+      +pfComp-m
+      +r(767)
+         //font-size: 36px
+   &__text
+      position: relative
+      display: inline-block
+      vertical-align: middle
+      width: (645/700*100%)
+      margin: 0 20px 35px 0
+      +r(990)
+         margin: 0 10px 35px 0
+         width: 91%
+      &::before
+         content: ''
+         position: absolute
+         left: -19px
+         top: 0
+         bottom: 0
+         width: 2px
+         background-color: #ffcc33
+         z-index: 1
+   &__list
+      margin: 20px 0 0
+   &__list-item
+      position: relative
+      font-size: 13px
+      line-height: 20px
+      padding-left: 29px
+      +r(767)
+         //font-size: 24px
+         //line-height: 1.2em
+      &::before
+         content: ''
+         position: absolute
+         +s('check')
+         left: 0px
+         top: 6px
+   &__arrow
+      font-size: 86px
+      display: inline-block
+      vertical-align: middle
+      +r(767)
+         display: none
+         //display: block
+         //transform: rotate(90deg)
+         //font-size: 140px
+         //margin: -20px auto 0 auto
+
+.timer-box
+
+   +r(767)
+      display: none
+
+   &--adaptive
+      display: none
+      position: absolute
+      +r(767)
+         display: block
+         position: relative
+         margin: 20px 0

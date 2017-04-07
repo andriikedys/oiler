@@ -1,0 +1,84 @@
+.delivery
+   padding: 40px 0
+   +r(480)
+      padding: 15px 0
+   &__title
+      +r(768)
+         font-size: 32px
+         line-height: 37px
+   &__row
+      margin-top: 35px
+      display: flex
+      justify-content: space-between
+      +r(767)
+         flex-direction: column
+   &__card
+      width: 30.5%
+      padding: 50px 20px 10px
+      box-shadow: 0 0 15px rgba(1, 1, 1, 0.15)
+      background-color: #ffffff
+      line-height: 21px
+      &:last-child
+         margin-bottom: 0
+      +r(1023)
+         width: 32%
+         padding: 30px 10px 10px
+      +r(767)
+         padding: 30px 15px 10px
+         width: 100%
+         margin-bottom: 40px
+   &__card-title
+      margin-bottom: 30px
+      font-size: 21px
+      line-height: 21px
+      +pfCond-r
+      +r(1023)
+         margin-bottom: 25px
+      +r(768)
+         font-size: 26px
+         line-height: 39px
+      &::before
+         content: ''
+         display: inline-block
+         vertical-align: 1px
+         margin-right: 10px
+         +arr(10, 12, #ffd121, r)
+         +r(767)
+            +arr(18, 22, #ffd121, r)
+   &__item
+      margin: 25px 0
+      +r(768)
+         margin: 10px 0
+   &__text
+      margin-bottom: 15px
+      +r(768)
+         font-size: 16px
+         line-height: 1.5em
+      span
+         +segoe-b
+      &--list
+         margin-bottom: 0
+   &__sub-title
+      margin-bottom: 10px
+      +segoe-b
+      +r(768)
+         font-size: 18px
+         line-height: 1.5em
+   &__list
+      padding-left: 35px
+      +r(768)
+         font-size: 14px
+         line-height: 1.5em
+      &--adv
+         margin-top: 10px
+         li:first-child
+            list-style-type: none
+   ol
+      list-style: decimal
+   ul
+      list-style: disc
+
+.layout
+   &--delivery
+      +r(768)
+         padding: 0 15px

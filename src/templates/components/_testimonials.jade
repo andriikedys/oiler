@@ -1,0 +1,57 @@
+mixin testimonials(modClass)
+   if modClass == undefined
+      - var modClass = ''
+   else
+      - var modClass = ' ' + modClass
+block testimonials
+   .testimonials(class='testimonials--#{modClass}')
+      h2.title-h3.testimonials__title Отзывы
+      .testimonials__inner
+         .testimonials__item
+            .testimonials__item-user Станислав, Dacia Logan,&nbsp;
+               span.testimonials__item-date 30 января 2014
+            .testimonials__item-row
+               .testimonials__item-photo
+                  img(src='img/testimonial-1.png')
+               .testimonials__item-feedback
+                  p.testimonials__item-text Доброго времени суток. Обслуживались вчера. Заехали наобум к Вам на диагностику, ничего и никого не ждали, все подробно показали-рассказали. Очень понравилось отношение. Позавчера мы заказали запчасти, через пару часов они были уже на СТО. Вчера в 9-00 пригнали машину и в 13-00 забрали, как нам и обещали. СПАСИБО большое. Удачи Вам ;)
+         .testimonials__item.testimonials__item--response
+            .testimonials__item-user Ответ автосервиса
+            .testimonials__item-row
+               .testimonials__item-photo
+                  img(src='img/testimonial-2.png')
+               .testimonials__item-feedback.testimonials__item-feedback--response
+                  p.testimonials__item-text Большое спасибо Вам за хороший отзыв, напомните о нём при следующем визите и получите в благодарность карту постоянного клиента!
+         .testimonials__item
+            .testimonials__item-user Алик, Mercedes w210, #[span.testimonials__item-date 26 ноября 2013]
+            .testimonials__item-row
+               .testimonials__item-photo
+                  img(src='img/testimonial-1.png')
+               .testimonials__item-feedback
+                  p.testimonials__item-text Был на выходных. Проверил ходовую и сделали компьютерную диагностику. Ребята позитивные, обстановка располагает. з.ы. печка в сто зачетная, очень приятно греться стоя рядом :)
+                     span.testimonials__item-add Дополнение от 27.11.2013:)
+                     span.testimonials__item-mob-hidden Дополню что ребята сообщили за комнату для отдыха, но мне не хотелось расставаться со своим конем.&nbsp;
+                     button.js-more-comment.more-btn.more-btn--testimonials Развернуть
+         .testimonials__item.testimonials__item--response
+            .testimonials__item-user Ответ автосервиса
+            .testimonials__item-row
+               .testimonials__item-photo
+                  img(src='img/testimonial-2.png')
+               .testimonials__item-feedback.testimonials__item-feedback--response
+                  p.testimonials__item-text Большое спасибо за положительный отзыв!
+                     span.testimonials__item-mob-hidden Возможно, Вы не обратили внимания на комнату клиента с отоплением, кофе и всем необходимым для проведения досуга, хотя, конечно, это скорее наш недочет, сделаем светящуюся вывеску и лишний раз будем напоминать нашим покупателя об этой опции.
+                     button.js-more-comment.more-btn.more-btn--testimonials Развернуть
+         .testimonials__item
+            .testimonials__item-user Денис, VW, #[span.testimonials__item-date 9 мая 2013]
+            .testimonials__item-row
+               .testimonials__item-photo
+                  img(src='img/testimonial-1.png')
+               .testimonials__item-feedback
+                  p.testimonials__item-text Все как всегда на высшем уровне. Адекватные цены, приветливый и профессиональный персонал, широкий выбор расходников и запчастей, качественный сервис. Обслуживаюсь не первый год и не первую машину.С недавних пор можно сделать компьютерную диагностику на некоторые марки, включая мою. Дима в магазине и Сережа на СТО: 5+. Рекомендую всем знакомым.
+         .testimonials__item.testimonials__item--response
+            .testimonials__item-user Ответ автосервиса
+            .testimonials__item-row
+               .testimonials__item-photo
+                  img(src='img/testimonial-2.png')
+               .testimonials__item-feedback.testimonials__item-feedback--response
+                  p.testimonials__item-text Денис, большое спасибо за положительный отзыв, рады что Вам нравится у нас все больше!

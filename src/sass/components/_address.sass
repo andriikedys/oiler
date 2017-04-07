@@ -1,0 +1,292 @@
+.address
+   padding: 15px 0
+   &__title
+      margin-bottom: 50px
+      +r(767)
+         margin-bottom: 25px
+   &__title-mark
+      display: inline-block
+      vertical-align: inherit
+      margin-right: 10px
+      font-size: 24px
+   &__street
+      padding: 40px 0 30px
+      border-top: 2px dashed #ffc633
+      max-width: 990px
+      margin: 0 auto
+      +r(767)
+         padding: 15px 0 30px
+      &-title
+         max-width: 990px
+         margin: 0 auto
+         padding: 35px 15px 20px
+         font-size: 32px
+         line-height: 1em
+         color: #333333
+         text-align: center
+         +pfCond-b
+         //+r(767)
+         //   padding: 25px 0 20px
+         //   font-size: 40px
+         +r(480)
+            font-size: 24px
+         span
+            +pfCond-r
+            +r(510)
+               display: block
+      &-inner
+         max-width: 960px
+         margin: 15px auto 0
+   &__street-label, &__video-label
+      margin-bottom: 10px
+      margin-left: 10px
+      font-size: 24px
+      line-height: 32px
+      color: #646466
+      +pfCond-r
+      +r(767)
+         text-align: center
+         //font-size: 36px
+         //margin-bottom: 20px
+      +r(480)
+         font-size: 18px
+
+   &__map
+      position: relative
+   &__map-holder
+      +r(767)
+         height: 400px
+      iframe
+         width: 100%
+         +r(767)
+            height: 100%
+   &__map-label
+      padding: 10px 35px 15px
+      position: absolute
+      right: 60px
+      top: 0
+      z-index: 1
+      background-color: #ffffd8
+      text-align: center
+      font-size: 18px
+      +r(1023)
+         right: 40px
+         padding: 10px 20px 15px
+      +r(767)
+         right: 0
+      +r(730)
+         position: relative
+         //font-size: 22px
+      +r(480)
+         font-size: 12px
+   &__map-subtitle
+      margin: 10px 0 5px
+      color: #ffc633
+      +segoe-sb
+   &__map-subtitle + &__map-subtitle
+      margin-top: 0
+      +segoe-b
+   &__map-work
+      color: #000
+      +segoe-b
+   &__video-wrapper
+      max-width: 960px
+      margin: 20px auto 0
+      +r(767)
+         margin: 50px auto 0
+   &__video-title
+      margin-bottom: 15px
+      font-size: 18px
+      +pfCond-m
+      +r(767)
+         //font-size: 28px
+         //text-align: left
+      span
+         font-size: 15px
+         +r(767)
+            font-size: 22px
+   &__video-inner
+      display: flex
+      justify-content: center
+      flex-wrap: wrap
+      +r(1023)
+         justify-content: space-around
+         align-items: flex-end
+      +r(767)
+         padding: 0 5px
+   &__video
+      flex-basis: 33.33333%
+      text-align: center
+      margin-bottom: 20px
+      +r(767)
+         flex-basis: 100%
+         margin-bottom: 60px
+         height: 480px
+         text-align: center
+      +r(480)
+         height: auto
+      iframe
+         +r(767)
+            height: 100%
+            width: 100%
+         +r(480)
+            height: 220px
+   &__video-label
+      margin: 15px 0 25px 10px
+
+   &--oil
+      padding-top: 100px
+      .address__street
+         padding: 0 0 40px
+      .address__street-title
+         text-align: left
+         +r(767)
+            text-align: center
+
+   &--oil-page
+      padding: 0
+      .address__street
+         margin: 90px 0 100px
+         padding: 50px 0 45px
+         box-shadow: 0 4px 15px rgba(1, 1, 1, 0.08)
+         background-color: #fff
+         border: none
+         +r(767)
+            margin: 0
+            padding-top: 15px
+      .address__street-title
+         padding: 0 15px 0
+      .address__street-inner
+         margin: 20px 0 0
+      .address__video-inner
+         max-width: 640px
+         margin: 0 auto
+      .address__video
+         margin: 0 10px 25px
+         +r(768)
+            margin-bottom: 55px
+      .address__map-label
+         padding: 10px 25px 15px
+         right: 40px
+         +r(767)
+            right: 0
+            padding: 5px 10px 5px
+      .address-map__phone
+         +r(767)
+            font-size: 14px
+      .address__map-subtitle
+         +r(767)
+            font-size: 16px
+      .address__map-work
+         +r(767)
+            font-size: 14px
+
+      .address__street-label, .address__video-label
+         margin-left: 20px
+
+// ADRESS LINKS
+.address-links
+   padding: 25px 0 30px
+   border-top: 2px dashed #ffc633
+   border-bottom: 2px dashed #ffc633
+   &__inner
+      max-width: 820px
+      margin: 0 auto
+      font-size: 0
+   &__row
+      margin: 0 -10px
+      +clr
+   &__head-title
+      margin-bottom: 25px
+      font-size: 30px
+      line-height: 37px
+      text-align: center
+      color: #333333
+      +pfCond-m
+      +r(990)
+         font-size: 28px
+   &__item
+      padding: 0 10px
+      float: left
+      width: 50%
+      text-align: center
+      &:nth-child(2)
+         float: right
+      +r(380)
+         float: none
+         width: 100%
+         display: block
+         padding-bottom: 20px
+   &__title
+      font-size: 36px
+      line-height: 36px
+      +pfCond-b
+      font-weight: 700
+      +r(990)
+         font-size: 32px
+      +r(767)
+         font-size: 24px
+         line-height: 1.5em
+   &__address
+      max-width: 270px
+      margin: 15px auto 25px
+      font-size: 20px
+      line-height: 27px
+      +r(990)
+         font-size: 18px
+      span
+         +segoe-b
+      +r(767)
+         max-width: 190px
+         font-size:  14px
+         line-height: 1.5em
+         min-height: 42px
+   &__btn
+      display: inline-block
+      padding: 0 48px
+      height: 35px
+      line-height: 35px
+      font-size: 18px
+      background-color: #ffcd00
+      letter-spacing: 0.01em
+      +trs
+      +pfComp-r
+      font-weight: 700
+      +r(767)
+         height: 45px
+         line-height: 45px
+         span
+            display: none
+      +r(480)
+         height: 35px
+         line-height: 35px
+         padding: 0 15px
+      &:hover
+         background-color: #ffae00
+   &--autoserv
+      margin: 55px 0 65px
+      +r(1023)
+         margin: 25px 0
+
+   &--oil-page
+      padding: 35px 0 50px
+      margin-top: 30px
+      box-shadow: 0 4px 15px rgba(1, 1, 1, 0.08)
+      background-color: #fff
+      border-top: 2px dashed #ffc633
+      border-bottom: 2px dashed #ffc633
+      +r(768)
+         //display: none
+      .address-links__btn
+         padding: 0 32px
+         +r(990)
+            padding: 0 10px
+            font-size: 14px
+      +r(480)
+         .address-links__item
+            display: block
+            float: none
+            margin: 15px auto
+            width: 80%
+      .address-links__inner
+         max-width: 720px

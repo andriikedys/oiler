@@ -1,0 +1,126 @@
+---
+title: "Развал-схождение колёс в Киеве"
+---
+extends layouts/_layout
+block content
+    .layout
+        section
+            h2.title-h2.title-h2_higher Развал-схождение колёс в Киеве
+            .benefit.benefit--image
+                .benefit__title
+                    span
+                        strong 5 причин
+                        | обслуживаться у нас
+                .benefit__inner(style="")
+                    -var benefitText = ['Вас обслуживает сертифицированный персонал', 'Мы ценим Ваше время', 'Вы получаете акт выполненных работ ','В Вашем распоряжении комфортабельная комната клиента', 'Вы платите чётко фиксированную цену'];
+                    mixin benefitList(...items)
+                        each item, index in items
+                            include components/_benefitList
+                    +benefitList('magister', 'clock', 'file', 'sofa', 'weigher')
+                    .benefit__sub-title ЗАКАЖИТЕ РАЗВАЛ-СХОЖДЕНИЕ ПРЯМО СЕЙЧАС:
+                    form.subscribe.subscribe--os
+
+                        label
+                            input(type="radio" name="os")
+                            | ДВЕ ОСИ <br>
+                            span Цена
+                                strong 328
+                                | грн.
+                        label
+                            input(type="radio" name="os")
+                            | ОДНА ОСЬ <br>
+                            span Цена
+                                strong 278
+                                | грн.
+                        .subscribe__inner
+                            .subscribe__form
+                                .subscribe__field
+                                    +icon('icon-cellphone','subscribe__field-icon')
+                                    input.subscribe__phone(type='tel' placeholder='Ваш телефон' required name)
+                                .subscribe__field
+                                    button.subscribe__submit-btn(type='submit') Запишите меня
+                    .benefit__description
+                        | Услуга выполняется для всех автомобилей, кроме: <br>
+                        | Range Rover, Land Rover, Mercedes ML и GL, Audi A8 и Q7, Mitsubishi Pajero, Toyota Tundra, Prado, Land Cruiser, Sequoia, VW Toureg,</br>
+                        | Jeep Grand Cherokee, Lexus GX и LX, Nissan Patrol, Pathfinder, Navara, Cadillac Escalade, микроавтобусов и др. авто весом более 2,3 тонн.
+        section.differ
+            h2.title-h2.title-h2_higher Почувствуйте разницу
+            .license.center
+                .license__row.flex-row.center
+                    .license__col.col-flex.col-flex--inb
+                        .letter.letter_3.dashed
+                            .letter__head
+                                .like-box.like-box--green
+                                    img.like.like_small(src="img/content/like-green.svg")
+                                    span 0
+                                .like-box.like-box--grey
+                                    img.like.like_small(src="img/content/like-grey.svg")
+                                    span 3
+                            .letter__body
+                                .license__block-title ОБЫЧНЫЙ АВТОСЕРВИС
+                                ul.license__block-list.license__block-list--unlicense
+                                    li Отсутствие гарантий
+                                    li Часто отсутствуют консультации специалиста
+                                    li Время обслуживания выбирает автосервис
+                    .license__col.col-flex--inb
+                        .letter.letter_3.dashed
+                            .letter__head.letter__head-yellow
+                                .like-box.like-box--green
+                                    img.like.like_small(src="img/content/like-green.svg")
+                                    span 5
+                                .like-box.like-box--grey
+                                    img.like.like_small(src="img/content/like-grey.svg")
+                                    span 0
+                            .letter__body
+                                .license__block-title НАШ АВТОСЕРВИС
+                                ul.license__block-list.license__block-list--license
+                                    li Гарантия выполненных работ
+                                    li Профессиональная консультация со специалистами
+                                    li Вы выбираете удобное для Вас время обслуживания
+                                    li Удобный график работы без выходных
+                                    li Удобное месторасположение
+            .differ__descr
+                | В конце процедуры выдаём распечатанные результаты
+        section.text
+
+            .container.container_960
+                h4.title_h4 Сделайте развал-схождение колёс на автосервисе, где дают гарантию на работу
+                 | и где мастера действительно знают, что они делают
+                .article.article_silver
+                    p
+                        span Если вы заботитесь о своём автомобиле и не желаете, чтобы ухудшилась его управляемость, а резина прослужила дольше,
+                        | вам стоит сделать развал-схождение колёс. При помощи этих настроек Ваш автомобиль может кардинально изменить
+                        | своё поведение на дороге (в лучшую сторону).
+                        span.is-hidden Мы уверены, что во всех городах автовладельцы ищут качественный развал-схождение
+                         |    и Киев не является исключением. Многие делают запрос в поисковой системе «развал-схождения киев цена»
+                         |    или «сколько стоит развал-схождение», для того, чтобы найти автосервис с хорошим развалом.
+                        button.more-btn.more-btn--blue.js-more-text Подробнее
+        section
+            .testimonials(class='testimonials--border-top')
+                  h2.title-h3.testimonials__title Отзывы
+                  .testimonials__inner
+                     .testimonials__item
+                        .testimonials__item-user Сергей на Hundai Tucson,
+                           span.testimonials__item-date 03 сентября 2014
+                        .testimonials__item-row
+                           .testimonials__item-photo
+                              img(src='img/testimonial-1.png')
+                           .testimonials__item-feedback
+                              p.testimonials__item-text Сергей, владелец Хундай Туксон (2008 г.). На это СТО вышел 3 года назад через Интернет. Решил попробовать и не разочаровался. ТО прохожу теперь только у них. Корректны, менеджеры с которыми общался компетентны, всегда готовы предложить хорошую альтернативу запчастям, расходникам. Несколько дней назад прошёл ТО на 60 000 км + развал-схождение (наконец появилось). Всё выполнили в срок и качественно. По ценам не скажу, так как не сравнивал с другими СТО, но качество без вопросов. <br> Пожелаю только формировать клиентскую базу. Однозначно рекомендую.
+                     .testimonials__item.testimonials__item--response
+                        .testimonials__item-user Ответ автосервиса
+                            span.testimonials__item-date 05 сентября 2014
+                        .testimonials__item-row
+                           .testimonials__item-photo
+                              img(src='img/testimonial-2.png')
+                           .testimonials__item-feedback.testimonials__item-feedback--response
+                              p.testimonials__item-text Добрый день, Сергей! <br> Большое спасибо за Ваш положительный отзыв! Рады, что Вам нравится наш сервис. Клиентская база находится в разработке, мы обязательно ее сделаем. Мы обещали сделать развал-схождение, и мы выполнили свое обещание. Еще раз благодарим Вас за отзыв.Напомните об этом отзыве в следующий раз и получите в благодарность скидочную карту постоянного клиента, либо, если такая у Вас есть - скромный подарок.
+                  .testimonials__descr
+                    p
+                     b Вы тоже можете оставить отзыв
+                     | о развале-схождении, сделанном в Oiler, на независимом портале "Всё СТО"
+
+
+
+
+

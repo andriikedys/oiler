@@ -1,0 +1,321 @@
+.compare
+  padding: 105px 0 110px
+  +r(767)
+    // padding: 25px 0 30px
+    padding: 0
+  &__inner
+    max-width: 970px
+    margin: 0 auto
+    padding: 0 15px
+  &__descr
+    position: relative
+    max-width: 640px
+    margin: 60px 0 50px
+    +clr
+    +r(767)
+      max-width: none
+      margin: 60px 25px
+  &__descr-text
+    float: left
+    max-width: 515px
+    font-size: 16px
+    line-height: 26px
+    color: #828282
+    +r(767)
+      //font-size: 24px
+      //line-height: 34px
+      max-width: none
+    p:nth-child(1)
+      +r(767)
+        max-width: calc(100% - 114px)
+    p + p
+      margin-top: 14px
+  &__descr-color
+    color: #231f20
+  &__descr-stamp
+    float: right
+    margin-top: 10px
+    +r(767)
+      position: absolute
+      right: -20px
+      top: -30px
+      margin-top: 0
+    +r(480)
+      top: 0
+    &::after
+      content: ''
+      +s('stamp-off')
+      display: block
+  //+r(767)
+  //   +s('stamp-off_lg')
+  &__row
+
+    margin: 0 -10px
+    font-size: 0
+    +r(767)
+      text-align: center
+  &__col
+    width: 33.33333%
+    display: inline-block
+    vertical-align: top
+    padding: 0 10px 25px
+    +r(1023)
+      padding: 0 5px 25px
+    +r(990)
+      width: 32%
+    +r(767)
+      width: 100%
+      max-width: 585px
+      padding: 0 0 40px
+  &__card
+    min-height: 495px
+    overflow: hidden
+    box-shadow: 0 0 5px rgba(0, 2, 4, 0.2)
+    border-radius: 5px 4px 4px 5px
+    background-color: #fff
+    +r(767)
+      min-height: 425px
+  &__card-head
+    min-height: 175px
+    padding: 25px 15px 20px
+    background-color: #f5f5f5
+
+    +r(767)
+    //min-height: 335px
+    //padding: 55px 15px 20px
+    &--gold
+      background-color: #ffcc33
+      .compare__card-title
+        color: #231f20
+        text-transform: uppercase
+        +pfCond-b
+  &__card-title
+    font-size: 24px
+    line-height: 24px
+    color: #828282
+    text-align: center
+    +pfCond-m
+    +r(767)
+  //font-size: 47px
+  //line-height: 47px
+  &__card-likes
+    font-size: 0
+    width: 160px
+    margin: 15px auto
+    +r(767)
+  //margin: 30px auto 0
+  //width: auto
+  &__card-like
+    display: inline-block
+    vertical-align: middle
+    position: relative
+    margin-right: 20px
+    font-size: 24px
+    color: #ffffff
+    z-index: 1
+    +r(767)
+    //margin-right: 40px
+    //font-size: 47px
+    &:nth-child(1)
+      top: 20px
+      +r(767)
+        top: 23px
+    &:nth-child(2)
+      margin-right: 0
+    &--red
+      +sr('like-red')
+      +r(767)
+    //+s('like-red')
+    //background-size: auto
+    &--green
+      +sr('like-green')
+      +r(767)
+    //+s('like-green')
+    //background-size: auto
+    &--gray
+      +sr('like-gray')
+      +r(767)
+    //+s('like-gray')
+    //background-size: auto
+    &--rotated
+      transform: scaleY(-1)
+  &__card-count
+    position: absolute
+    z-index: 1
+    left: 0
+  &__card-count--1
+    left: 50%
+    top: 5px
+  //+r(767)
+  //   top: 10px
+  &__card-count--2
+    left: 50%
+    top: 25px
+  //+r(767)
+  //   top: 43px
+  &__card-count--rotated
+    transform: scaleY(-1)
+    left: 52%
+    top: 27px
+    +r(767)
+  //top: 52px
+  &__card-inner
+    padding: 25px 15px 15px 20px
+    +r(1023)
+      padding: 25px 10px 15px 10px
+    +r(767)
+  //padding: 25px 40px 15px 40px
+  &__card-row
+    height: 30px
+  &__card-features
+    font-size: 14px
+  &__card-text
+    font-size: 14px
+    line-height: 14px
+
+    +r(767)
+      //font-size: 24px
+      //line-height: 58px
+      text-align: left
+  &__card-text:nth-child(2n)
+    text-transform: uppercase
+    color: #e14c36
+    text-align: right
+  &__card-text--yes:nth-child(2n)
+    color: #19b24c
+    text-transform: uppercase
+    text-align: right
+
+
+  //compare oil-page mod
+  &--oil-page
+    .compare__descr
+       margin: 15px 0 30px
+       +r(767)
+          padding: 0 15px
+    .compare__descr-text
+      max-width: 430px
+      color: #010000
+      font-size: 14px
+      line-height: 20px
+      +r(767)
+        max-width: 100%
+        color: #6d6d6d
+        //font-size: 24px
+        line-height: 1.2em
+
+    .compare__row
+      display: flex
+      justify-content: space-between
+      margin: 0
+      +r(767)
+        display: block
+    .compare__col
+      flex-basis: (220/735*100%)
+
+      padding: 0
+      +r(767)
+        display: block
+        max-width: 300px
+        margin: 20px auto
+        box-shadow: 0 4px 15px rgba(1, 1, 1, 0.08);
+    .compare__card
+      min-height: 335px
+      box-shadow: 0 4px 15px rgba(1, 1, 1, 0.08)
+      max-width: 300px
+    .compare__card-inner
+      margin-top: -25px
+      padding: 10px 15px 10px 20px
+      +r(767)
+        padding: 10px 40px
+
+    .compare__card-row
+      height: 20px
+    .compare__card-head
+      min-height: 150px
+      padding: 15px
+      background: url(../img/bg/card-grey_top.png) no-repeat top -15px center/cover
+      +r(990)
+        padding: 15px 5px
+      +r(768)
+        padding: 40px 10px
+      +r(767)
+    //min-height: 362px
+    .compare__card-head--gold
+      background: url(../img/bg/card-gold_top.png) no-repeat top -15px center/cover
+    .compare__card-title
+      font-size: 15px
+      line-height: 20px
+      color: #000
+      text-transform: none
+      +segoe-b
+    //+r(767)
+    //   font-size: 42px
+    //   line-height: 1.2em
+    .compare__card-likes
+      margin: 8px auto
+      position: relative
+    //+r(767)
+    //   margin: 25px auto
+    .compare__card-likes::after
+      content: ''
+      display: block
+      margin: 0 auto
+      +sr('compare-likes')
+      transform: scale(0.75)
+    //+r(767)
+    //   background-image: url('../img/like.svg')
+    //   height: 86px
+    //   width: 280px
+    //   +cover
+
+    .compare__card-count
+      font-size: 14px
+      +segoe-b
+    //+r(767)
+    //   font-size: 42px
+
+    .compare__card-count--1
+      left: 40%
+      top: 10px
+      color: #505050
+    //+r(767)
+    //   left: 46%
+
+    .compare__card-count--2
+      left: 85%
+      top: 10px
+      color: #19a64c
+    //+r(767)
+    //   left: 70%
+    .compare__card-text
+      font-size: 11px
+      line-height: 20px
+      +r(991)
+        &:nth-child(1)
+          padding-right: 8px 
+//+r(767)
+//   font-size: 24px
+   line-height: 1.5em
+.like
+  display: inline-block
+  &_small
+    height: 36px
+.like-box
+  display: inline-block
+  font-size: 18px
+  line-height: 36px
+  +segoe-b
+  margin: 25px 0 0 0
+  &:first-of-type
+    margin-right: 36px
+  span
+    display: inline-block
+    vertical-align: middle
+  img
+    vertical-align: middle
+    margin: 0 5px
+  &--green
+    color: $green
+  &--grey
+    color: $grey

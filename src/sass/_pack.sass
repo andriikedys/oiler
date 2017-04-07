@@ -1,0 +1,229 @@
+.pack
+  padding: 15px 0 65px
+  +r(1023)
+    padding-bottom: 35px
+  &__inner
+    position: relative
+    max-width: 850px
+    margin-top: 30px
+    margin-left: 95px
+    text-align: right
+    font-size: 0
+    +clr
+    +r(1199)
+      margin: 30px auto 0
+    +r(767)
+      text-align: center
+      padding: 0
+  &__table
+    position: absolute
+    top: 45px
+    left: 0
+    right: -5px
+    z-index: 1
+    font-size: 16px
+    border: 1px dashed #b7b7b7
+    text-align: left
+    +pfCond-r
+    +r(767)
+      display: none
+    &-row
+      padding: 3px
+      border-bottom: 1px dashed #b7b7b7
+      &:last-child
+        border-bottom: none
+  &__item
+    position: relative
+    width: 155px
+    min-height: 370px
+    display: inline-block
+    vertical-align: top
+    padding: 10px 0 20px
+    margin-left: 23px
+    background-color: #fff
+    border: 1px solid #b7b7b7
+    border-radius: 20px
+    text-align: center
+    +pfCond-m
+    +r(1023)
+      width: 140px
+      margin-left: 5px
+    +r(767)
+      width: 100%
+      max-width: 345px
+      min-height: 0
+      padding: 30px 0 40px
+      margin: 0 auto 40px
+      display: block
+    &::after
+      content: ''
+      position: absolute
+      top: 40px
+      right: 0
+      z-index: 2
+      +r(767)
+        top: 66px
+        right: 2%
+      +r(400)
+        top: auto
+        bottom: 83px
+    &--hit::after
+      +s('hit')
+      //+r(767)
+      //  +s('hit_lg')
+    &--recommend::after
+      +s('recommend')
+      //+r(767)
+      //  +s('recommend_lg')
+    &-title
+      padding-bottom: 20px
+      font-size: 18px
+      line-height: 18px
+      +r(767)
+        //font-size: 48px
+        //line-height: 48px
+        //padding-bottom: 30px
+        border-bottom: 1px dashed #b7b7b7
+    &-feature
+      position: relative
+      padding: 0 10px
+      height: 27px
+      line-height: 27px
+      font-size: 0
+      pointer-events: none
+      user-select: none
+      +r(767)
+        padding: 0 30px
+        pointer-events: auto
+        //font-size: 24px
+        height: 30px
+        line-height: 30px
+        font-size: 18px
+        user-select: all
+        border-bottom: 1px dashed #b7b7b7
+        text-align: left
+        +pfCond-r
+    &-add
+      margin-bottom: 15px
+      font-size: 16px
+      +r(1023)
+        max-width: 130px
+        margin: 0 auto
+      +r(767)
+        max-width: none
+        //margin: 20px 0 30px
+        margin: 10px 0 15px
+
+        font-size: 18px
+        line-height: 1.5em
+      &--nofree
+        margin-bottom: 78px
+        +r(1023)
+          margin-bottom: 84px
+        +r(767)
+          margin-bottom: 15px
+    &-price
+      margin-bottom: 3px
+      color: #19b24c
+      font-size: 38px
+      line-height: 38px
+      +r(767)
+        margin-bottom: 10px
+        font-size: 35px
+        line-height: 1.5em
+      &--val
+        font-size: 21px
+        +r(767)
+          //font-size: 42px
+    &-order
+      display: inline-block
+      min-width: 120px
+      height: 30px
+      line-height: 32px
+      background-color: #ffc90b
+      font-size: 18px
+      +trs
+      +pfCond-m
+      +r(767)
+        min-width: 185px
+        //height: 65px
+        //line-height: 65px
+        height: 35px
+        line-height: 35px
+        //font-size: 42px
+        font-size: 26px
+        +pfCond-r
+      &:hover
+        background-color: #ff8903
+    &-free
+      font-size: 16px
+      +pfCond-r
+      +r(1023)
+        font-size: 15px
+      +r(767)
+        display: inline-block
+        max-width: 330px
+        //font-size: 30px
+      span
+        color: #ffd700
+        +pfCond-m
+        +r(767)
+          //font-size: 34px
+      span.pack__item-free--green
+        color: #19b24c
+    &-discount
+      font-size: 18px
+      color: #ffd700
+      +r(767)
+        margin: 5px 0 10px
+        //font-size: 40px
+        font-size: 26px
+  &__icon-check
+    display: inline-block
+    vertical-align: middle
+    font-size: 11px
+    +r(767)
+      position: absolute
+      top: 5px
+      right: 20%
+      font-size: 16px
+    +r(400)
+      right: 10%
+    &--gold
+      fill: #ffcc33
+    &--green
+      fill: #19b24c
+  &__label
+    float: left
+    margin-top: 25px
+    text-align: right
+    +r(1023)
+      float: none
+    +r(767)
+      margin-top: 0
+      text-align: left
+      font-size: 0
+    &-icon
+      display: inline-block
+      vertical-align: middle
+      margin-right: 12px
+      font-size: 25px
+      +r(767)
+        vertical-align: top
+        font-size: 25px
+        margin-right: 20px
+        margin-top: 25px
+    &-text
+      display: inline-block
+      vertical-align: middle
+      font-size: 13px
+      line-height: 18px
+      +r(767)
+        width: calc(100% - 75px)
+        //font-size: 23px
+        //line-height: 30px
+        span
+          display: block
+          margin-top: 10px
+        div + div
+          margin-top: 10px

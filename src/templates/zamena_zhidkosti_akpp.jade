@@ -1,0 +1,179 @@
+---
+title: "Замена жидкости в MКПП"
+---
+extends layouts/_layout
+block content
+    .layout.layout--maslo(style="background-image: url('img/bg/maslo_background-red.png')")
+        section
+            h2.title-h2.title-h2_higher Замена жидкости в MКПП
+            .benefit.benefit--reasons.dashed
+                .benefit__title Выгода для вас
+                .benefit__inner
+
+                    -var benefitText = ['Вы получаете точный подбор', 'Вас обслуживает обученный персонал', 'Вы получаете официальный товар','Вы принимаете участие в процессе', 'Вы получаете гарантию качества', 'Вас обслуживают специалисты с большим опытом'];
+                    mixin benefitList(...items)
+                        each item, index in items
+                            include components/_benefitList
+                    +benefitList('arrow', 'magister', 'list', 'people', 'guarantee', 'cars')
+        section.differ
+            h2.title-h2.title-h2_higher 8 причин заменить масло в нашем автосервисе:
+            .license.center
+                .license__row.flex-row.center
+                    .license__col.col-flex.col-flex--inb
+                        .letter.letter_3.dashed
+                            .letter__head
+                                .like-box.like-box--green
+                                    img.like.like_small(src="img/content/like-green.svg")
+                                    span 0
+                                .like-box.like-box--grey
+                                    img.like.like_small(src="img/content/like-grey.svg")
+                                    span 6
+                            .letter__body
+                                .license__block-title ОБЫЧНЫЙ АВТОСЕРВИС
+                                ul.license__block-list.license__block-list--unlicense
+                                    li Товар под заказ или привозить самому
+                                    li Отсутствие консультации
+                                    li Подбор масла делаете вы
+                                    li Отсутствие ассортимента товаров
+                                    li Время обслуживания выбирает сервис
+                                    li Вероятность приобретения подделки
+                    .license__col.col-flex.col-flex--inb
+                        .letter.letter_3.dashed.letter--border
+                            .letter__head.letter__head-yellow
+                                .like-box.like-box--green
+                                    img.like.like_small(src="img/content/like-green.svg")
+                                    span 8
+                                .like-box.like-box--grey
+                                    img.like.like_small(src="img/content/like-grey.svg")
+                                    span 0
+                            .letter__body
+                                .license__block-title НАШ АВТОСЕРВИС
+                                ul.license__block-list.license__block-list--license.license__block-list--bold
+                                    li Товар всегда в наличии
+                                    li Профессиональная консультация сертифицированными специалистами
+                                    li Масло подбирает за Вас менеджер
+                                    li Широкий ассортимент товаров
+                                    li Вы выбираете удобное для вас время обслуживания
+                                    li Оригинальный сертифицированный товар
+                                    li Удобный график работы (без выходных)
+                                    li Удобное месторасположение (в центре)
+                    .license__col
+                        .strip-line
+                            .strip-line__number
+                                strong 60-80 <br>
+                                span тыс.км
+                            //.strip-line__text интервал замены масла
+
+                            .strip-line__img
+                                img(src="img/content/stripe.png")
+                            .strip-line__img.strip-line__img-arr
+                                img(src="img/hand_arrow.png" alt="alt")
+                        .subscribe.subscribe--simple
+                            .subscribe__title Записаться в 1 клик
+                            .subscribe__inner
+                                .subscribe__price 198
+                                    span грн.
+                                .subscribe__form
+                                    form(action='#')
+                                        .subscribe__field
+                                            +icon('icon-cellphone','subscribe__field-icon')
+                                            input.subscribe__phone(type='tel' placeholder='Ваш телефон' required name)
+                                        .subscribe__field
+                                            button.subscribe__submit-btn(type='submit') Запишите меня
+
+        section.manager
+            .manager__title
+                i.icon.icon-manager
+                | Правильно подобрать масло для вашего автомобиля поможет эксперт-менеджер.
+                .manager__img
+                    img(src="img/content/mkpp.png")
+            .container
+                .article.article_silver
+                    p Очень важно, чтобы подбор масла осуществлялся именно нашим менеджером. Ведь все эти жидкости разные и, если вы вдруг выберете сами не то масло, то стоимость ошибки будет слишком велика. Мы являемся официальным представителем всей продукции, которая находится в нашем магазине. <br> Мы работаем только с проверенными и фирменными товарами.
+        section
+            .container
+                .article.article_silver
+                    .title_h4 Секрет, как продлить жизнь механической коробке передач на вашем автомобиле.
+                    p МКПП (механическая коробка переключения передач) — это устройство, которое изменяет в двигателе его крутящий момент. Она получила такое
+                     | название, потому что переключение происходит механически (вручную).
+                    p.is-hidden  название, потому что переключение происходит механически (вручную).название, потому что переключение происходит механически (вручную).
+                    button.more-btn.more-btn--blue.js-more-text Подробнее
+        section.testimonials-container
+            .testimonials
+                h2.title-h3.testimonials__title.left Отзывы
+                .testimonials__inner
+                    .testimonials__item
+                        .testimonials__item-user Никита, Kia Cerato 2.0 АКПП,
+                            span.testimonials__item-date 5 января 2014
+                        .testimonials__item-row
+                            .testimonials__item-photo
+                                img(src='img/testimonial-1.png')
+                            .testimonials__item-feedback
+                                p.testimonials__item-text Заехал к ребятам в воскресение на замену масла в АКПП (Киа Черато 2.0, 2008 года, 50 тык пробега) путем врезки в систему охлаждения. Открыли коробку, поменяли фильтр (сам покупал), закрыли, прогнали по коробке масло (тоже сам покупал). Залили наверное в коробку на ЛУАЗе (а именно там мой Чератик собирался) откровенное г*вно - потому как слили почти шлак, а это за 50 тык не злостной езды. Очень всем советую менять масло в АКПП на 50 тык, особенно если Ваша машина нашей сборки. Через пару дней ребята попросили заехать — посмотреть нигде ли течет. Все супер, коробка стала работать гораздо плавнее, кикдаун более отзывчивый. Спасибо ребятам за хорошую работу и отдельное мастеру Вите (и его музычке) и Мише. 100% по маслу АКПП буду ездить к ним, с остальным на следующем ТО попробую — отпишусь =))
+                    .testimonials__item.testimonials__item--response
+                        .testimonials__item-user Ответ автосервиса
+                            span.testimonials__item-date
+                        .testimonials__item-row
+                            .testimonials__item-photo
+                                img(src='img/testimonial-2.png')
+                            .testimonials__item-feedback.testimonials__item-feedback--response
+                                p.testimonials__item-text Большое спасибо за хороший отзыв, очень рады новым постоянные клиентам
+                    .testimonials__item
+                        .testimonials__item-user Саша, Subaru Forester 2.5T AT,
+                            span.testimonials__item-date 17 декабря 2013
+                        .testimonials__item-row
+                            .testimonials__item-photo
+                                img(src='img/testimonial-1.png')
+                            .testimonials__item-feedback
+                                p.testimonials__item-text Делал частичные работы ТО150: Замена АТФ с помощью установки. Промыли коробку новым маслом. Удобно, что все расходники есть на складе и можно в любой момент достать. Попутно заменил аккумулятор. Мне понравилось. Как менеджер, так и мастер в ремзоне были на высоте.
+                    .testimonials__item.testimonials__item--response
+                        .testimonials__item-user Ответ автосервиса
+                            span.testimonials__item-date
+                        .testimonials__item-row
+                            .testimonials__item-photo
+                                img(src='img/testimonial-2.png')
+                            .testimonials__item-feedback.testimonials__item-feedback--response
+                                p.testimonials__item-text Спасибо большое за положительный отзыв, ждём Вас снова у нас.
+                    .testimonials__item
+                        .testimonials__item-user Юрий, Mitsubishi Galant E33,
+                            span.testimonials__item-date 25 ноября 2013
+                        .testimonials__item-row
+                            .testimonials__item-photo
+                                img(src='img/testimonial-1.png')
+                            .testimonials__item-feedback
+                                p.testimonials__item-text Менял масло в коробке автомат, стойки стабилизатора, втулки стабилизатора, менеджер Денис — быстро, четко все рассказал, подсказал по запчастям, сколько масла в коробку нужно и т.д. записал в тот же день на СТО, оговорили сроки 3-4 часа, приехал забирать машину через 3 часа, все качественно, быстро, красиво
+                    .testimonials__item.testimonials__item--response
+                        .testimonials__item-user Ответ автосервиса
+                            span.testimonials__item-date
+                        .testimonials__item-row
+                            .testimonials__item-photo
+                                img(src='img/testimonial-2.png')
+                            .testimonials__item-feedback.testimonials__item-feedback--response
+                                p.testimonials__item-text Большое спасибо за хороший отзыв, приятно когда отмечают профессионализм наших сотрудников. Теперь на нашем сайте вы можете оставить отзыв о каждом лично в разделе «Обратная связь».
+        h2.title_h2 Бесплатная консультация по подбору масла в МКПП:
+        .request
+            .request__inner
+                .request__col
+                    .comp-diag__subscr-label.request__label БЫСТРЫЙ ЗАПРОС
+                .request__col
+                    .comp-diag__subscr-info.request__info
+                        | Запишитесь на подбор масла в МКПП,&nbsp;
+                        br
+                        a.comp-diag__subscr-info--b(href='tel:0442382492') позвонив по телефону (044) 238-24-92
+                    .comp-diag__subscr-info.request__info
+                        | Или оставьте свои контакты, и мы свяжемся
+                        br
+                        | с Вами в течение&nbsp;
+                        span.comp-diag__subscr-info--b 5 мин. в рабочее время
+                .request__col
+                    .subscribe
+                        .subscribe__title Записаться в 1 клик
+                        .subscribe__inner
+                            .subscribe__form
+                                form(action='#')
+                                    .subscribe__field
+                                        +icon('icon-cellphone','subscribe__field-icon')
+                                        input.subscribe__phone(type='tel' placeholder='Ваш телефон' required name)
+                                    .subscribe__field
+                                        button.subscribe__submit-btn(type='submit') Запишите меня
+

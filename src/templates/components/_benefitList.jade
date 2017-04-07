@@ -1,0 +1,24 @@
+block benefitItem
+
+    - var arr = benefitMod;
+
+    -if(arr != undefined ){
+    - for (var i of arr) {
+        -if(i === index ){
+            -var mod = 'benefit__item--pad';
+            -break;
+        -} else {
+            -var mod = '';
+        -}
+    - }
+    -} else {
+        -var mod = '';
+    -}
+
+
+.benefit__item(class='#{mod}')
+    .benefit__icon(class='benefit__icon--#{item}')
+    .benefit__text= benefitText ? benefitText[index] : ''
+
+
+

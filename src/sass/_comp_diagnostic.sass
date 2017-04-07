@@ -1,0 +1,337 @@
+.comp-diag
+   padding: 40px 0 100px
+
+   &__sub-title
+      margin-top: 12px
+
+      +r(767)
+      +segoe-sb
+
+   &__descr
+      margin-bottom: 50px
+      max-width: 890px
+      color: #6d6d6d
+      line-height: 20px
+      &-title
+         position: relative
+         margin-bottom: 25px
+         font-size: 16px
+         +segoe-sb
+         +r(767)
+            max-width: 450px
+         &::before
+            content: ''
+            position: absolute
+            width: 30px
+            height: 1px
+            background-color: #ffcc33
+            bottom: -5px
+            left: 0
+            +r(767)
+               width: 50px
+               height: 2px
+               bottom: 17px
+      &-text
+         +segoe-r
+         font-size: 14px
+
+         &--hidden
+            display: none
+   &__subscr
+      padding-top: 50px
+      &-title
+         margin-bottom: 25px
+         font-size: 24px
+         text-transform: uppercase
+         text-align: left
+         +pfComp-r
+         +r(767)
+
+            text-align: center
+      &-label
+         +pfCond-m
+         font-size: 24px
+         text-align: center
+         +r(767)
+            padding-top: 15px
+
+      &-inner
+         box-shadow: 0 4px 15px rgba(1, 1, 1, 0.08)
+         +r(767)
+            margin: 0 -15px
+            padding-bottom: 50px
+         .subscribe--simple
+            padding: 10px 15px 10px 15px
+            box-shadow: none
+            max-width: 250px
+            +r(767)
+               max-width: none
+               text-align: center
+         .subscribe__title
+            font-size: 23px
+            text-align: left
+            width: 100%
+            +r(1199)
+               margin-bottom: 15px
+            +r(767)
+               text-align: center
+         .subscribe__title::after
+            right: 11px
+            +r(1023)
+               right: 0
+            +r(767)
+               width: 175px
+               right: 130px
+         .subscribe__title:before
+            right: 30px
+            +r(1023)
+               right: 14px
+               top: 17px
+            +r(767)
+               right: 175px
+         .subscribe__form
+            +r(767)
+               float: none
+               margin: 0 auto
+         .subscribe__inner
+            +r(767)
+               float: none
+
+      &-row
+         font-size: 0
+      &-col
+         width: 30%
+         display: inline-block
+         vertical-align: middle
+         +r(767)
+            display: block
+            width: 100%
+         +r(1023)
+            width: 27%
+         &:nth-child(2)
+            +r(1023)
+               width: 40%
+            +r(767)
+               width: 100%
+         &:nth-child(3)
+            width: 40%
+            +r(1023)
+               width: 33%
+            +r(767)
+               width: 100%
+      &-info
+         margin: 30px 0
+         font-size: 14px
+         color: #6d6d6d
+         text-align: left
+         +r(767)
+            text-align: center
+
+         &--b
+            +segoe-b
+
+// LICENSE BLOCK
+.license
+   &__title
+      margin-bottom: 30px
+      font-size: 21px
+      line-height: 20px
+      +pfComp-r
+      text-transform: uppercase
+      text-align: left
+
+
+      +r(767)
+         //font-size: 39px
+         //line-height: 46px
+   &__row
+      margin: 0 -25px
+      font-size: 0
+      +r(1199)
+         margin: 0 -10px
+      +r(1023)
+         margin: 0 -5px
+      +r(767)
+         text-align: center
+         margin: 0
+   //   margin: 0
+   &__col
+      display: inline-block
+      vertical-align: top
+      width: calc(33% - 47px)
+      margin: 0 25px
+      font-size: 16px
+      b
+         font-weight: 600
+
+
+
+      +r(1199)
+         //width: calc(36.5% - 20px)
+         margin: 0 10px
+         width: calc(33.3% - 20px)
+      +r(1023)
+         //width: calc(36.5% - 10px)
+         width: calc(33.3% - 10px)
+         margin: 0 5px
+      +r(767)
+         width: 100%
+         max-width: 310px
+         text-align: left
+         //vertical-align: baseline
+
+         //margin: 0 0 50px
+         margin: 0 5px 25px
+      +r(600)
+         margin: 0 0 25px
+      //&:nth-child(3)
+      &-2
+         width: (750/1200 * 100%)
+         +r(1199)
+            width: 61.5%
+         +r(1023)
+            width: 61.5%
+         p
+            padding-top: 42px
+      .license__col--small
+         vertical-align: bottom
+         +r(1199)
+            width: calc(27% - 20px)
+         +r(1023)
+            width: calc(27% - 10px)
+         +r(767)
+            width: 100%
+            margin-bottom: 0
+   &__block
+      max-width: 365px
+      min-height: 400px
+      padding: 15px
+      background-size: 100%
+      background-repeat: no-repeat
+      box-shadow: 0 4px 15px rgba(1, 1, 1, 0.08)
+      +r(1023)
+         padding: 15px 0
+      +r(767)
+         max-width: none
+         //padding: 35px 30px 40px
+         margin: 0 auto
+      &-title
+         max-width: 270px
+         margin: 20px auto 70px
+         +pfCond-m
+         font-size: 21px
+         line-height: 26px
+         text-transform: uppercase
+         text-align: center
+         .letter &
+            margin: 20px auto
+         +r(1023)
+            margin: 0 auto 70px
+         +r(767)
+            //margin: 20px auto 110px
+            //max-width: 590px
+            //font-size: 46px
+            //line-height: 56px
+            +pfCond-m
+
+      &-list
+         &--bold
+            li
+               +segoe-sb
+         li
+            position: relative
+            padding-left: 35px
+            margin-bottom: 10px
+            font-size: 14px
+            line-height: 19px
+            text-align: left
+            //+r(767)
+            //   padding-left: 55px
+            //   font-size: 30px
+            //   line-height: 50px
+            &:last-child
+               margin-bottom: 0
+         li::before
+            top: 5px
+            left: 10px
+            content: ''
+            position: absolute
+            //+r(767)
+            //   top: 25px
+            //   transform: scale(1.5)
+         &--unlicense
+
+            li::before
+               +s('close')
+         &--license
+            li::before
+               +s('check')
+      &--unlicense
+         background-image: url(../img/bg/card-grey_bg.png)
+         li::before
+            +s('close')
+      &--license
+         background-image: url(../img/bg/card-gold_bg.png)
+         li::before
+            +s('check')
+   &__subscr
+      max-width: 365px
+      margin: 0 auto
+      +r(1199)
+         max-width: none
+      &-row
+         margin-bottom: 30px
+         +clr
+         +r(1199)
+            text-align: center
+         +r(1023)
+            margin-bottom: 15px
+         +r(767)
+            display: none
+      &-col
+         +r(767)
+            display: inline-block
+            vertical-align: middle
+            //width: 50%
+      &-col:nth-child(1)
+         float: left
+         +r(1199)
+            float: none
+      &-col:nth-child(2)
+         float: right
+         +r(1199)
+            float: none
+      &-icon
+         font-size: 25px
+         display: inline-block
+         vertical-align: middle
+      &-text
+         display: inline-block
+         vertical-align: middle
+         margin-left: 15px
+         max-width: 145px
+         font-size: 14px
+         line-height: 21px
+         text-align: center
+         color: #231f20
+         +r(1199)
+            margin-left: 5px
+      &-logo
+         margin-top: 7px
+         +r(1199)
+            margin-top: 15px
+            float: none
+   &--comp-diag
+      margin-bottom: 55px
+      +r(767)
+         margin: 35px 0 60px
+
+
+
+.razval
+   padding: 60px 0
+.text-content
+   padding: 10px 0 80px 0
+.done__image
+   +r(990)
+   max-width: 320px

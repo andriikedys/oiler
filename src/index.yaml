@@ -1,0 +1,32 @@
+ProjectTitle: temp
+
+PageList:
+- file: comp_diagnostic.html
+  ready: 90
+- file: delivery.html
+  ready: 90
+- file: oil.html
+  ready: 90
+- file: oil-page.html
+  ready: 90
+- file: remont_dvigatelya.html
+  ready: 90
+- file: sto.html
+  ready: 90
+- file: vkorobke.html
+  ready: 90
+- file: diagnostic.html
+  ready: 90
+- file: preprod_diagnostic.html
+  ready: 90
+- file: shino-montazh.html
+  ready: 50
+- file: razval.html
+  ready: 50
+- file: zapravka_cond.html
+  ready: 50
+- file: zamena_zhidkosti_mkpp.html
+  ready: 10
+- file: zamena_zhidkosti_akpp.html
+  ready: 10
+

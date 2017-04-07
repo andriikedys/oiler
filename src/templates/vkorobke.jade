@@ -1,0 +1,75 @@
+---
+title: "Замена масла в коробке"
+---
+extends layouts/_layout
+block content
+    .container.container_1200
+        h2.title_h2 ЗАМЕНА МАСЛА В КОРОБКЕ
+        h4.title_h4 Выберите Вашу коробку передач:
+        section.akp
+            ul.akp__list
+                li.akp__item
+                    a(href="#")
+                        .akp__image
+                            img(src="img/akp1.png")
+                            .akp__name АКПП
+                        .akp__descr Автоматическая коробка переключения передач
+                li.akp__item
+                    a(href="#")
+                        .akp__image
+                            img(src="img/mkp.png")
+                            .akp__name МКПП
+                        .akp__descr Механическая коробка переключения передач
+                li.akp__item
+                    a(href="#")
+                        .akp__image
+                            img(src="img/akp1.png")
+                            .akp__name CVT
+                        .akp__descr Вариаторная коробка переключения передач
+                li.akp__item.akp__item--yellow
+                    a(href="#")
+                        .akp__image
+                            img(src="img/akp1.png")
+                            .akp__name DGS
+                        .akp__descr Коробка переключения передач с двойным сцеплением
+                li.akp__item
+                    a(href="#")
+                        .akp__image
+                            img(src="img/rkp.png")
+                            .akp__name РКП
+                        .akp__descr Роботизированная коробка передач (коробка-робот)
+        section.text
+           h4.title.title_h4 Зачем нужна замена масла в коробке переключения передач?
+           article.article.article_silver
+               p Неправильное и несвоевременное обслуживание коробки переключения передач автомобиля служит ее преждевременным выходом из стоя. Некоторые автолюбители считают, что коробку передач не стоит обслуживать, в чем очень сильно ошибаются.
+                   span.is-hidden Порой на многих станциях клиентам сообщают, что менять масло и фильтр в коробке вообще не нужно, так как сами не умеют этого делать либо у них нет специального оборудования для замены. Мы развеем все эти мифы.
+                   button.more-btn.more-btn--blue.js-more-text(type='button') Подробнее
+        h2.title_h2 Бесплатная консультация по подбору масла в коробке передач
+        .request
+            .request__inner
+                .request__col
+                    .comp-diag__subscr-label.request__label БЫСТРЫЙ ЗАПРОС
+                .request__col
+                    .comp-diag__subscr-info.request__info
+                        | Запишитесь на подбор масла в коробке передач,&nbsp;
+                        br
+                        a.comp-diag__subscr-info--b(href='tel:0442382492') позвонив по телефону (044) 238-24-92
+                    .comp-diag__subscr-info.request__info
+                        | Или оставьте свои контакты, и мы свяжемся
+                        br
+                        | с Вами в течение&nbsp;
+                        span.comp-diag__subscr-info--b 5 мин. в рабочее время
+                .request__col
+                    .subscribe
+                        .subscribe__title Записаться в 1 клик
+                        .subscribe__inner
+                            .subscribe__form
+                                form(action='#')
+                                    .subscribe__field
+                                        +icon('icon-cellphone','subscribe__field-icon')
+                                        input.subscribe__phone(type='tel' placeholder='Ваш телефон' required name)
+                                    .subscribe__field
+                                        button.subscribe__submit-btn(type='submit') Запишите меня
+
+
+

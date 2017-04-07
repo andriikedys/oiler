@@ -1,0 +1,187 @@
+---
+title: "Комплекс диагностики автомобиля"
+---
+extends layouts/_layout
+block content
+    .layout.layout--diagnostic
+        section
+            h2.title-h2 Комплекс диагностики автомобиля
+            h4.title_h4 Вы можете записаться на диагностику по телефону <br> (044) 238-24-92 или сделайте заказ онлайн, выбрав один из пакетов услуг:
+
+                .benefit.benefit--reasons
+                    .benefit__title Выгода для вас
+
+                    .benefit__inner
+
+                        -var benefitText = ['Экономия вашего времени', 'Решение проблемы с первого раза', 'Вы всегда знаете, за что платите', 'Персональный менеджер к вашим услугам', 'Вы получаете гарантированный результат', '100%-я готовность вашего авто'];
+                        mixin benefitList(...items)
+                            each item, index in items
+                                include components/_benefitList
+                        +benefitList('clock', 'mark', 'monitor', 'magister', 'guarantee', 'heart')
+        section.diagnostic-types
+            .grid-row.flex-row
+                .col.col-4.col-flex
+                    .letter.letter_3.letter_line
+                        .letter__head
+                            h3.letter__h2 ДИАГНОСТИКА ХОДОВОЙ
+                                strong 7
+                                span пунктов
+                        .letter__body.letter__body_adapt
+                            .letter__done
+                                span Готовность авто:
+                                strong 33%
+                                img(src="img/content/done3.png")
+                            ul.list.list_silver
+                                li
+                                    span проверка работоспособности осветительных приборов
+                                li
+                                    span осмотр и контроль состояния деталей подвески на отсутствие люфта и механических повреждений
+                                li
+                                    span осмотр амортизаторов на предмет герметичности
+                                li
+                                    span осмотр и контроль элементов рулевого управления на предмет герметичности и отсутствия люфтов
+                                li
+                                    span осмотр пыльников ШРУСов на герметичность
+                                li
+                                    span осмотр тормозных дисков и колодок на предмет износа
+                                li
+                                    span проверка подшипников ступицы на предмет неисправности
+                        button.more-btn.more-btn--adapt.more-btn--blue.js-more-text Подробнее
+                        .subscribe.subscribe--letter
+                            .subscribe__title Записаться в 1 клик
+                            .subscribe__inner
+                                .subscribe__price 118
+                                    span грн.
+                                .subscribe__form
+                                    form(action='#')
+                                        .subscribe__field
+                                            +icon('icon-cellphone','subscribe__field-icon')
+                                            input.subscribe__phone(type='tel' placeholder='Ваш телефон' required name)
+                                        .subscribe__field
+                                            button.subscribe__submit-btn(type='submit') Запишите меня
+                .col.col-4.col-flex
+                    .letter.letter_3.letter_line
+                        .letter__head
+                            h3.letter__h2 БАЗОВАЯ ДИАГНОСТИКА
+                                strong 16
+                                span пунктов
+
+                        .letter__body.letter__body_adapt
+                            .letter__done
+                                span Готовность авто:
+                                strong 76%
+                                img(src="img/content/done2.png")
+                            h4.letter__h3 Диагностика ходовой (7 пунктов) <br> +
+                            ul.list.list_yellow
+                                li
+                                    span осмотр состояния уплотнительных элементов двигателя и КПП на предмет герметичности
+                                li
+                                    span осмотр тормозных шлангов на герметичность
+                                li
+                                    span осмотр системы охлаждения на предмет герметичности и контроль уровня охлаждающей жидкости
+                                li
+                                    span проверка состояния аккумулятора
+                                li
+                                    span проверка уровня масла в двигателе
+                                li
+                                    span проверка уровня жидкости гидроусилителя
+                                li
+                                    span проверка состояния и уровня тормозной жидкости
+                                li
+                                    span проверка состояния фильтра воздуха
+                                li
+                                    span проверка состояния фильтра салона
+                        button.more-btn.more-btn--adapt.more-btn--blue.js-more-text Подробнее
+                        .subscribe.subscribe--letter
+                            .subscribe__title Записаться в 1 клик
+                            .subscribe__inner
+                                .subscribe__price 218
+                                    span грн.
+                                .subscribe__form
+                                    form(action='#')
+                                        .subscribe__field
+                                            +icon('icon-cellphone','subscribe__field-icon')
+                                            input.subscribe__phone(type='tel' placeholder='Ваш телефон' required name)
+                                        .subscribe__field
+                                            button.subscribe__submit-btn(type='submit') Запишите меня
+                .col.col-4.col-flex
+                    .letter.letter_3.letter_line
+                        .letter__head.letter__head-yellow
+                            h3.letter__h2 ПОЛНАЯ ДИАГНОСТИКА
+                                strong 21
+                                span пункт
+                        .letter__body.letter__body_adapt
+                            .letter__done
+                                span Готовность авто:
+                                strong 100%
+                                img(src="img/content/done1.png")
+                            h4.letter__h3 Базовая диагностика (16 пунктов) <br> +
+                            ul.list.list_green
+                                li
+                                    span компьютерная диагностика
+
+                                li
+                                    span осмотр состояния деталей крепежа двигателя
+                                li
+                                    span oсмотр состояния деталей крепежа КПП
+                                li
+                                    span осмотр и контроль натяжения поликлиновых ремней
+                                li
+                                    span осмотр состояния покрышек на предмет равномерности износа
+                        button.more-btn.more-btn--adapt.more-btn--blue.js-more-text Подробнее
+                        .subscribe.subscribe--letter
+                            .subscribe__title Записаться в 1 клик
+                            .subscribe__inner
+                                .subscribe__price 458
+                                    span грн.
+                                .subscribe__form
+                                    form(action='#')
+                                        .subscribe__field
+                                            +icon('icon-cellphone','subscribe__field-icon')
+                                            input.subscribe__phone(type='tel' placeholder='Ваш телефон' required name)
+                                        .subscribe__field
+                                            button.subscribe__submit-btn(type='submit') Запишите меня
+        section.razval
+            .razval__inner
+                .circle
+                    .circle__inner
+                        i.icon.icon-like-w
+                        .circle__text Развал- схождение
+                        .circle__text 278 грн
+                .razval__text Напоминаем о важности проверки и регулировки углов схождения и развала колес вместе с сезонной заменой резины!
+
+
+
+
+        section.text-content
+            article.article.article_silver
+                h4.article__title Автосервис Oiler также предоставляет услугу:
+                    span диагностика авто при покупке
+                span Диагностика – это слово, которое пришло в мир автомобилей благодаря медицине. В этом слове существует два корня, такие как : «диа», что в переводе означает «насквозь» и второй корень «гнозис», переводится как «взгляд».
+                span.is-hidden Выходит, что диагностика означает взглянуть насквозь и определить, что все в порядке либо нужно осуществлять вмешательство. Среди врачей есть шутка, о том, что лучшим диагностом является патологоанатом. А если мы говорим об автомобилях, то взглянуть насквозь во все узлы является невозможной процедурой для авто-владельца. Некоторые стараются опереться на свой опыт водителя, на свою интуицию, но порой неисправность м ожет находиться в самых непредсказуемых местах. Таким образом правильная диагностика ходовой части зависит не только от того оборудования, которым диагностируют автомобиль, а и от самого мастера.
+                button.more-btn.more-btn--blue.js-more-text Подробнее
+        .request
+            .request__inner
+                .request__col
+                    .comp-diag__subscr-label.request__label БЫСТРЫЙ ЗАПРОС
+                .request__col
+                    .comp-diag__subscr-info.request__info
+                        | Запишитесь на комплексную диагностику,&nbsp;
+                        br
+                        a.comp-diag__subscr-info--b(href='tel:0442382492') позвонив по телефону (044) 238-24-92
+                    .comp-diag__subscr-info.request__info
+                        | Или оставьте свои контакты, и мы свяжемся
+                        br
+                        | с Вами в течение&nbsp;
+                        span.comp-diag__subscr-info--b 5 мин. в рабочее время
+                .request__col
+                    .subscribe
+                        .subscribe__title Записаться в 1 клик
+                        .subscribe__inner
+                            .subscribe__form
+                                form(action='#')
+                                    .subscribe__field
+                                        +icon('icon-cellphone','subscribe__field-icon')
+                                        input.subscribe__phone(type='tel' placeholder='Ваш телефон' required name)
+                                    .subscribe__field
+                                        button.subscribe__submit-btn(type='submit') Запишите меня

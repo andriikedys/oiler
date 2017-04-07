@@ -1,0 +1,548 @@
+---
+title: Услуга замена масла
+---
+extends layouts/_layout
+block content
+   .oil
+      section.oil-offer
+         .oil-offer__bg(style='background-image: url(img/bg/oil_bg.jpg)')
+         .oil-offer__inner
+            .oil-offer__img
+               img(src='img/content/oil_change.png' alt)
+            .oil-offer__col
+               .oil-offer__form
+                  .oil-offer__form-text
+                     .oil-offer__form-title Всего 118 грн. 30 минут работы
+                     .oil-offer__form-subtitle ЧТО ДЛЯ ЭТОГО НАДО?
+                     .oil-offer__form-descr
+                        .oil-offer__form-descr.oil-offer__form-descr--all Всё есть у нас:&nbsp;
+                        | Консультирующий и помогающий вам менеджер, высококвалифицированный мастер, фильтры на все марки авто.
+                     .oil-offer__form-info
+                        div Как часто следует проводить замену?
+                        div 10 000 км / 1 раз в год
+                     .oil-form
+                        form(action='#')
+                           .oil-form__field
+                              input.oil-form__input(type='tel' required placeholder='Ваш телефон')
+                           .oil-form__field
+                              button.oil-form__submit(type='submit') Записать меня
+      section.oil-simple
+         .oil-simple__inner
+            .oil-title ЗАМЕНА МАСЛА В OILER - ЭТО ПРОСТО
+            .oil-simple__row
+               .oil-simple__col
+                  .oil-simple__item
+                     .oil-simple__item-pic.oil-simple__item-pic--1
+                     .oil-simple__item-text Надоело выяснять у
+                         br
+                         | своих знакомых название
+                         br
+                         | квалифицированного сервиса?
+               .oil-simple__col
+                  .oil-simple__item
+                     .oil-simple__item-pic.oil-simple__item-pic--2
+                     .oil-simple__item-text Вы вымотаны
+                        br
+                        | подбором масла которое лучше
+                        br
+                        | подойдёт к вашему авто?
+               .oil-simple__col
+                  .oil-simple__item
+                     .oil-simple__item-pic.oil-simple__item-pic--3
+                     .oil-simple__item-text Хотите узнать
+                        br
+                        | как эти проблемы можно
+                        br
+                        | быстро и просто решить?
+
+
+      section.oil-trust
+         .oil-trust__layout
+            .oil-trust__inner
+               .oil-trust__img
+                  picture
+                     source(srcset='img/content/oil_trust_mob.png' media='(max-width: 767px)')
+                     img(src='img/content/oil_trust.png')
+               .oil-trust__text ДОВЕРЬТЕ НАМ СВОЙ АВТО, А САМИ ОТДЫХАЙТЕ
+                  br
+                  | ИЛИ ЗАНИМАЙТЕСЬ СВОИМИ ДЕЛАМИ
+
+      section.oil-scheme
+         .oil-scheme__layout
+            .oil-title.oil-scheme__title СХЕМА РАБОТЫ
+            .oil-scheme__col
+               .oil-scheme__descr Удобная схема работы,
+                  br
+                  | которая позволяет
+                  br
+                  | свести ваше участие к минимуму.
+               .oil-scheme__descr Всё, что вам нужно сделать —
+                  br
+                  | это оставить номер телефона.
+            .oil-scheme__col
+               .oil-scheme__item
+                  .oil-scheme__item-pic.oil-scheme__item-pic--1
+                  .oil-scheme__item-text Запишитесь в 1 клик через форму
+               .oil-scheme__item
+                  .oil-scheme__item-pic.oil-scheme__item-pic--2
+                  .oil-scheme__item-text В течение 5 мин. менеджер вам перезванивает
+               .oil-scheme__item
+                  .oil-scheme__item-pic.oil-scheme__item-pic--3
+                  .oil-scheme__item-text Менеджер подбирает масло и фильтры
+               .oil-scheme__item
+                  .oil-scheme__item-pic.oil-scheme__item-pic--4
+                  .oil-scheme__item-text Попивая кофе на диване, вы наблюдаете за выполнением работ
+               .oil-scheme__item
+                  .oil-scheme__item-pic.oil-scheme__item-pic--5
+                  .oil-scheme__item-text Вы получаете то, что хотели и оставляете хороший отзыв
+
+      section.oil-sign
+         .layout
+            .oil-sign__title ЗАПИШИТЕСЬ СЕЙЧАС!
+            a.oil-sign__phone(href='tel:0443383175') (044) 338-31-75
+            .sign-timer
+               .sign-timer__label Конец рабочего дня через:
+               .sign-timer__count.js-sign-timer
+               .sign-timer__text
+                  .sign-timer__col часов
+                  .sign-timer__col мин
+                  .sign-timer__col сек
+               .sign-timer__message Рабочий день уже окончен, но мы перезвоним Вам утром
+            .oil-sign__price Всего 118 грн.
+            .oil-form
+               form(action='#')
+                  .oil-form__field
+                     input.oil-form__input(type='tel' required placeholder='Ваш телефон')
+                  .oil-form__field
+                     button.oil-form__submit(type='submit') Записать меня
+
+      section.oil-pay
+         .oil-pay__layout
+            .oil-title ЗА ЧТО ВЫ ПЛАТИТЕ
+            .oil-pay__subtitle 7 ПРИЧИН КУПИТЬ МАСЛО У НАС
+            .oil-pay__row
+               .oil-pay__col
+                  .oil-pay__item
+                     .oil-pay__item-pic.oil-pay__item-pic--1
+                     .oil-pay__item-text Вы тратите час времени, а не день
+                  .oil-pay__item
+                     .oil-pay__item-pic.oil-pay__item-pic--2
+                     .oil-pay__item-text Вам профессионально подберут масло и фильтр
+                  .oil-pay__item
+                     .oil-pay__item-pic.oil-pay__item-pic--3
+                     .oil-pay__item-text Вы получаете акт с детальным списком работ
+                  .oil-pay__item
+                     .oil-pay__item-pic.oil-pay__item-pic--4
+                     .oil-pay__item-text Комфортабельная комната клиента с кофе и плюшками
+               .oil-pay__col
+                  .oil-pay__item
+                     .oil-pay__item-pic.oil-pay__item-pic--5
+                     .oil-pay__item-text Стоимость работ известна заранее
+                  .oil-pay__item
+                     .oil-pay__item-pic.oil-pay__item-pic--6
+                     .oil-pay__item-text Вы получаете официальный товар
+                  .oil-pay__item
+                     .oil-pay__item-pic.oil-pay__item-pic--7
+                     .oil-pay__item-text В наличии 24 бренда масел
+            .oil-pay__subtitle Мы - авторизованный магазин по продаже
+
+         .oil-slider.js-oil-slider
+            .oil-slider__item
+               img(src='img/logos/liqui-moly.png')
+            .oil-slider__item
+               img(src='img/logos/castrol.png')
+            .oil-slider__item
+               img(src='img/logos/aral.png')
+            .oil-slider__item
+               img(src='img/logos/shell.png')
+            .oil-slider__item
+               img(src='img/logos/liqui-moly.png')
+            .oil-slider__item
+               img(src='img/logos/castrol.png')
+
+      section.compare
+         .oil-title СРАВНЕНИЕ С КОНКУРЕНТАМИ
+         .compare__inner
+            .compare__descr
+               .compare__descr-text
+                  p Автосервис Oiler сочетает в себе официальный магазин и СТО, что позволяет давать&nbsp;
+                     span.compare__descr-color гарантию и на товар и на услуги.
+                  p Этого вам не сможет дать ни один конкурент, т.к. не возьмёт на себя ответственность за работу другой фирмы.
+               .compare__descr-stamp
+            .compare__row
+               .compare__col
+                  .compare__card
+                     .compare__card-head
+                        .compare__card-title Другой автосервис
+                        .compare__card-likes
+                           .compare__card-like.compare__card-like--red
+                              .compare__card-count.compare__card-count--1 6
+                           .compare__card-like.compare__card-like--gray
+                              .compare__card-count.compare__card-count--2 1
+                     .compare__card-inner
+                        table.compare__card-features
+                           tr.compare__card-row
+                              td.compare__card-text Гарантия на товар
+                              td.compare__card-text Нет
+                           tr.compare__card-row
+                              td.compare__card-text Приобретение запчастей
+                              td.compare__card-text Нет
+                           tr.compare__card-row
+                              td.compare__card-text Персональный менеджер
+                              td.compare__card-text Нет
+                           tr.compare__card-row
+                              td.compare__card-text Квалифицированный подбор
+                              td.compare__card-text Нет
+                           tr.compare__card-row
+                              td.compare__card-text Удобное время записи
+                              td.compare__card-text Нет
+                           tr.compare__card-row
+                              td.compare__card-text Быстрый результат
+                              td.compare__card-text Нет
+                           tr.compare__card-row
+                              td.compare__card-text Головная боль
+                              td.compare__card-text.compare__card-text--yes Да
+               .compare__col
+                  .compare__card
+                     .compare__card-head
+                        .compare__card-title Другой автомагазин
+                        .compare__card-likes
+                           .compare__card-like.compare__card-like--red
+                              .compare__card-count.compare__card-count--1 5
+                           .compare__card-like.compare__card-like--gray
+                              .compare__card-count.compare__card-count--2 2
+                     .compare__card-inner
+                        table.compare__card-features
+                           tr.compare__card-row
+                              td.compare__card-text Обслуживание авто
+                              td.compare__card-text Нет
+                           tr.compare__card-row
+                              td.compare__card-text Гарантия на запчасти
+                              td.compare__card-text Нет
+                           tr.compare__card-row
+                              td.compare__card-text Быстрый результат
+                              td.compare__card-text Нет
+                           tr.compare__card-row
+                              td.compare__card-text Расчет без предоплаты
+                              td.compare__card-text Нет
+                           tr.compare__card-row
+                              td.compare__card-text Подбор менеджером
+                              td.compare__card-text--yes Да
+                           tr.compare__card-row
+                              td.compare__card-text Квалифицированный подбор
+                              td.compare__card-text Нет
+                           tr.compare__card-row
+                              td.compare__card-text Головная боль
+                              td.compare__card-text.compare__card-text--yes Да
+               .compare__col
+                  .compare__card
+                     .compare__card-head.compare__card-head--gold
+                        .compare__card-title Автосервис Oiler
+                        .compare__card-likes
+                           .compare__card-like.compare__card-like--gray.compare__card-like--rotated
+                              .compare__card-count.compare__card-count--1.compare__card-count--rotated 1
+                           .compare__card-like.compare__card-like--green
+                              .compare__card-count.compare__card-count--2 8
+                     .compare__card-inner
+                        table.compare__card-features
+                           tr.compare__card-row
+                              td.compare__card-text Гарантия на товар и работы
+                              td.compare__card-text--yes Да
+                           tr.compare__card-row
+                              td.compare__card-text Официальный товар
+                              td.compare__card-text--yes Да
+                           tr.compare__card-row
+                              td.compare__card-text Комплексное решение задачи
+                              td.compare__card-text--yes Да
+                           tr.compare__card-row
+                              td.compare__card-text Персональный менеджер
+                              td.compare__card-text--yes Да
+                           tr.compare__card-row
+                              td.compare__card-text Квалифицированный подбор
+                              td.compare__card-text--yes Да
+                           tr.compare__card-row
+                              td.compare__card-text Никакой предоплаты
+                              td.compare__card-text--yes Да
+                           tr.compare__card-row
+                              td.compare__card-text Удобное время записи
+                              td.compare__card-text.compare__card-text--yes Да
+                           tr.compare__card-row
+                              td.compare__card-text Быстрый результат
+                              td.compare__card-text.compare__card-text--yes Да
+                           tr.compare__card-row
+                              td.compare__card-text Головная боль
+                              td.compare__card-text.compare__card-text--no Нет
+
+      section.oil-sign
+         .layout
+            .oil-sign__title ЗАПИШИТЕСЬ СЕЙЧАС!
+            a.oil-sign__phone(href='tel:0443383175') (044) 338-31-75
+            .sign-timer
+               .sign-timer__label Конец рабочего дня через:
+               .sign-timer__count.js-sign-timer
+               .sign-timer__text
+                  .sign-timer__col часов
+                  .sign-timer__col мин
+                  .sign-timer__col сек
+               .sign-timer__message Рабочий день уже окончен, но мы перезвоним Вам утром
+            .oil-sign__price Всего 118 грн.
+            .oil-form
+               form(action='#')
+                  .oil-form__field
+                     input.oil-form__input(type='tel' required placeholder='Ваш телефон')
+                  .oil-form__field
+                     button.oil-form__submit(type='submit') Записать меня
+
+      section.feed
+         .feed__inner
+            .oil-title ОТЗЫВЫ КЛИЕНТОВ
+            .feed__row
+               .feed__col
+                  .feed__item
+                     .feed__item-img
+                        img(src='img/testimonial-sm.png')
+                     .feed__item-inner
+                        .feed__item-username Сергей на Kia Rio New&nbsp;
+                           span.feed__item-date 15 января 2016
+                        .feed__item-text Приехал поменять масло. Очень понравилось. И отношение, и работа, и качество материалов. Мастер дал замечание по машине. Обязательно учту, наверное к вам и приеду на устранение.
+                        .feed__rate(data-rate="3")
+                           +icon('icon-star','feed__rate-star')
+                           +icon('icon-star','feed__rate-star')
+                           +icon('icon-star','feed__rate-star')
+                           +icon('icon-star','feed__rate-star')
+                           +icon('icon-star','feed__rate-star')
+               .feed__col
+                  .feed__item
+                     .feed__item-img
+                        img(src='img/testimonial-sm.png')
+                     .feed__item-inner
+                        .feed__item-username Dmitriy на Skoda Octavia&nbsp;
+                           span.feed__item-date 14.10.2015
+                        .feed__item-text Остался очень доволен сервисом этих ребят!!! Был в Oiler впервые. Меня сразу впечатлил подход к клиенту.
+                        .feed__item-text.feed__item-text--hidden Обязательно учту, наверное к вам и приеду на устранение.
+                        button.more-btn.more-btn--feed.js-more-text Подробнее
+                        .feed__rate(data-rate="5")
+                           +icon('icon-star','feed__rate-star')
+                           +icon('icon-star','feed__rate-star')
+                           +icon('icon-star','feed__rate-star')
+                           +icon('icon-star','feed__rate-star')
+                           +icon('icon-star','feed__rate-star')
+               .feed__col
+                  .feed__item
+                     .feed__item-img
+                        img(src='img/testimonial-sm.png')
+                     .feed__item-inner
+                        .feed__item-username Антон на Lexus&nbsp;
+                           span.feed__item-date 21 июля 2015
+                        .feed__item-text Замена масла и фильтров прошла быстро, в точно назначенное время. Адекватные цены на работы и запчасти. Внимательный к клиентам персонал. Хорошая комната для клиентов с кофе, интеренетом, ТВ и кондиционером.
+                        .feed__rate(data-rate="5")
+                           +icon('icon-star','feed__rate-star')
+                           +icon('icon-star','feed__rate-star')
+                           +icon('icon-star','feed__rate-star')
+                           +icon('icon-star','feed__rate-star')
+                           +icon('icon-star','feed__rate-star')
+               .feed__col
+                  .feed__item
+                     .feed__item-img
+                        img(src='img/testimonial-sm.png')
+                     .feed__item-inner
+                        .feed__item-username Алексей на Skoda Superb&nbsp;
+                           span.feed__item-date 15 января 2016
+                        .feed__item-text Приезжал на OILER на ТО. Замена масла, фильтров, прокладки клапанной крышки и полная диагностика авто. Остались одни положительные впечатления.
+                        .feed__item-text.feed__item-text--hidden Остались одни положительные впечатления.
+                        button.more-btn.more-btn--feed.js-more-text Подробнее
+                        .feed__rate(data-rate="4")
+                           +icon('icon-star','feed__rate-star')
+                           +icon('icon-star','feed__rate-star')
+                           +icon('icon-star','feed__rate-star')
+                           +icon('icon-star','feed__rate-star')
+                           +icon('icon-star','feed__rate-star')
+
+      section.experience
+         .experience__layout
+            .oil-title Наш опыт
+            .experience__inner
+               .experience__item
+                  .experience__item-title МЫ ОБСЛУЖИВАЕМ
+                  .experience__cars
+                     .experience__cars-item
+                        .experience__cars-count 12 731
+                        .experience__cars-text Авто в год
+                     .experience__cars-item
+                        .experience__cars-count 35
+                        .experience__cars-text Авто в день
+                  .experience__feeds
+                     .experience__feeds-title ОТЗЫВОВ ЗА&nbsp;
+                        span 2015 ГОД
+                     .experience__feeds-graph
+                        .experience__feeds-text
+                           span 91%&nbsp;
+                           | оставивших отзыв дали нам наивысшую оценку -
+                           span 5 из 5&nbsp;
+                        .experience__feeds-text При другой оценке мы всегда открыты к диалогу и исправлению своих ошибок. Всё что для этого нужно - связаться с нами и приехать к нам на сервис
+                     .experience__feeds-remark СОГЛАСНЫ, ИНОГДА ЕСТЬ ПРОБЛЕМЫ, НО МЫ ВСЕГДА
+                        br
+                        | РЕШИМ ЭТОТ ВОПРОС В ВАШУ ПОЛЬЗУ
+                     .experience__feeds-copy &lowast;Все отзывы взяты с:&nbsp;
+                        span “Все СТО”, Facebook, Google+, Otzyv.ua
+
+               .experience__item
+                  .experience__item-title.experience__item-title--margin В 2015 МЫ:
+                  .overview
+                     .overview__item
+                        .overview__item-text Провели замен масла
+                        .overview__item-count 4 256
+                     .overview__item
+                        .overview__item-text Поменяли воздушных фильтров
+                        .overview__item-count 2 631
+                     .overview__item
+                        .overview__item-text Сделали диагностик авто
+                        .overview__item-count 4 138
+                     .overview__item
+                        .overview__item-text Поменяли фильтров салона
+                        .overview__item-count 1 684
+                     .overview__item
+                        .overview__item-count 979
+                        .overview__item-text.overview__item-text_979 Поменяли топливных фильтров
+                     .overview__item
+                        .overview__item-count 40 414
+                        .overview__item-text.overview__item-text_40 Продали литров масла
+                  .experience__form
+                     .experience__form-title ЗАПИШИТЕСЬ СЕЙЧАС!
+                     .oil-form
+                        form(action='#')
+                           .oil-form__field
+                              input.oil-form__input(type='tel' required placeholder='Ваш телефон')
+                           .oil-form__field
+                              button.oil-form__submit(type='submit') Записать меня
+
+      section.oil-result
+         .oil-result__inner
+            .oil-title Итоги
+            .oil-result__subtitle ИТАК, ВЫ УБЕДИЛИСЬ, ЧТО:
+            .oil-result__row
+               .oil-result__col
+                  .oil-result__item
+                     .oil-result__item-number 1
+                     .oil-result__item-text Вы получаете персонального менеджера который обеспечит максимально быстрое выполнение всех необходимых задач
+                  .oil-result__item
+                     .oil-result__item-number 2
+                     .oil-result__item-text Вы получаете гарантию и на товары и на услуги, что вам не смогут предоставить конкуренты
+                  .oil-result__item
+                     .oil-result__item-number 3
+                     .oil-result__item-text Вы получаете уверенность в безопасности сотрудничества с нами, о которой говорят отзывы наших клиентов
+               .oil-result__col
+                  .oil-result__item
+                     .oil-result__item-number 4
+                     .oil-result__item-text Вы получаете значительно больше, чем просто замену масла
+
+                  .oil-result__item
+                     .oil-result__item-number 5
+                     .oil-result__item-text Вы получаете гарантию
+                        br
+                        | выполненных работ или возврат денег
+
+            .oil-result__remark ПОЭТОМУ ОСТАВЬТЕ СВОЙ НОМЕР ТЕЛЕФОНА И ПРИСОЕДИНЯЙТЕСЬ К ДОВОЛЬНЫМ КЛИЕНТАМ
+                           +icon('icon-arr_big','oil-result__remark-arr')
+
+      section.oil-sign
+         .layout
+            .oil-sign__title ЗАПИШИТЕСЬ СЕЙЧАС!
+            a.oil-sign__phone(href='tel:0443383175') (044) 338-31-75
+            .sign-timer
+               .sign-timer__label Конец рабочего дня через:
+               .sign-timer__count.js-sign-timer
+               .sign-timer__text
+                  .sign-timer__col часов
+                  .sign-timer__col мин
+                  .sign-timer__col сек
+               .sign-timer__message Рабочий день уже окончен, но мы перезвоним Вам утром
+            .oil-sign__price Всего 118 грн.
+            .oil-form
+               form(action='#')
+                  .oil-form__field
+                     input.oil-form__input(type='tel' required placeholder='Ваш телефон')
+                  .oil-form__field
+                     button.oil-form__submit(type='submit') Записать меня
+
+      section.address.address--oil
+         h3.address__title.title-h3 АДРЕСА НАШИХ АВТОРСЕРВИСОВ
+         .address__street#lukjanovka
+            .address__street-title
+               +icon('icon-marker','address__title-mark')
+               | Oiler Лукьяновка,&nbsp;
+               span ул. Нагорная, 47
+            .address__street-inner
+               .address__street-label Карта проезда:
+               .address__map
+                  .address__map-label
+                     a.address__map-phone(href='tel:0443538179') (044) 353-81-79
+                     .address__map-subtitle Мы работаем
+                     .address__map-work Пн-Сб: с 9:00 до 19:00
+                  .gmap-holder
+                     iframe(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2539.350437472534!2d30.483649815732164!3d50.47181947947823!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce7589650e45%3A0xae8f8de6ccb76e68!2z0LLRg9C70LjRhtGPINCd0LDQs9GW0YDQvdCwLCA0Nywg0JrQuNGX0LI!5e0!3m2!1sru!2sua!4v1473243915051', width='960', height='300', frameborder='0', style='border:0;', allowfullscreen='')
+
+            .address__video-wrapper
+               .address__video-label Видео проезда:
+               .address__video-inner
+                  .address__video
+                     .address__video-title Проезд с ул. Нижний Вал
+                     iframe(width='300', height='210', src='https://www.youtube.com/embed/EJTvNSnkXlY', frameborder='0', allowfullscreen='')
+                  .address__video
+                     .address__video-title Проезд с ул. Черновола
+                     iframe(width='300', height='210', src='https://www.youtube.com/embed/y1NEuEQCZ6k', frameborder='0', allowfullscreen='')
+                  .address__video
+                     .address__video-title Проезд с ул. Фрунзе&nbsp;
+                        span (через Подольский спуск)
+                     iframe(width='300', height='210', src='https://www.youtube.com/embed/76hv_iAImA0', frameborder='0', allowfullscreen='')
+                  .address__video
+                     .address__video-title Проезд с ул. Нижнеюрковская
+                     iframe(width='300', height='210', src='https://www.youtube.com/embed/a0VudTMciZQ', frameborder='0', allowfullscreen='')
+                  .address__video
+                     .address__video-title Проезд с ул. Мельникова
+                     iframe(width='300', height='210', src='https://www.youtube.com/embed/gB-jEs0eO9E', frameborder='0', allowfullscreen='')
+                  .address__video
+                     .address__video-title Проезд от м. Лукьяновская
+                     iframe(width='300', height='210', src='https://www.youtube.com/embed/G7Xil4Z3_YI', frameborder='0', allowfullscreen='')
+                  .address__video
+                     .address__video-title Проезд с ул. Сечевых Стрельцов
+                     iframe(width='300', height='210', src='https://www.youtube.com/embed/V_k36TjlXnc', frameborder='0', allowfullscreen='')
+                  .address__video
+                     .address__video-title Проезд с ул. Набережно - Луговая
+                     iframe(width='300', height='210', src='https://www.youtube.com/embed/BPGzsNzUTnU', frameborder='0', allowfullscreen='')
+
+         .address__street#pechersk
+            .address__street-title
+               +icon('icon-marker','address__title-mark')
+               | Oiler Печерск,&nbsp;
+               span ул. Киквидзе, 43
+            .address__street-inner
+               .address__street-label Карта проезда:
+               .address__map
+                  .address__map-label
+                     a.address__map-phone(href='tel:0442382492') (044) 238-24-92
+                     .address__map-subtitle Мы работаем
+                     .address__map-subtitle Без выходных
+                     .address__map-work Пн-Пт: с 8:00 до 21:00
+                     .address__map-work Сб-Вс: с 8:00 до 19:00
+                  .gmap-holder
+                     iframe(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4276.920911577318!2d30.55655456725702!3d50.402488499288246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf5938ffd67d%3A0x92b3c357237742e0!2z0LLRg9C7LiDQmtGW0LrQstGW0LTQt9C1LCA0Mywg0JrQuNGX0LI!5e0!3m2!1sru!2sua!4v1437388007937', width='960', height='300', frameborder='0', style='border:0; pointer-events: none;', allowfullscreen='')
+            .address__video-wrapper
+               .address__video-label Видео проезда:
+               .address__video-inner
+                  .address__video
+                     .address__video-title Заезд с ул. Сапёрно-слободская
+                     iframe(width='300', height='210', src='//www.youtube.com/embed/Kiau7leTsv0?list=PL5_p_jsLOe1IHv4nNtq07fWiYoA8_auON', frameborder='0', allowfullscreen='')
+                  .address__video
+                     .address__video-title Заезд с бульв. Леси Украинки
+                     iframe(width='300', height='210', src='//www.youtube.com/embed/XUr0I-Ppvts?list=PL5_p_jsLOe1IHv4nNtq07fWiYoA8_auON', frameborder='0', allowfullscreen='')
+                  .address__video
+                     .address__video-title Заезд с ул. Надднепрянское шоссе
+                     iframe(width='300', height='210', src='//www.youtube.com/embed/WyeGCd-JUgQ?list=PL5_p_jsLOe1IHv4nNtq07fWiYoA8_auON', frameborder='0', allowfullscreen='')
+                  .address__video
+                     .address__video-title Заезд с Южного моста
+                     iframe(width='300', height='210', src='//www.youtube.com/embed/u31D4GHnWwU?list=PL5_p_jsLOe1IHv4nNtq07fWiYoA8_auON', frameborder='0', allowfullscreen='')
+                  .address__video
+                     .address__video-title Заезд с бульвара Дружбы Народов
+                     iframe(width='300', height='210', src='//www.youtube.com/embed/9ykG7BvLKDw?list=PL5_p_jsLOe1IHv4nNtq07fWiYoA8_auON', frameborder='0', allowfullscreen='')
+

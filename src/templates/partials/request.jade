@@ -1,0 +1,25 @@
+.request
+   .request__inner
+      .request__col
+         .comp-diag__subscr-label.request__label БЫСТРЫЙ ЗАПРОС
+      .request__col
+         .comp-diag__subscr-info.request__info
+            | Запишитесь на компьютерную диагностику,&nbsp;
+            br
+            a.comp-diag__subscr-info--b(href='tel:0442382492') позвонив по телефону (044) 238-24-92
+         .comp-diag__subscr-info.request__info
+            | Или оставьте свои контакты, и мы свяжемся
+            br
+            | с Вами в течение&nbsp;
+            span.comp-diag__subscr-info--b 5 мин. в рабочее время
+      .request__col
+         .subscribe
+            .subscribe__title Записаться в 1 клик
+            .subscribe__inner
+               .subscribe__form
+                  form(action='#')
+                     .subscribe__field
+                        +icon('icon-cellphone','subscribe__field-icon')
+                        input.subscribe__phone(type='tel' placeholder='Ваш телефон' required name)
+                     .subscribe__field
+                        button.subscribe__submit-btn(type='submit') Запишите меня

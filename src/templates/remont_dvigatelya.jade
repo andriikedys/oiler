@@ -1,0 +1,172 @@
+---
+title: Ремонт двигателя
+---
+extends layouts/_layout
+block content
+    .layout.layout--motor-fix.motor-fix
+        h2.title_h2 Ремонт двигателя
+
+        .benefit.benefit--reasons.benefit--motor
+            .benefit__title Выгода для вас
+            .benefit__inner
+               -var benefitText = ['Ваш двигатель получает новую жизнь','Вы получаете гарантию до 60 тыс.км', 'Вы забираете авто в четко поставленные сроки', 'Вы платите фиксированную стоимость услуг', 'Вы получаете лучшие запчасти, сразу на месте', 'Вас обслуживают специалисты с большим опытом'];
+               mixin benefitList(...items)
+                  each item, index in items
+                     include components/_benefitList
+               +benefitList('heart', 'guarantee', 'timer', 'money', 'tools', 'spec')
+        .container.container-motor
+            h4.title_h4 Ремонт двигателя — это просто. Но только в автосервисе Oiler.
+            .article.article--silver
+                p
+                    strong Ремонт двигателя
+                    — серьёзный и кропотливый процесс. Грамотный подход специалистов к ремонту этого агрегата обеспечит Вам гарантию безопасной езды на данном автомобиле и его нормальную работу.
+                p Одним из самых важных элементов автомобиля является двигатель. На сегодняшний день не так просто найти автосервис, на котором
+                    strong капитальный ремонт двигателя
+                    делается профессионально и без негативных последствий. Если Вы нашли эту статью по запросам (
+                    strong  капремонт двигателя Киев,
+                    strong  переборка двигателя цена,
+                    strong  ремонт двигателей Киев,
+                    strong  ремонт двигателя цена
+                    ) значит, Вы не зря искали.
+                    br
+                    Только на автосервисе Oiler капремонт двигателя пройдет быстро и качественно.
+                    span.is-hidden Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    button.more-btn.more-btn--feed.js-more-text Подробнее
+
+            .row.important
+                .col.col-1-3.important__col
+                    .important-image
+                        img(src='img/content/important.png')
+                .col.col-2-3.important__col
+                    p Для определения действительного источника неисправности необходимо провести диагностику двигателя.
+                    p По нашему опыту, из всех запросов на ремонт двигателя, 70% содержали неисправности, связанные с другими узлами автомобиля.
+            form.row.diagnostic.letter.grid-4(action="#")
+                .letter__col.col.col-1-4
+                    .letter__head
+                        h2.letter__title Какой у Вас тип двигателя?
+                    .letter__body
+                        p
+                            label
+                               input.js-change-price(type="radio" name="group1" value="88 грн" checked)
+                               span Бензиновый
+                        p
+                            label
+                                input.js-change-price(type="radio" name="group1" value="178 грн")
+                                span Дизельный
+                .letter__col.col.col-1-4
+                    .letter__head
+                         h2.letter__title
+                            i.icon.icon-lupa-laptop
+                    .letter__body
+                       .letter__table
+                           .letter__cell Визуальный осмотр
+                           .letter__cell.table-price.js-visual-price 50 грн.
+                       .letter__table
+                           .letter__cell Компьютерная диагностика
+                           .letter__cell.table-price.js-comp-diagnostic 178 грн.
+
+
+
+
+                .letter__col.col.col-1-4
+                    .letter__head
+                        h2.letter__title Замер компрессии
+                    .letter__body
+                        .letter__table
+                            .letter__cell Один цилиндр
+                            .letter__cell.table-price
+                                strong.table-price.js-chage-price 88 грн.
+                        .letter__table Выберете кол-во цилиндров:
+                        div.radio-container
+                           label
+                              input.js-motor-numb(type="radio" name="group2" value="4" )
+                              span 4
+                           label
+                               input.js-motor-numb(type="radio" name="group2" value="8" )
+                               span 8
+                           label
+                              input.js-motor-numb(type="radio" name="group2" value="12" )
+                              span 12
+                        div.radio-container
+                            label
+                                input.js-motor-numb(type="radio" name="group2" value="6" )
+                                span 6
+                            label
+                                 input.js-motor-numb(type="radio" name="group2" value="10" )
+                                 span 10
+                            label
+                                input.js-motor-numb(type="radio" name="group2" value="0")
+                                span не знаю
+
+                .letter__col.col.col-1-4
+                    .letter__head
+                        h2.letter__title
+                            p ИТОГО:
+                            span.js-result Выберете кол-во
+                                br
+                                цилиндров
+                    .letter__body
+                        .click-title запишитесь в 1 клик
+                        .input-box
+                            .input-phone
+                                input(placeholder="Ваш телефон")
+                            button.btn.btn_yellow(type="submit") ЗАПИШИТЕ МЕНЯ
+            .diagnostic__hint
+                +icon('icon-star','license__subscr-icon')
+                Для некоторых автомобилей понадобится снятие коллектора (299 грн.). Уточните информацию у менеджера.
+            .social.social_sm
+                .social__item.social__item_motor
+                    img(src="img/soc.png")
+                .social__item
+                    span Рассказать друзьям:
+                    img(src="img/soc1.png")
+            section.testimonials
+                h3.testimonials__title Отзывы
+                .testimonials__inner
+                    .testimonials__item
+                        .testimonials__item-user Станислав, Dacia Logan MCV 2008,
+                            span.testimonials__item-date 30 января 2014 г.
+                        .testimonials__item-row
+                            .testimonials__item-photo
+                                img(src="img/testimonial-1.png")
+                            .testimonials__item-feedback
+                                p.testimonials__item-text Доброго времени суток. Обслуживались вчера. Заехали наобум к Вам на диагностику, ничего и никого не ждали, все подробно показали-рассказали. Очень понравилось отношение. Позавчера мы заказали запчасти, через пару часов они были уже на СТО. Вчера в 9-00 пригнали машину                                 и в 13-00 забрали, как нам и обещали. СПАСИБО большое. Удачи Вам ;)
+                    .testimonials__item.testimonials__item--response
+                        .testimonials__item-user Ответ автосервиса
+                        .testimonials__item-row
+                            .testimonials__item-photo
+                                img(src="img/testimonial-2.png")
+                            .testimonials__item-feedback.testimonials__item-feedback--response
+                                p.testimonials__item-text Большое спасибо Вам за хороший отзыв, напомните о нём при следующем визите и получите в благодарность карту постоянного клиента!
+            .request-container
+                .request
+                    .request__inner
+                        .request__col
+                            .comp-diag__subscr-label.request__label БЫСТРЫЙ ЗАПРОС
+                        .request__col
+                            .comp-diag__subscr-info.request__info
+                                | Запишитесь на ремонт двигателя,&nbsp;
+                                br
+                                a.comp-diag__subscr-info--b(href='tel:0442382492') позвонив по телефону (044) 238-24-92
+                            .comp-diag__subscr-info.request__info
+                                | Или оставьте свои контакты, и мы свяжемся
+                                br
+                                | с Вами в течение&nbsp;
+                                span.comp-diag__subscr-info--b 5 мин. в рабочее время
+                        .request__col
+                            .subscribe
+                                .subscribe__title Записаться в 1 клик
+                                .subscribe__inner
+                                    .subscribe__form
+                                        form(action='#')
+                                            .subscribe__field
+                                                +icon('icon-cellphone','subscribe__field-icon')
+                                                input.subscribe__phone(type='tel' placeholder='Ваш телефон' required name)
+                                            .subscribe__field
+                                                button.subscribe__submit-btn(type='submit') Запишите меня
+
+
+
+
+
+
